@@ -11,10 +11,12 @@ class Situation
         Situation(int N_lights, const std::vector<std::vector<int> >& _interruptors);
 
         float weight(const std::vector<bool>& bits);
+        float weight(const std::vector<int>& coeffs);
 
     private:
         std::vector<bool> lightState;
         std::vector<std::vector<int> > interruptors;
+        std::vector<std::vector<int> > lightStateIntegers;
 };
 
 

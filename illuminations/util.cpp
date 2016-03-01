@@ -58,6 +58,39 @@ float hammingDistance(const std::vector<bool>& v1, const std::vector<bool>& v2)
     return ret;
 }
 
+std::vector<int> convertBinToInt(const std::vector<bool>& v)
+{
+    std::vector<int> ret((v.size()-1)/32+1);
+    unsigned int cur = 0;
+    ret[cur] = 0;
+    int o = 31;
+    for(unsigned int i=0;i<v.size();i++)
+    {
+        if(v[i])
+            ret[cur] += (1<<o);
+        o--;
+        if(o<0)
+        {
+            o = 31;
+            cur++;
+            ret[cur] = 0;
+        }
+    }
+
+    return ret;
+}
+
+std::string convertIntToBinaryString(int i)
+{
+    std::string ret;
+    ret.resize(32);
+    for(unsigned int j=0;j<32;j++)
+        if(i&(1<<(31-j)))
+            ret[j] = '1';
+        else
+            ret[j] = '0';
+    return ret;
+}
 
 
 

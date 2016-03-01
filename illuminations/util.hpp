@@ -48,7 +48,8 @@ float tanForExponent(unsigned int n, unsigned int N, float p);
 std::vector<std::array<unsigned char,3> > readTrios(const std::string& path);
 float evaluateSumBits(const std::vector<bool>& vec);
 float hammingDistance(const std::vector<bool>& v1, const std::vector<bool>& v2);
-
+std::vector<int> convertBinToInt(const std::vector<bool>& v);
+std::string convertIntToBinaryString(int i);
 
 
 
