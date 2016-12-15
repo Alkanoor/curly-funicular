@@ -14,6 +14,7 @@
 \usepackage{fancyhdr}
 \usepackage{wrapfig}
 \usepackage{filecontents}
+\usepackage{tikzsymbols}
 
 %====================== INFORMATION ET REGLES ======================
 
@@ -44,6 +45,15 @@ pdfstartview = {FitH}}
 @online{rapport_maxence,
   title = {Mémoire de stage : Étude d’OpenFlow dans le contexte de la sécurité},
   author = {Maxence Tury}
+}
+\end{filecontents}
+
+\begin{filecontents}{references.bib}
+@online{histoire,
+  title = {A Survey of Software-De ned Networking:  Past,
+Present, and Future of Programmable Networks},
+  author = {Bruno Nunes Astuto, Marc Mendonça, Xuan Nam Nguyen, Katia Obraczka,Thierry Turletti}
+  url = {https://hal.inria.fr/hal-00825087/file/hal_final.pdf}
 }
 \end{filecontents}
 
@@ -81,7 +91,7 @@ pdfstartview = {FitH}}
 \newpage
 ~
 \section*{\Huge{Remerciements\\}}
-\Large Avant d'entamer la lecture de ce rapport, je tiens avant tout à remercier toute l'équipe du département RST (Réseaux et Services des Télécommunications) de Télécom SudParis qui m'a si bien accueilli durant ce stage, le maître de conférences Gregory Blanc qui m'a encadré avec bienveillance, et toutes les autres personnes que j'ai pu cottoyer plus ou moins longtemps à l'occasion d'évènements ponctuels comme la conférence RAID qui s'est tenue en septembre.
+\Large Avant d'entamer la lecture de ce rapport, je tiens avant tout à remercier toute l'équipe du département RST (Réseaux et Services des Télécommunications) de Télécom SudParis qui m'a si bien accueilli durant ce stage. Je remercie également mon encadrant côté Télécom ParisTech Rida Khatoun, m'ayant mis en relation avec le maître de conférences Gregory Blanc qui m'a encadré avec bienveillance pendant toute la durée du stage. Enfin, toutes les autres personnes que j'ai pu cottoyer plus ou moins longtemps à l'occasion d'évènements ponctuels comme la conférence RAID qui s'est tenue en septembre.
 \phantomsection
 
 
@@ -95,9 +105,13 @@ pdfstartview = {FitH}}
 \section{Réseau SDN (Software Defined Network)}
 	\subsection{Motivation}
 		\input{./motivation_sdn.tex}
+		~\\
 	\subsection{Concepts}
 		\input{./concepts.tex}
+		~\\
 	\subsection{Historique}
+		\input{./histoire.tex}
+		~\\
 	\subsection{Exemples d'applications}
 \section{Cadre de l'étude}
 	\subsection{Problématique et objectifs}
@@ -124,24 +138,7 @@ pdfstartview = {FitH}}
 \section{Ressources}
 
 
-%====================== INCLUSION DES PARTIES ======================
-
 ~
-\newpage
-
-%\input{./presentation.tex}
-
-%\input{./existant.tex}
- 
-%\input{./besoins.tex}
-
-%\input{./autre_partie.tex}
-
-%\input{./resultats.tex}
-
-%\input{./bilan.tex}
-
-%\input{./annexes.tex}
 
 \newpage
 
