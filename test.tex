@@ -1,0 +1,157 @@
+\documentclass[a4paper]{article}
+
+%====================== PACKAGES ======================
+
+\usepackage[utf8x]{inputenc}
+\usepackage[french]{babel}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{array}
+\usepackage{tabularx}
+\usepackage{setspace}
+\usepackage[T1]{fontenc}
+\usepackage[top=2.5cm, bottom=2.5cm, left=2.5cm, right=2.5cm]{geometry}
+\usepackage{fancyhdr}
+\usepackage{wrapfig}
+\usepackage{filecontents}
+
+%====================== INFORMATION ET REGLES ======================
+
+%rajouter les numérotation pour les \paragraphe et \subparagraphe
+\setcounter{secnumdepth}{4}
+\setcounter{tocdepth}{4}
+
+\hypersetup{
+pdfauthor = {Julien Schoumacher},
+pdftitle = {Stage de fin d'étude -
+           Etude de sécurité d'un contrôleur SDN : ONOS},
+pdfsubject = {Mémoire de stage d'ingénieur},
+pdfkeywords = {SDN, ONOS, sécurité},
+pdfstartview = {FitH}}
+
+\graphicspath{ {images/} }
+
+
+%====================== Bibliographie ======================
+\begin{filecontents}{references.bib}
+@online{indirection,
+  title = {Niveau d'indirection supplémentaire},
+  url = {https://en.wikipedia.org/wiki/Fundamental_theorem_of_software_engineering},
+}
+\end{filecontents}
+
+\begin{filecontents}{references.bib}
+@online{rapport_maxence,
+  title = {Mémoire de stage : Étude d’OpenFlow dans le contexte de la sécurité},
+  author = {Maxence Tury}
+}
+\end{filecontents}
+
+\begin{filecontents}{references.bib}
+@online{OF_10,
+  title = {Spécification Openflow 1.0},
+  url = {http://archive.openflow.org/documents/openflow-spec-v1.0.0.pdf}
+}
+\end{filecontents}
+
+\begin{filecontents}{references.bib}
+@online{OF_15,
+  title = {Spécification Openflow 1.5},
+  url = {https://www.opennetworking.org/images/stories/downloads/sdn-resources/onf-specifications/openflow/openflow-switch-v1.5.0.noipr.pdf}
+}
+\end{filecontents}
+
+
+%======================== DEBUT DU DOCUMENT ========================
+\newgeometry{top=3.5cm}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[C]{~\\}
+\fancyfoot[C]{\thepage}
+
+\begin{document}
+
+%régler l'espacement entre les lignes
+\newcommand{\HRule}{\rule{\linewidth}{0.5mm}}
+
+%page de garde
+\input{./title.tex}
+
+%======================== Remerciements ========================
+\newpage
+~
+\section*{\Huge{Remerciements\\}}
+\Large Avant d'entamer la lecture de ce rapport, je tiens avant tout à remercier toute l'équipe du département RST (Réseaux et Services des Télécommunications) de Télécom SudParis qui m'a si bien accueilli durant ce stage, le maître de conférences Gregory Blanc qui m'a encadré avec bienveillance, et toutes les autres personnes que j'ai pu cottoyer plus ou moins longtemps à l'occasion d'évènements ponctuels comme la conférence RAID qui s'est tenue en septembre.
+\phantomsection
+
+
+%======================== Table des matières ========================
+\newpage
+\tableofcontents
+
+
+\newpage
+\fancyhead[L]{1- Réseau SDN}
+\section{Réseau SDN (Software Defined Network)}
+	\subsection{Motivation}
+		\input{./motivation_sdn.tex}
+	\subsection{Concepts}
+		\input{./concepts.tex}
+	\subsection{Historique}
+	\subsection{Exemples d'applications}
+\section{Cadre de l'étude}
+	\subsection{Problématique et objectifs}
+	\subsection{Architecture d'un réseau SDN}
+		\subsubsection{Openflow}
+		\subsubsection{Contrôleur SDN}
+		\subsubsection{ONOS}
+	\subsection{Surface d'attaque}
+		\subsubsection{Menaces au niveau de l'interaction avec les switchs}
+		\subsubsection{Menaces au niveau de l'interaction utilisateur}
+		\subsubsection{Autres menaces}
+	\subsection{Scénarios envisagés}
+\section{Audit}
+	\subsection{Man in the middle au niveau de l'interface sud}
+	\subsection{Altération de la topologie depuis l'interface sud}
+	\subsection{Deni de service au niveau de l'interface sud}
+	\subsection{Deni de service au niveau de l'interface nord}
+	\subsection{Fuites d'information au niveau de l'interface nord}
+	\subsection{Mauvaise configuration au niveau de l'interface nord}
+\section{Validation et évaluation}
+	\subsection{Résultats de l'étude}
+	\subsection{Autres considérations}
+\section{Perspectives à l'issue du stage}
+\section{Ressources}
+
+
+%====================== INCLUSION DES PARTIES ======================
+
+~
+\newpage
+
+%\input{./presentation.tex}
+
+%\input{./existant.tex}
+ 
+%\input{./besoins.tex}
+
+%\input{./autre_partie.tex}
+
+%\input{./resultats.tex}
+
+%\input{./bilan.tex}
+
+%\input{./annexes.tex}
+
+\newpage
+
+%récupérer les citation avec "/footnotemark"
+\nocite{*}
+
+%choix du style de la biblio
+\bibliographystyle{plain}
+%inclusion de la biblio
+\bibliography{bibliographie.bib}
+%voir wiki pour plus d'information sur la syntaxe des entrées d'une bibliographie
+
+\end{document}
