@@ -15,6 +15,7 @@
 \usepackage{wrapfig}
 \usepackage{filecontents}
 \usepackage{tikzsymbols}
+\usepackage{metre}
 
 %====================== INFORMATION ET REGLES ======================
 
@@ -35,6 +36,13 @@ pdfstartview = {FitH}}
 
 %====================== Bibliographie ======================
 \begin{filecontents}{references.bib}
+@online{of_def,
+  title = {Avantages SDN},
+  url = {https://www.opennetworking.org/sdn-resources/sdn-definition},
+}
+\end{filecontents}
+
+\begin{filecontents}{references.bib}
 @online{indirection,
   title = {Niveau d'indirection supplémentaire},
   url = {https://en.wikipedia.org/wiki/Fundamental_theorem_of_software_engineering},
@@ -54,6 +62,14 @@ pdfstartview = {FitH}}
 Present, and Future of Programmable Networks},
   author = {Bruno Nunes Astuto, Marc Mendonça, Xuan Nam Nguyen, Katia Obraczka,Thierry Turletti}
   url = {https://hal.inria.fr/hal-00825087/file/hal_final.pdf}
+}
+\end{filecontents}
+
+\begin{filecontents}{references.bib}
+@online{openflow_google,
+  title = {Openflow at Google},
+  author = {Hoelzle Tue}
+  url = {http://opennetsummit.org/archives/apr12/hoelzle-tue-openflow.pdf}
 }
 \end{filecontents}
 
@@ -113,6 +129,8 @@ Present, and Future of Programmable Networks},
 		\input{./histoire.tex}
 		~\\
 	\subsection{Exemples d'applications}
+		\input{./applications.tex}
+\newpage
 \section{Cadre de l'étude}
 	\subsection{Problématique et objectifs}
 	\subsection{Architecture d'un réseau SDN}

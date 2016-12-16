@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.12.13)  15 DEC 2016 17:41
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.12.13)  16 DEC 2016 15:42
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -623,9 +623,58 @@ File: tikzlibrarytrees.code.tex 2008/02/24 v3.0.1a (rcs-revision 1.2)
 \tikzsymbols@draftboxlength=\skip62
 \tikzsymbols@draftboxheight=\skip63
 )
+(/usr/share/texlive/texmf-dist/tex/latex/metre/metre.sty
+Package: metre 2001/12/05 v. 1.0 A package for classicists
+
+(/usr/share/texlive/texmf-dist/tex/latex/relsize/relsize.sty
+Package: relsize 2013/03/29 ver 4.1
+)
+\M@ibycus=\count130
+\M@metra=\count131
+\M@metra@font=\count132
+\M@box@m=\box39
+\M@box@b=\box40
+\M@box@tsmb=\box41
+\M@box@tsbm=\box42
+\M@box@tsmm=\box43
+\M@box@ps=\box44
+\M@box@a=\box45
+\M@box@o=\box46
+\M@box@k=\box47
+\M@box@K=\box48
+\M@box@p=\box49
+\M@box@A=\box50
+\M@box@G=\box51
+\M@dim@m=\dimen183
+\M@dim@b=\dimen184
+\M@dim@p=\dimen185
+\M@dim@s=\dimen186
+\M@dim@bsink=\dimen187
+\M@dim@sunk=\dimen188
+\M@metra@ex=\dimen189
+\M@text@ex=\dimen190
+\M@dim@c@ext=\dimen191
+\M@dim@c@int=\dimen192
+\M@dim@c@Ext=\dimen193
+\M@linea@indent=\dimen194
+\M@linea@height=\dimen195
+\M@linea@length=\dimen196
+)
 (/usr/share/texlive/texmf-dist/tex/latex/ucs/data/uni-0.def
 File: uni-0.def 2013/05/13 UCS: Unicode data U+0000..U+00FF
 )
+
+LaTeX Warning: Overwriting file `./references.bib'.
+
+\openout15 = `references.bib'.
+
+
+
+LaTeX Warning: Overwriting file `./references.bib'.
+
+\openout15 = `references.bib'.
+
+
 
 LaTeX Warning: Overwriting file `./references.bib'.
 
@@ -691,39 +740,39 @@ LaTeX Warning: Overwriting file `./references.bib'.
 (./test.aux)
 \openout1 = `test.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 82.
-LaTeX Font Info:    ... okay on input line 82.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 82.
-LaTeX Font Info:    ... okay on input line 82.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 82.
-LaTeX Font Info:    ... okay on input line 82.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 82.
-LaTeX Font Info:    ... okay on input line 82.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 82.
-LaTeX Font Info:    ... okay on input line 82.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 82.
-LaTeX Font Info:    ... okay on input line 82.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 82.
-LaTeX Font Info:    ... okay on input line 82.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 98.
+LaTeX Font Info:    ... okay on input line 98.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 98.
+LaTeX Font Info:    ... okay on input line 98.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 98.
+LaTeX Font Info:    ... okay on input line 98.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 98.
+LaTeX Font Info:    ... okay on input line 98.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 98.
+LaTeX Font Info:    ... okay on input line 98.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 98.
+LaTeX Font Info:    ... okay on input line 98.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 98.
+LaTeX Font Info:    ... okay on input line 98.
  (/usr/share/texlive/texmf-dist/tex/latex/ucs/ucsencs.def
 File: ucsencs.def 2011/01/21 Fixes to fontencodings LGR, T3
 )
-LaTeX Info: Redefining \degres on input line 82.
-LaTeX Info: Redefining \dots on input line 82.
-LaTeX Info: Redefining \up on input line 82.
+LaTeX Info: Redefining \degres on input line 98.
+LaTeX Info: Redefining \dots on input line 98.
+LaTeX Info: Redefining \up on input line 98.
 
 (/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count130
-\scratchdimen=\dimen183
-\scratchbox=\box39
-\nofMPsegments=\count131
-\nofMParguments=\count132
+\scratchcounter=\count133
+\scratchdimen=\dimen197
+\scratchbox=\box52
+\nofMPsegments=\count134
+\nofMParguments=\count135
 \everyMPshowfont=\toks41
-\MPscratchCnt=\count133
-\MPscratchDim=\dimen184
-\MPnumerator=\count134
-\makeMPintoPDFobject=\count135
+\MPscratchCnt=\count136
+\MPscratchDim=\dimen198
+\MPnumerator=\count137
+\makeMPintoPDFobject=\count138
 \everyMPtoPDFconversion=\toks42
 ) (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
@@ -740,8 +789,8 @@ G,.JBIG2,.JB2,.eps]
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-\AtBeginShipoutBox=\box40
-Package hyperref Info: Link coloring OFF on input line 82.
+\AtBeginShipoutBox=\box53
+Package hyperref Info: Link coloring OFF on input line 98.
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
@@ -749,11 +798,11 @@ Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
-\c@section@level=\count136
+\c@section@level=\count139
 )
-LaTeX Info: Redefining \ref on input line 82.
-LaTeX Info: Redefining \pageref on input line 82.
-LaTeX Info: Redefining \nameref on input line 82.
+LaTeX Info: Redefining \ref on input line 98.
+LaTeX Info: Redefining \pageref on input line 98.
+LaTeX Info: Redefining \nameref on input line 98.
 
 (./test.out) (./test.out)
 \@outlinefile=\write4
@@ -823,7 +872,7 @@ Overfull \hbox (15.0pt too wide) in paragraph at lines 11--12
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./images/TelecomParisTech_
 logo_200_01.png> <./images/Logo_SP.jpg>])
-Underfull \hbox (badness 10000) in paragraph at lines 93--93
+Underfull \hbox (badness 10000) in paragraph at lines 109--109
 
  []
 
@@ -837,8 +886,8 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.99 \newpage
-              [1] (./test.toc
+l.115 \newpage
+               [1] (./test.toc
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <14.4> on input line 3.
 )
@@ -846,25 +895,46 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 \openout5 = `test.toc'.
 
  [2] (./motivation_sdn.tex
-Underfull \hbox (badness 10000) in paragraph at lines 1--2
+LaTeX Font Info:    Try loading font information for T1+cmtt on input line 1.
 
- []
-
-[3]
-Underfull \hbox (badness 10000) in paragraph at lines 12--13
-
- []
-
-LaTeX Font Info:    Try loading font information for T1+cmtt on input line 22.
 (/usr/share/texlive/texmf-dist/tex/latex/base/t1cmtt.fd
 File: t1cmtt.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 22.
+(Font)              <8> on input line 1.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 22.
+(Font)              <6> on input line 1.
+
+Underfull \hbox (badness 10000) in paragraph at lines 1--2
+
+ []
+
+
+LaTeX Font Warning: Command \relsize invalid in math mode on input line 5.
+
+
+LaTeX Font Warning: Command \relsize invalid in math mode on input line 7.
+
+
+LaTeX Font Warning: Command \relsize invalid in math mode on input line 9.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 9--10
+
+ []
+
+[3]
+
+LaTeX Font Warning: Command \relsize invalid in math mode on input line 17.
+
+
+LaTeX Font Warning: Command \relsize invalid in math mode on input line 18.
+
+
+LaTeX Font Warning: Command \relsize invalid in math mode on input line 19.
+
 )
-Underfull \hbox (badness 10000) in paragraph at lines 21--109
+Underfull \hbox (badness 10000) in paragraph at lines 22--125
 
  []
 
@@ -878,14 +948,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 3--4
 
  []
 
-[5] <images/routage_normal.png, id=191, 1018.80624pt x 359.3425pt>
+[5] <images/routage_normal.png, id=195, 1018.80624pt x 359.3425pt>
 File: images/routage_normal.png Graphic file (type png)
 
 <use images/routage_normal.png>
 Package pdftex.def Info: images/routage_normal.png used on input line 9.
 (pdftex.def)             Requested size: 355.51817pt x 125.39342pt.
 
-<images/openflow.png, id=193, 1026.83624pt x 657.45625pt>
+<images/openflow.png, id=197, 1026.83624pt x 657.45625pt>
 File: images/openflow.png Graphic file (type png)
 
 <use images/openflow.png>
@@ -895,13 +965,27 @@ Package pdftex.def Info: images/openflow.png used on input line 15.
 (/usr/share/texlive/texmf-dist/tex/latex/ucs/data/uni-32.def
 File: uni-32.def 2013/05/13 UCS: Unicode data U+2000..U+20FF
 )
-\0 g 0 G14.4tikzsymbols@savebox@BasicTree1red!30!blackred!75!blackorangeleaf=\b
-ox41
- [6 <./images/routage_normal.png> <./images/openflow.png>]
+
+LaTeX Font Warning: Command \relsize invalid in math mode on input line 23.
+
+[6 <./images/routage_normal.png> <./images/openflow.png>]
+
+LaTeX Font Warning: Command \relsize invalid in math mode on input line 24.
+
+
+LaTeX Font Warning: Command \relsize invalid in math mode on input line 25.
+
+
+LaTeX Font Warning: Command \relsize invalid in math mode on input line 26.
+
+
 Overfull \hbox (8.28345pt too wide) in paragraph at lines 26--27
 \T1/cmr/m/n/14.4 tants (perte d'un lien, dis-fonc-tion-ne-ment, ra-len-tis-se-m
 ent ...) peuvent
  []
+
+
+LaTeX Font Warning: Command \relsize invalid in math mode on input line 27.
 
 
 Overfull \hbox (8.85394pt too wide) in paragraph at lines 27--28
@@ -910,7 +994,7 @@ ent les switchs
  []
 
 )
-Underfull \hbox (badness 10000) in paragraph at lines 30--112
+Underfull \hbox (badness 10000) in paragraph at lines 30--128
 
  []
 
@@ -926,16 +1010,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 1--2
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1--2
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 3--4
-
- []
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 3--4
 
  []
@@ -946,13 +1020,53 @@ Underfull \hbox (badness 10000) in paragraph at lines 5--6
  []
 
 
+Underfull \hbox (badness 10000) in paragraph at lines 7--8
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 9--10
+
+ []
+
+)
+Underfull \hbox (badness 10000) in paragraph at lines 11--131
+
+ []
+
+(./applications.tex
+Underfull \hbox (badness 10000) in paragraph at lines 1--2
+
+ []
+
+[8]
+Overfull \hbox (174.96782pt too wide) in paragraph at lines 3--3
+[][][]\T1/cmr/m/n/8 .[][]$\T1/cmtt/m/n/8 http : / / www . networkworld . com / 
+article / 2189197 / lan-[]wan / google-[]s-[]software-[]defined-[]openflow-[]ba
+ckbone-[]drives-[]wan-[]links-[]to-[]100-[]-[]utilization .
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3--4
+
+ []
+
+
+Overfull \hbox (14.25621pt too wide) in paragraph at lines 5--5
+[][][]\T1/cmr/m/n/8 .[][]$\T1/cmtt/m/n/8 http : / / www . networkworld . com / 
+article / 2937396 / cloud-[]computing / microsoft-[]needs-[]sdn-[]for-[]azure-[
+]cloud .
+ []
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 5--6
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 7--8
-
+Underfull \hbox (badness 10000) in paragraph at lines 7--7
+[][][]\T1/cmr/m/n/8 .[][][]$\T1/cmtt/m/n/8 https : / / www . opennetworking . o
+rg / images / stories / downloads / sdn-[]resources / onf-[]specifications /
  []
 
 
@@ -960,32 +1074,65 @@ Underfull \hbox (badness 10000) in paragraph at lines 7--8
 
  []
 
-)
-Underfull \hbox (badness 10000) in paragraph at lines 9--115
+[9]
+Overfull \hbox (9.33916pt too wide) in paragraph at lines 9--10
+\T1/cmr/m/n/14.4 lo-gie (les ma-chines vir-tuelles changent sou-vent d'em-pla-c
+e-ment/adresse)).
+ []
+
+
+LaTeX Font Warning: Command \relsize invalid in math mode on input line 12.
+
+
+LaTeX Font Warning: Command \relsize invalid in math mode on input line 13.
+
+
+LaTeX Font Warning: Command \relsize invalid in math mode on input line 14.
+
+
+LaTeX Font Warning: Command \relsize invalid in math mode on input line 15.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 15--16
 
  []
 
-[8] [9]
+) [10] [11] [12]
 No file test.bbl.
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 154.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 154.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 172.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 172.
 (./test.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 154.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 154.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 172.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 172.
 Package rerunfilecheck Info: File `test.out' has not changed.
 (rerunfilecheck)             Checksum: 86B9B605E12C1760F3485211A0F902CA;2136.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 154.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 172.
  ) 
 Here is how much of TeX's memory you used:
- 20755 strings out of 494883
- 393880 string characters out of 6178692
- 573265 words of memory out of 5000000
- 23638 multiletter control sequences out of 15000+600000
+ 20273 strings out of 494883
+ 373170 string characters out of 6178692
+ 482125 words of memory out of 5000000
+ 23137 multiletter control sequences out of 15000+600000
  17379 words of font info for 38 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
- 92i,18n,104p,1440b,2656s stack positions out of 5000i,500n,10000p,200000b,80000s
-pdfTeX warning (dest): name{Hfootnote.4} has been referenced but does not exi
+ 62i,13n,67p,1338b,521s stack positions out of 5000i,500n,10000p,200000b,80000s
+pdfTeX warning (dest): name{Hfootnote.9} has been referenced but does not exi
 st, replaced by a fixed one
+
+pdfTeX warning (dest): name{Hfootnote.8} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{Hfootnote.7} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{Hfootnote.6} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{Hfootnote.5} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{Hfootnote.4} has been referenced but does not exist
+, replaced by a fixed one
 
 pdfTeX warning (dest): name{Hfootnote.3} has been referenced but does not exist
 , replaced by a fixed one
@@ -1007,11 +1154,11 @@ mf-var/fonts/pk/ljfour/jknappen/ec/ecrm1440.600pk> </home/alka/.texmf-var/fonts
 /pk/ljfour/jknappen/ec/ecbx1728.600pk> </home/alka/.texmf-var/fonts/pk/ljfour/j
 knappen/ec/ecrm1728.600pk> </home/alka/.texmf-var/fonts/pk/ljfour/jknappen/ec/e
 cbx2488.600pk> </home/alka/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm2074.600p
-k>
-Output written on test.pdf (10 pages, 373688 bytes).
+k></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
+Output written on test.pdf (13 pages, 380346 bytes).
 PDF statistics:
- 670 PDF objects out of 1000 (max. 8388607)
- 260 compressed objects within 3 object streams
- 47 named destinations out of 1000 (max. 500000)
+ 723 PDF objects out of 1000 (max. 8388607)
+ 293 compressed objects within 3 object streams
+ 55 named destinations out of 1000 (max. 500000)
  257 words of extra memory for PDF output out of 10000 (max. 10000000)
 
