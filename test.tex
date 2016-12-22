@@ -1,8 +1,8 @@
-\documentclass[a4paper]{article}
+\documentclass[a4paper,10pt]{article}
 
 %====================== PACKAGES ======================
 
-\usepackage[utf8x]{inputenc}
+\usepackage[utf8]{inputenc}
 \usepackage[french]{babel}
 \usepackage{graphicx}
 \usepackage{hyperref}
@@ -10,7 +10,7 @@
 \usepackage{tabularx}
 \usepackage{setspace}
 \usepackage[T1]{fontenc}
-\usepackage[top=2.5cm, bottom=2.5cm, left=2.5cm, right=2.5cm]{geometry}
+\usepackage[top=2.5cm, bottom=2.5cm, left=2cm, right=2cm]{geometry}
 \usepackage{fancyhdr}
 \usepackage{wrapfig}
 \usepackage{filecontents}
@@ -19,9 +19,6 @@
 
 %====================== INFORMATION ET REGLES ======================
 
-%rajouter les numérotation pour les \paragraphe et \subparagraphe
-\setcounter{secnumdepth}{4}
-\setcounter{tocdepth}{4}
 
 \hypersetup{
 pdfauthor = {Julien Schoumacher},
@@ -40,50 +37,43 @@ pdfstartview = {FitH}}
   title = {Avantages SDN},
   url = {https://www.opennetworking.org/sdn-resources/sdn-definition},
 }
-\end{filecontents}
 
-\begin{filecontents}{references.bib}
 @online{indirection,
   title = {Niveau d'indirection supplémentaire},
   url = {https://en.wikipedia.org/wiki/Fundamental_theorem_of_software_engineering},
 }
-\end{filecontents}
 
-\begin{filecontents}{references.bib}
 @online{rapport_maxence,
   title = {Mémoire de stage : Étude d’OpenFlow dans le contexte de la sécurité},
   author = {Maxence Tury}
 }
-\end{filecontents}
 
-\begin{filecontents}{references.bib}
 @online{histoire,
   title = {A Survey of Software-De ned Networking:  Past,
 Present, and Future of Programmable Networks},
   author = {Bruno Nunes Astuto, Marc Mendonça, Xuan Nam Nguyen, Katia Obraczka,Thierry Turletti}
   url = {https://hal.inria.fr/hal-00825087/file/hal_final.pdf}
 }
-\end{filecontents}
 
-\begin{filecontents}{references.bib}
 @online{openflow_google,
   title = {Openflow at Google},
   author = {Hoelzle Tue}
   url = {http://opennetsummit.org/archives/apr12/hoelzle-tue-openflow.pdf}
 }
-\end{filecontents}
 
-\begin{filecontents}{references.bib}
 @online{OF_10,
   title = {Spécification Openflow 1.0},
   url = {http://archive.openflow.org/documents/openflow-spec-v1.0.0.pdf}
 }
-\end{filecontents}
 
-\begin{filecontents}{references.bib}
 @online{OF_15,
   title = {Spécification Openflow 1.5},
   url = {https://www.opennetworking.org/images/stories/downloads/sdn-resources/onf-specifications/openflow/openflow-switch-v1.5.0.noipr.pdf}
+}
+
+@online{OF_13,
+  title = {Spécification Openflow 1.3},
+  url = {https://www.opennetworking.org/images/stories/downloads/sdn-resources/onf-specifications/openflow/openflow-spec-v1.3.0.pdf}
 }
 \end{filecontents}
 
@@ -97,8 +87,7 @@ Present, and Future of Programmable Networks},
 
 \begin{document}
 
-%régler l'espacement entre les lignes
-\newcommand{\HRule}{\rule{\linewidth}{0.5mm}}
+
 
 %page de garde
 \input{./title.tex}
@@ -131,12 +120,18 @@ Present, and Future of Programmable Networks},
 	\subsection{Exemples d'applications}
 		\input{./applications.tex}
 \newpage
+\fancyhead[L]{2- Cadre de l'étude}
 \section{Cadre de l'étude}
 	\subsection{Problématique et objectifs}
+		\input{./problematique.tex}
 	\subsection{Architecture d'un réseau SDN}
+		Avant toute chose, il est nécessaire de détailler la façon dont un réseau SDN fonctionne, afin que les attaques qui seront évoquées plus tard puissent être bien comprises. Pour cela, on insistera particulièrement sur la description du protocole Openflow, mais aussi sur celle de l'objet de notre étude, ONOS.
 		\subsubsection{Openflow}
+			\input{./openflow.tex}
 		\subsubsection{Contrôleur SDN}
+			\input{./controleur.tex}
 		\subsubsection{ONOS}
+			%\input{./onos.tex}
 	\subsection{Surface d'attaque}
 		\subsubsection{Menaces au niveau de l'interaction avec les switchs}
 		\subsubsection{Menaces au niveau de l'interaction utilisateur}
