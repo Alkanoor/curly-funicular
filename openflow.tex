@@ -50,8 +50,12 @@ Il est constitué :
 
 \end{list}
 
-Ci-dessus une capture Openflow réalisée sous Wireshark.
+\begin{figure}[h]
+  	\centering
+  	\includegraphics[width=1\textwidth]{session_openflow_whouaouh.png}
+  	\caption{Capture d'une session Openflow réalisée sous Wireshark entre le switch virtuel crée en 192.168.56.1 et le contrôleur en 192.168.56.102}
+\end{figure}
 
-La figure précédente provient de mes expérimentations, j'ai en effet été amené durant mon stage à créer une sorte de mini-switch virtuel très basique avec Scapy, ce qui m'a forcé à implémenter à la fois la pile TCP et la session Openflow . Même si par la suite cela m'a été peu utile pour réaliser mes scénarios d'attaque, cela m'a permis de bien comprendre le protocole Openflow.
+La figure précédente provient de mes expérimentations, j'ai en effet été amené durant mon stage à créer une sorte de mini-switch virtuel très basique avec Scapy, ce qui m'a forcé à implémenter à la fois la pile TCP et la session Openflow . Même si par la suite cela m'a été peu utile pour réaliser mes scénarios d'attaque, cela m'a permis de bien comprendre le protocole.
 
 Le lecteur désirant rentrer dans les détails techniques peut se référer à la spécification de la version 1.3\footnote{\label{OF_13}https://www.opennetworking.org/images/stories/downloads/sdn-resources/onf-specifications/openflow/openflow-spec-v1.3.0.pdf (106 pages, dont 49 d'explications)}.
