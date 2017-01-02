@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.12.20)  22 DEC 2016 10:56
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.12.20)  1 JAN 2017 23:14
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1471,9 +1471,9 @@ mf-var/fonts/pk/ljfour/jknappen/ec/ecrm1440.600pk> </home/alka/.texmf-var/fonts
 knappen/ec/ecrm1728.600pk> </home/alka/.texmf-var/fonts/pk/ljfour/jknappen/ec/e
 cbx2488.600pk> </home/alka/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm2074.600p
 k></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on test.pdf (19 pages, 545623 bytes).
+Output written on test.pdf (19 pages, 546848 bytes).
 PDF statistics:
- 797 PDF objects out of 1000 (max. 8388607)
+ 798 PDF objects out of 1000 (max. 8388607)
  321 compressed objects within 4 object streams
  66 named destinations out of 1000 (max. 500000)
  267 words of extra memory for PDF output out of 10000 (max. 10000000)
