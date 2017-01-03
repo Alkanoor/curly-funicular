@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.12.13)  2 JAN 2017 17:28
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.12.13)  3 JAN 2017 14:25
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1344,14 +1344,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 15--16
 
  []
 
-) [10] [11] (./problematique.tex) (./openflow.tex
-<images/interfaces.jpg, id=252, 372.39125pt x 332.24126pt>
+) [10] [11] (./problematique.tex) [12] (./openflow.tex
+<images/interfaces.jpg, id=259, 372.39125pt x 332.24126pt>
 File: images/interfaces.jpg Graphic file (type jpg)
 
 <use images/interfaces.jpg>
 Package pdftex.def Info: images/interfaces.jpg used on input line 4.
 (pdftex.def)             Requested size: 188.21288pt x 167.92499pt.
- [12]
+
 Underfull \hbox (badness 10000) in paragraph at lines 8--9
 
  []
@@ -1366,7 +1366,7 @@ LaTeX Font Warning: Command \relsize invalid in math mode on input line 15.
 
 LaTeX Font Warning: Command \relsize invalid in math mode on input line 17.
 
-[14] <images/brocade_flow.png, id=268, 433.62pt x 301.125pt>
+[14] <images/brocade_flow.png, id=270, 433.62pt x 301.125pt>
 File: images/brocade_flow.png Graphic file (type png)
 
 <use images/brocade_flow.png>
@@ -1382,10 +1382,10 @@ LaTeX Font Warning: Command \relsize invalid in math mode on input line 34.
 
 LaTeX Font Warning: Command \relsize invalid in math mode on input line 36.
 
+[15 <./images/brocade_flow.png>]
 
 LaTeX Font Warning: Command \relsize invalid in math mode on input line 45.
 
-[15 <./images/brocade_flow.png>]
 
 LaTeX Font Warning: Command \relsize invalid in math mode on input line 47.
 
@@ -1398,14 +1398,18 @@ quête/réponse),
 
 LaTeX Font Warning: Command \relsize invalid in math mode on input line 49.
 
-<images/session_openflow_whouaouh.png, id=277, 1358.07375pt x 442.65375pt>
+<images/session_openflow_whouaouh.png, id=279, 1358.07375pt x 442.65375pt>
 File: images/session_openflow_whouaouh.png Graphic file (type png)
 
 <use images/session_openflow_whouaouh.png>
 Package pdftex.def Info: images/session_openflow_whouaouh.png used on input lin
 e 55.
-(pdftex.def)             Requested size: 376.42575pt x 122.69264pt.
- [16 <./images/session_openflow_whouaouh.png (PNG copy)>]
+(pdftex.def)             Requested size: 418.25368pt x 136.3229pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[16]
 Underfull \hbox (badness 10000) in paragraph at lines 61--61
 [][][]\T1/cmr/m/n/8 .[][]https ://www.opennetworking.org/images/stories/downloa
 ds/sdn-resources/onf-
@@ -1416,13 +1420,46 @@ Underfull \hbox (badness 10000) in paragraph at lines 3--5
 
  []
 
-[17] <images/lldp.png, id=291, 423.5825pt x 271.0125pt>
+[17 <./images/session_openflow_whouaouh.png (PNG copy)>]
+<images/lldp.png, id=293, 423.5825pt x 271.0125pt>
 File: images/lldp.png Graphic file (type png)
  <use images/lldp.png>
 Package pdftex.def Info: images/lldp.png used on input line 8.
 (pdftex.def)             Requested size: 250.95476pt x 160.56177pt.
-)
-[18 <./images/lldp.png (PNG copy)>] [19]
+
+Underfull \hbox (badness 10000) in paragraph at lines 12--13
+
+ []
+
+[18 <./images/lldp.png (PNG copy)>]
+Underfull \hbox (badness 10000) in paragraph at lines 14--15
+
+ []
+
+) (./onos.tex <images/ONOS_archi.png, id=303, 720.6925pt x 276.03125pt>
+File: images/ONOS_archi.png Graphic file (type png)
+
+<use images/ONOS_archi.png>
+Package pdftex.def Info: images/ONOS_archi.png used on input line 10.
+(pdftex.def)             Requested size: 418.25368pt x 160.1951pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+LaTeX Font Warning: Command \relsize invalid in math mode on input line 16.
+
+
+LaTeX Font Warning: Command \relsize invalid in math mode on input line 18.
+
+[19]
+
+LaTeX Font Warning: Command \relsize invalid in math mode on input line 20.
+
+
+LaTeX Font Warning: Command \relsize invalid in math mode on input line 22.
+
+) [20 <./images/ONOS_archi.png (PNG copy)>] [21]
 No file test.bbl.
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 167.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 167.
@@ -1431,22 +1468,27 @@ Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 167.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 167.
 Package rerunfilecheck Info: File `test.out' has not changed.
 (rerunfilecheck)             Checksum: 86B9B605E12C1760F3485211A0F902CA;2136.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 167.
  ) 
 Here is how much of TeX's memory you used:
- 19620 strings out of 494883
- 363441 string characters out of 6178692
+ 19634 strings out of 494883
+ 363640 string characters out of 6178692
  467669 words of memory out of 5000000
- 22465 multiletter control sequences out of 15000+600000
+ 22469 multiletter control sequences out of 15000+600000
  17379 words of font info for 38 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
  62i,13n,67p,1333b,451s stack positions out of 5000i,500n,10000p,200000b,80000s
-pdfTeX warning (dest): name{Hfootnote.12} has been referenced but does not ex
+pdfTeX warning (dest): name{Hfootnote.15} has been referenced but does not ex
 ist, replaced by a fixed one
+
+pdfTeX warning (dest): name{Hfootnote.14} has been referenced but does not exis
+t, replaced by a fixed one
+
+pdfTeX warning (dest): name{Hfootnote.13} has been referenced but does not exis
+t, replaced by a fixed one
+
+pdfTeX warning (dest): name{Hfootnote.12} has been referenced but does not exis
+t, replaced by a fixed one
 
 pdfTeX warning (dest): name{Hfootnote.11} has been referenced but does not exis
 t, replaced by a fixed one
@@ -1493,10 +1535,10 @@ mf-var/fonts/pk/ljfour/jknappen/ec/ecrm1440.600pk> </home/alka/.texmf-var/fonts
 knappen/ec/ecrm1728.600pk> </home/alka/.texmf-var/fonts/pk/ljfour/jknappen/ec/e
 cbx2488.600pk> </home/alka/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm2074.600p
 k></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on test.pdf (20 pages, 734272 bytes).
+Output written on test.pdf (22 pages, 822332 bytes).
 PDF statistics:
- 814 PDF objects out of 1000 (max. 8388607)
- 327 compressed objects within 4 object streams
- 69 named destinations out of 1000 (max. 500000)
- 277 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 842 PDF objects out of 1000 (max. 8388607)
+ 343 compressed objects within 4 object streams
+ 75 named destinations out of 1000 (max. 500000)
+ 282 words of extra memory for PDF output out of 10000 (max. 10000000)
 

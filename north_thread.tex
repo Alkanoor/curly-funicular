@@ -1,0 +1,54 @@
+Le contrôleur exécute potentiellement des applications fournies par des tiers. Si un utilisateur  importe une application malveillante sur le contrôleur, cela peut avoir des répercussions sur tout le réseau.
+Concernant la méthode STRIDE appliquée à l'interface nord, on trouve majoritairement 5 menaces :
+
+\begin{list}{$\Asteriscus$}{}
+
+\item Spoofing (S) : (abus de langage ici, mais c'est la catégorie qui se rapproche le plus de la réalité) possibilité de modifier le comportement de certaines applications avec des droits non adaptés.
+
+\item Tampering (T) : possibilité de modifier le flux de données des applications en se plaçant sur le chemin du contrôleur (man in the middle). Cette partie est rapide à étudier puisque là encore, TLS, si il est correctement utilisé, permet d’éviter toute modification du flux.
+
+\item Information disclosure (I) : possibilité d’obtenir les flux d’informations entre les éléments du réseau et le contrôleur (là encore si TLS est activé cela réduit la menace à son minimum).
+
+\item Denial of service (D) : possibilité d'action néfaste sur le contrôleur (modification de la topologie, dégradation du service offert par le contrôleur, ...).
+
+\end{list}
+
+Dans la suite, on testera S,T,D. Mais toujours relativement au contrôleur, c'est à dire qu'on regardera si le contrôleur agit comme il est supposé réagir, permettant ou non l'attaque. Et on constatera ou non la généricité des attaques.
+
+
+° Repudation concernant à la fois l’administration du contrôleur, mais aussi les actions importantes des switchs et des applications (notamment lors des phases d’authentification, de déconnexion, et d’actions à fort impact).
+° Information disclosure par rapport aux informations qu’un élément quelconque du réseau peut obtenir sur d’autres éléments sans y être expressément autorisé.
+° Denial of service par rapport aux possibilités d’entrave de fonctionnement du contrôleur de manière interne (par exemple une application qui utilise trop de ressources, …).
+° Tampering concernant la possibilité de modifier le flux de données des switchs et des applications en se plaçant sur le chemin du contrôleur (man in the middle). Cette partie est rapide à étudier puisque TLS (au sud) (+HTTPS au nord) permettent d’éviter toute modification.
+
+° Denial of service concernant la possibilité de surcharge des interfaces réseau.
+° Repudiation concernant la possibilité par exemple pour une application de nier certaines actions entreprises.
+
+ONOS dispose d’une option activable depuis la version Drake, Security Mode, qui rajoute de nombreuses protections au contrôleur, protections qu’on détaillera dans l’analyse détaillée. Par la suite, on fera une étude (potentiellement très brève) d’ONOS avec les modules Security mode et TLS/HTTPS activés ou non.
+On va donc appliquer la méthode STRIDE aux divers éléments et interfaces qui composent ONOS, à savoir :
+- Le contrôleur en lui même. Pour celui-ci, il est théoriquement possible d’étudier les 6 élements mais nous en regarderons au maximum 4 :
+° Repudation concernant à la fois l’administration du contrôleur, mais aussi les actions importantes des switchs et des applications (notamment lors des phases d’authentification, de déconnexion, et d’actions à fort impact).
+° Information disclosure par rapport aux informations qu’un élément quelconque du réseau peut obtenir sur d’autres éléments sans y être expressément autorisé.
+° Denial of service par rapport aux possibilités d’entrave de fonctionnement du contrôleur de manière interne (par exemple une application qui utilise trop de ressources, …).
+° Elevation of privileges par rapport aux possiblités éventuelles de corruption du flot d’éxecution du contrôleur (qu’on testera essentiellement par fuzzing si cela sera tenté).
+- Les interfaces nord et sud. Pour celles-ci, on testera 3 éléments :
+° Tampering concernant la possibilité de modifier le flux de données des switchs et des applications en se plaçant sur le chemin du contrôleur (man in the middle). Cette partie est rapide à étudier puisque TLS (au sud) (+HTTPS au nord) permettent d’éviter toute modification.
+° Information disclosure concernant la possibilité d’obtenir les flux d’informations entre les éléments du réseau et le contrôleur (là encore si TLS/HTTPS sont activés cela réduit la vulnérabilité à son minimum).
+° Denial of service concernant la possibilité de surcharge des interfaces réseau.
+-Les autres éléments du réseau (en prenant comme élément central et étudié un contrôleur) :
+° Spoofing concernant la possibilité pour un élement (switch, application, autre contrôleur) de se faire passer pour ce qu’il n’est pas (autre switch par exemple, …).
+° Repudiation concernant la possibilité par exemple pour une application de nier certaines actions entreprises.
+- Les données dans le contrôleur (donc majoritairement l’état du réseau) :
+° Tampering concenant la possibilité pour des éléments acceptés et de confiance de modifier plus fortement qu’imaginé l’état du réseau virtuel conçu par ONOS.
+° Information disclosure concernant la possibilité de faire fuiter l’état du réseau tel qu’ONOS le conçoit.
+° Denial of service concernant la possibilité de modifier les structures internes de donées dans un état tel que cela amoindrit le service.
+On va aussi essayer de tester des attaques connues sur les réseaux SDN, pour le moment je n’en connais qu’une qui a été testée avec succès sur quelques contrôleurs (dont ONOS dans certaines versions antérieures) qui se base sur le principe suivant :
+dans un réseau SDN, l’adresse MAC dans les paquets est inchangée lors du passage par le contrôleur (c’est toujours celle du switch émetteur), contrairement à ce qui se passe dans un réseau classique où l’adresse MAC est modifiée lors du passage par la couche 3 (routeurs notamment).
+Cela entraine la mise en place de mécanismes de tracking d’hôtes, qui permettent le suivi des machines même lorsque celles-ci changent (changent d’adresse MAC, d’adresse IP, de VLAN ID, de numéros de port ...).
+Or ce mécanisme, si il n’est pas associé à un mécanisme d’authentification, est vulnérable (puisqu’on peut alors faire croire au contrôleur qu’un hôte a changé de localisation en mettant celle d’une machine malveillante alors que ce n’est pas le cas).
+L’attaque est expliquée ici :
+http://www.internetsociety.org/sites/default/files/10_4_2.pdf
+A propos du Security Mode dans ONOS, c’est un mécanisme qui, principalement, restreint l’accès des applications à une API standardisée et réduite par rapport à l’ensemble des éléments d’ONOS. Un mécanisme de gestion d’autorisations par rôle permet à l’administrateur du contrôleur d’autoriser des applications spécifiques à accomplir certaines actions spécifiques pouvant impacter le contrôleur dans sa globalité. Ce mode permet donc théoriquement à la fois d’éviter aux applications d’avoir trop de pouvoir sur les structures de données internes au contrôleur, et également d’avoir une granularité assez forte permettant des privilèges bien précis définis pour chaque application. Cela devrait également permettre d’éviter la majorité des cas d’élévations de privilège.
+Pour certaines applications dont le but sera de surveiller/auditer, une permission de lecture sera appropriée. Pour une gestion des paquets PACKET_IN, une permission spéciale existe (de même que pour la gestion de nombreux évènements réseaux). Un IDS pourra être doté des permissions de lecture et d’écriture. Les différents rôles sont listés ici : https://wiki.onosproject.org/display/ONOS/ONOS+Application+Permissions.
+Comme ONOS l’indique dans sa documentation, c’est un mode qu’on peut rapprocher de SELinux. Les accès non autorisés sont bloqués à l’exécution et éventuellement enregistrés.
+Voici maintenant un plan un peu plus détaillé (qui le sera d’avantage au fur et à mesure de l’avancée des travaux) des scénarios d’attaque envisagés.
