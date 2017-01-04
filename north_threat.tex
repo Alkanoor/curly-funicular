@@ -1,0 +1,26 @@
+Le contrôleur exécute potentiellement des applications fournies par des tiers. Si un utilisateur  importe une application malveillante sur le contrôleur, cela peut avoir des répercussions sur tout le réseau.
+Concernant la méthode STRIDE appliquée à l'interface nord, on trouve majoritairement 5 menaces :
+
+\begin{list}{$\Asteriscus$}{}
+
+\item Spoofing (S) : (abus de langage ici, mais c'est la catégorie qui se rapproche le plus de la réalité) possibilité de modifier le comportement de certaines applications avec des droits non adaptés.
+
+\item Tampering (T) : possibilité de modifier le flux de données des applications en se plaçant sur le chemin du contrôleur (man in the middle). Cette partie est rapide à étudier puisque là encore, TLS, si il est correctement utilisé, permet d’éviter toute modification du flux d'information.
+
+\item Repudiation (R) : possibilité pour une application de nier certaines actions dont elle est l'origine.
+
+\item Information disclosure (I) : possibilité d’obtenir des informations sur d'autres applications, sur l'état général du contrôleur, ...
+
+\item Denial of service (D) : possibilité d'action néfaste sur le contrôleur (modification de la topologie, dégradation du débit offert par le contrôleur, ...).
+
+\end{list}
+
+Dans la suite, on testera S,T,D et I. Encore une fois cela sera fait par rapport à ONOS, ce qui ici se justifie d'avantage (aucun standard n'existant au niveau de l'interface nord, celle-ci peut varier beaucoup selon le contrôleur). De plus, ONOS propose un mécanisme de sécurité intéressant à étudier qui est le Security Mode, mis en place depuis la version Drake (1.3) du contrôleur.
+
+\begin{figure}[h]
+  	\centering
+  	\includegraphics[width=0.6\textwidth]{secure_mode.png}
+  	\caption{Secure mode activé : accès aux fonctions critiques restreint lors de l'utilisation de l'API par certaines applications}
+\end{figure}
+
+Ce module, qui continue d'être amélioré, rajoute la possibilité de définir des permissions fines (ce qui se traduit par le droit d'utiliser ou non certaines fonctions de l'API) par rôle aux applications, et sera légèrement détaillé plus tard. Les attaques qui constitueront cette partie seront donc moins génériques que les attaques menées au niveau de l'interface sud.
