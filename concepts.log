@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.12.13)  16 DEC 2016 13:36
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.12.13)  6 JAN 2017 12:16
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1729,8 +1729,8 @@ Overfull \hbox (20.0pt too wide) in paragraph at lines 21--22
  []
 
 ! Undefined control sequence.
-<recently read> \staveVI 
-                         
+<recently read> \FilledSmallDiamondshape 
+                                         
 l.23 \item D
             'abord cela réduit grandement la complexité de configuration m...
 The control sequence at the end of the top line
@@ -1867,8 +1867,8 @@ Missing character: There is no e in font nullfont!
 Missing character: There is no ) in font nullfont!
 Missing character: There is no . in font nullfont!
 ! Undefined control sequence.
-<recently read> \staveVI 
-                         
+<recently read> \FilledSmallDiamondshape 
+                                         
 l.24 \item C
             ela facilite donc énormément le développement d'applications ...
 The control sequence at the end of the top line
@@ -2020,8 +2020,8 @@ Missing character: There is no u in font nullfont!
 Missing character: There is no e in font nullfont!
 Missing character: There is no . in font nullfont!
 ! Undefined control sequence.
-<recently read> \staveVI 
-                         
+<recently read> \FilledSmallDiamondshape 
+                                         
 l.25 \item L
             es routes optimales sont plus facilement calculables qu'au sein ...
 The control sequence at the end of the top line
@@ -2253,8 +2253,8 @@ Missing character: There is no e in font nullfont!
 Missing character: There is no s in font nullfont!
 Missing character: There is no . in font nullfont!
 ! Undefined control sequence.
-<recently read> \staveVI 
-                         
+<recently read> \FilledSmallDiamondshape 
+                                         
 l.26 \item L
             a gestion du réseau devient plus simple, les évènements impor...
 The control sequence at the end of the top line
@@ -2467,8 +2467,8 @@ Missing character: There is no � in font nullfont!
 Missing character: There is no e in font nullfont!
 Missing character: There is no . in font nullfont!
 ! Undefined control sequence.
-<recently read> \staveVI 
-                         
+<recently read> \FilledSmallDiamondshape 
+                                         
 l.27 \item L
             es coûts matériels sont diminués puisque seuls subsistent les...
 The control sequence at the end of the top line
@@ -2947,7 +2947,7 @@ Missing character: There is no . in font nullfont!
  
 Here is how much of TeX's memory you used:
  12 strings out of 494883
- 198 string characters out of 6178692
+ 214 string characters out of 6178692
  47957 words of memory out of 5000000
  3413 multiletter control sequences out of 15000+600000
  3640 words of font info for 14 fonts, out of 8000000 for 9000

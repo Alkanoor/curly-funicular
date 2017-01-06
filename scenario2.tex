@@ -1,0 +1,24 @@
+\underline{Prérequis/Hypothèses :}\\
+- Une entité malveillante connectée au réseau local\\
+- Une topologie en partie connue (adresse mac de deux switchs)\\
+- 2 switchs s1 et s2 non reliés entre eux
+
+
+\underline{Buts :}\\
+L’hôte malveillant (en se faisant passer pour un switch) fait croire au contrôleur qu’il existe un lien entre lui et s1, ainsi qu’entre lui et s2. Si la manière dont ONOS calcule les plus courts chemins peut être exploitée et que l'hôte arrive à faire croire que ces liens sont rapides, il est possible que le contrôleur crée un nouveau lien logique entre s1 et s2. Cela engendre un déni de service puisque les paquets qui correspondront aux règles ajoutées sur les switchs s1 et s2 empruntant le faux lien seront envoyés à notre entité malveillante, pouvant les modifier ou tout simplement les détruire : on peut alors aboutir à un "trou noir" dans le réseau.
+
+\underline{Déroulement :}\\
+Notre hôte malveillant envoie de faux paquets LLDP en multicast pour simuler un lien entre lui, le switch s1 et le switch s2 (en utilisant le mécanisme de découverte de topologie d'ONOS évoqué à la page 15).
+
+\underline{Détails techniques :}\\
+Se référer au scénario 2 décrit dans l'annexe (page).
+
+\underline{Résultat :}\\
+L'attaque, en partie reproduite depuis l'article "Poisoning Network Visibility in Software-Defined Networks: New Attacks and Countermeasures" \footnote{\url{http://www.internetsociety.org/sites/default/files/10_4_2.pdf}}, fonctionne dans certains cas, permettant de stopper le contact entre s1 et s2. Je n'ai pas trouvé comment faire fonctionner l'attaque à chaque essai. Il est également envisageable d'intercepter/modifier du trafic réseau avec cette méthode même si je ne l'ai pas fait.
+
+\underline{Parades proposées :}\\
+Une solution intéressante proposée dans le document associé à l’attaque est de rajouter un champ dans les paquets LLDP envoyés par le contrôleur qui contienne une partie authentification : par exemple n’accepter des paquets LLDP que lorsqu’un champ supplémentaire crée par le contrôleur et basé sur certaines caractéristiques du switch auquel il est envoyé est vérifié (mécanisme de signature). Cela résiste à la fabrication de paquets sur un hôte, mais ne résiste pas si l’attaquant dispose d’un switch connecté au réseau qui est capable de recevoir des paquets LLDP. Toutefois, cela octroie une sécurité supplémentaire non négligeable puisqu’il devient impossible de mettre en œuvre cette attaque si on n’est pas physiquement connecté.
+
+\underline{Limitations/Impact/probabilité :}\\
+Là encore l’attaquant doit faire partie du réseau local. De plus, la détermination de la topologie (même supposée optimale) trouvée par le contrôleur n’est pas forcément simple à prévoir, et ce n’est pas dit que le faux lien qu’on indique sera effectivement utilisé par le contrôleur.\\
+Donc encore une fois on a une attaque avec une probabilité (très) faible et un impact fort. On peut noter que l’avantage SDN précédent (obtenir beaucoup d'information locale pour construire une topologie globale) se retourne dans cette situation contre lui : vu que tout est centralisé, si on arrive à modifier la vision du réseau du contrôleur les conséquences sont plus graves contrairement à un réseau classique où il faudrait potentiellement modifier un grand nombre de routeurs avant d’arriver à un point de déni de service équivalent.

@@ -1,17 +1,19 @@
-\documentclass[a4paper,10pt]{article}
+\documentclass[11pt]{article}
 
 %====================== PACKAGES ======================
 
 \usepackage[utf8]{inputenc}
 \usepackage[french]{babel}
+\usepackage{natbib}
+\usepackage{url}
+\usepackage{amsmath}
 \usepackage{graphicx}
-\usepackage{hyperref}
-\usepackage{array}
-\usepackage{tabularx}
-\usepackage{setspace}
-\usepackage[T1]{fontenc}
-\usepackage[top=2.5cm, bottom=2.5cm, left=2cm, right=2cm]{geometry}
+\usepackage{parskip}
 \usepackage{fancyhdr}
+\usepackage{hyperref}
+\usepackage{tabularx}
+\usepackage{vmargin}
+\usepackage{setspace}
 \usepackage{wrapfig}
 \usepackage{filecontents}
 \usepackage{tikzsymbols}
@@ -21,11 +23,16 @@
 
 %====================== INFORMATION ET REGLES ======================
 
+\setmarginsrb{2.5 cm}{1.5 cm}{2.5 cm}{1.5 cm}{1 cm}{1 cm}{1 cm}{1.5 cm}
+\renewcommand{\baselinestretch}{1.3} 
+
+\title{Stage de fin d'étude - Etude de sécurité d'un contrôleur SDN : ONOS}                             
+\author{Julien Schoumacher}
+\date{\today}
 
 \hypersetup{
-pdfauthor = {Julien Schoumacher},
-pdftitle = {Stage de fin d'étude -
-           Etude de sécurité d'un contrôleur SDN : ONOS},
+pdfauthor = {\@author},
+pdftitle = {\@title},
 pdfsubject = {Mémoire de stage d'ingénieur},
 pdfkeywords = {SDN, ONOS, sécurité},
 pdfstartview = {FitH}}
@@ -82,7 +89,7 @@ Present, and Future of Programmable Networks},
 
 
 %======================== DEBUT DU DOCUMENT ========================
-\newgeometry{top=3.5cm}
+
 \pagestyle{fancy}
 \fancyhf{}
 \fancyhead[C]{~\\}
@@ -97,11 +104,12 @@ Present, and Future of Programmable Networks},
 
 %======================== Remerciements ========================
 \newpage
-~
-\section*{\Huge{Remerciements\\}}
-\Large Avant d'entamer la lecture de ce rapport, je tiens avant tout à remercier toute l'équipe du département RST (Réseaux et Services des Télécommunications) de Télécom SudParis qui m'a si bien accueilli durant ce stage. Je remercie également mon encadrant côté Télécom ParisTech Rida Khatoun, m'ayant mis en relation avec le maître de conférences Gregory Blanc qui m'a encadré avec bienveillance pendant toute la durée du stage. Enfin, toutes les autres personnes que j'ai pu cottoyer plus ou moins longtemps à l'occasion d'évènements ponctuels comme la conférence RAID qui s'est tenue en septembre.
+{\large ~\\}
+\section*{\Huge{Remerciements}}
+~\\
+{\Large~~~~~~~
+Avant d'entamer la lecture de ce rapport, je tiens avant tout à remercier toute l'équipe du département RST (Réseaux et Services des Télécommuni-cations) de Télécom SudParis qui m'a si bien accueilli durant ce stage. Je remercie également mon encadrant côté Télécom ParisTech Rida Khatoun, m'ayant mis en relation avec le maître de conférences Gregory Blanc qui m'a encadré avec bienveillance pendant toute la durée du stage. Enfin, toutes les autres personnes que j'ai pu cottoyer plus ou moins longtemps à l'occasion d'évènements ponctuels comme la conférence RAID qui s'est tenue en septembre.}
 \phantomsection
-
 
 %======================== Table des matières ========================
 \newpage
@@ -150,8 +158,10 @@ Present, and Future of Programmable Networks},
 \section{Audit}
 	\subsection{Man in the middle au niveau de l'interface sud}
 		\input{./scenario1.tex}
+		\newpage
 	\subsection{Altération de la topologie depuis l'interface sud}
 		\input{./scenario2.tex}
+		\newpage
 	\subsection{Deni de service au niveau de l'interface sud}
 		\input{./scenario3.tex}
 	\subsection{Deni de service au niveau de l'interface nord}
@@ -171,14 +181,7 @@ Present, and Future of Programmable Networks},
 ~
 
 \newpage
-
-%récupérer les citation avec "/footnotemark"
-\nocite{*}
-
-%choix du style de la biblio
 \bibliographystyle{plain}
-%inclusion de la biblio
-\bibliography{bibliographie.bib}
-%voir wiki pour plus d'information sur la syntaxe des entrées d'une bibliographie
+\bibliography{biblist}
 
 \end{document}

@@ -1,15 +1,15 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.12.13)  5 JAN 2017 17:45
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.12.13)  6 JAN 2017 18:14
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
-**test.tex
-(./test.tex
+**test2_template.tex
+(./test2_template.tex
 LaTeX2e <2016/02/01>
 Babel <3.9q> and hyphenation patterns for 7 language(s) loaded.
 (/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
-(/usr/share/texlive/texmf-dist/tex/latex/base/size10.clo
-File: size10.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
+(/usr/share/texlive/texmf-dist/tex/latex/base/size11.clo
+File: size11.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
 )
 \c@part=\count79
 \c@section=\count80
@@ -368,6 +368,75 @@ Package babel Info: Making ? an active character on input line 345.
 Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
 \KV@toks@=\toks17
 )
+(/usr/share/texlive/texmf-dist/tex/latex/natbib/natbib.sty
+Package: natbib 2010/09/13 8.31b (PWD, AO)
+\bibhang=\skip49
+\bibsep=\skip50
+LaTeX Info: Redefining \cite on input line 694.
+\c@NAT@ctr=\count91
+)
+(/usr/share/texlive/texmf-dist/tex/latex/url/url.sty
+\Urlmuskip=\muskip10
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2016/03/03 v2.15a AMS math features
+\@mathmargin=\skip51
+
+For additional information on amsmath, use the `?' option.
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amstext.sty
+Package: amstext 2000/06/29 v2.01 AMS text
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks18
+\ex@=\dimen106
+))
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen107
+)
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty
+Package: amsopn 1999/12/14 v2.01 operator names
+)
+\inf@bad=\count92
+LaTeX Info: Redefining \frac on input line 199.
+\uproot@=\count93
+\leftroot@=\count94
+LaTeX Info: Redefining \overline on input line 297.
+\classnum@=\count95
+\DOTSCASE@=\count96
+LaTeX Info: Redefining \ldots on input line 394.
+LaTeX Info: Redefining \dots on input line 397.
+LaTeX Info: Redefining \cdots on input line 518.
+\Mathstrutbox@=\box26
+\strutbox@=\box27
+\big@size=\dimen108
+LaTeX Font Info:    Redeclaring font encoding OML on input line 630.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 631.
+\macc@depth=\count97
+\c@MaxMatrixCols=\count98
+\dotsspace@=\muskip11
+\c@parentequation=\count99
+\dspbrk@lvl=\count100
+\tag@help=\toks19
+\row@=\count101
+\column@=\count102
+\maxfields@=\count103
+\andhelp@=\toks20
+\eqnshift@=\dimen109
+\alignsep@=\dimen110
+\tagshift@=\dimen111
+\tagwidth@=\dimen112
+\totwidth@=\dimen113
+\lineht@=\dimen114
+\@envbody=\toks21
+\multlinegap=\skip52
+\multlinetaggap=\skip53
+\mathdisplay@stack=\toks22
+LaTeX Info: Redefining \[ on input line 2735.
+LaTeX Info: Redefining \] on input line 2736.
+)
 (/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
 Package: graphicx 2014/10/28 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
 
@@ -391,10 +460,24 @@ Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
 (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
 Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
 )
-\Gread@gobject=\count91
+\Gread@gobject=\count104
 ))
-\Gin@req@height=\dimen106
-\Gin@req@width=\dimen107
+\Gin@req@height=\dimen115
+\Gin@req@width=\dimen116
+)
+(/usr/share/texlive/texmf-dist/tex/latex/parskip/parskip.sty
+Package: parskip 2001/04/09 non-zero parskip adjustments
+)
+(/usr/share/texlive/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
+\fancy@headwidth=\skip54
+\f@ncyO@elh=\skip55
+\f@ncyO@erh=\skip56
+\f@ncyO@olh=\skip57
+\f@ncyO@orh=\skip58
+\f@ncyO@elf=\skip59
+\f@ncyO@erf=\skip60
+\f@ncyO@olf=\skip61
+\f@ncyO@orf=\skip62
 )
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/hyperref.sty
 Package: hyperref 2012/11/06 v6.83m Hypertext links for LaTeX
@@ -453,16 +536,16 @@ Package: auxhook 2011/03/04 v1.3 Hooks for auxiliary files (HO)
 (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/kvoptions.sty
 Package: kvoptions 2011/06/30 v3.11 Key value format for package options (HO)
 )
-\@linkdim=\dimen108
-\Hy@linkcounter=\count92
-\Hy@pagecounter=\count93
+\@linkdim=\dimen117
+\Hy@linkcounter=\count105
+\Hy@pagecounter=\count106
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/pd1enc.def
 File: pd1enc.def 2012/11/06 v6.83m Hyperref: PDFDocEncoding definition (HO)
 Now handling font encoding PD1 ...
 ... no UTF-8 mapping file for font encoding PD1
 )
-\Hy@SavedSpaceFactor=\count94
+\Hy@SavedSpaceFactor=\count107
 
 (/usr/share/texlive/texmf-dist/tex/latex/latexconfig/hyperref.cfg
 File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
@@ -474,17 +557,12 @@ Package hyperref Info: Plain pages OFF on input line 4458.
 Package hyperref Info: Backreferencing OFF on input line 4463.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4688.
-\c@Hy@tempcnt=\count95
-
-(/usr/share/texlive/texmf-dist/tex/latex/url/url.sty
-\Urlmuskip=\muskip10
-Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
-)
+\c@Hy@tempcnt=\count108
 LaTeX Info: Redefining \url on input line 5041.
-\XeTeXLinkMargin=\dimen109
-\Fld@menulength=\count96
-\Field@Width=\dimen110
-\Fld@charsize=\dimen111
+\XeTeXLinkMargin=\dimen118
+\Fld@menulength=\count109
+\Field@Width=\dimen119
+\Fld@charsize=\dimen120
 Package hyperref Info: Hyper figures OFF on input line 6295.
 Package hyperref Info: Link nesting OFF on input line 6300.
 Package hyperref Info: Hyper index ON on input line 6303.
@@ -494,85 +572,59 @@ Package hyperref Info: Link coloring with OCG OFF on input line 6320.
 Package hyperref Info: PDF/A mode OFF on input line 6325.
 LaTeX Info: Redefining \ref on input line 6365.
 LaTeX Info: Redefining \pageref on input line 6369.
-\Hy@abspage=\count97
-\c@Item=\count98
-\c@Hfootnote=\count99
+\Hy@abspage=\count110
+\c@Item=\count111
+\c@Hfootnote=\count112
 )
 
 Package hyperref Message: Driver (autodetected): hpdftex.
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/hpdftex.def
 File: hpdftex.def 2012/11/06 v6.83m Hyperref driver for pdfTeX
-\Fld@listcount=\count100
-\c@bookmark@seq@number=\count101
+\Fld@listcount=\count113
+\c@bookmark@seq@number=\count114
 
 (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty
 Package: rerunfilecheck 2011/04/15 v1.7 Rerun checks for auxiliary files (HO)
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 82.
 )
-\Hy@SectionHShift=\skip49
-)
-(/usr/share/texlive/texmf-dist/tex/latex/tools/array.sty
-Package: array 2014/10/28 v2.4c Tabular extension package (FMi)
-\col@sep=\dimen112
-\extrarowheight=\dimen113
-\NC@list=\toks18
-\extratabsurround=\skip50
-\backup@length=\skip51
+\Hy@SectionHShift=\skip63
 )
 (/usr/share/texlive/texmf-dist/tex/latex/tools/tabularx.sty
 Package: tabularx 2014/10/28 v2.10 `tabularx' package (DPC)
-\TX@col@width=\dimen114
-\TX@old@table=\dimen115
-\TX@old@col=\dimen116
-\TX@target=\dimen117
-\TX@delta=\dimen118
-\TX@cols=\count102
-\TX@ftn=\toks19
+
+(/usr/share/texlive/texmf-dist/tex/latex/tools/array.sty
+Package: array 2014/10/28 v2.4c Tabular extension package (FMi)
+\col@sep=\dimen121
+\extrarowheight=\dimen122
+\NC@list=\toks23
+\extratabsurround=\skip64
+\backup@length=\skip65
 )
-(/usr/share/texlive/texmf-dist/tex/latex/setspace/setspace.sty
+\TX@col@width=\dimen123
+\TX@old@table=\dimen124
+\TX@old@col=\dimen125
+\TX@target=\dimen126
+\TX@delta=\dimen127
+\TX@cols=\count115
+\TX@ftn=\toks24
+)
+(/usr/share/texlive/texmf-dist/tex/latex/vmargin/vmargin.sty
+Package: vmargin 2004/07/15 V2.5 set document margins (VK)
+
+Package: vmargin 2004/07/15 V2.5 set document margins (VK)
+\PaperWidth=\dimen128
+\PaperHeight=\dimen129
+) (/usr/share/texlive/texmf-dist/tex/latex/setspace/setspace.sty
 Package: setspace 2011/12/19 v6.7a set line spacing
 )
-(/usr/share/texlive/texmf-dist/tex/latex/base/fontenc.sty
-Package: fontenc 2005/09/27 v1.99g Standard LaTeX package
-
-(/usr/share/texlive/texmf-dist/tex/latex/base/t1enc.def
-File: t1enc.def 2005/09/27 v1.99g Standard LaTeX file
-LaTeX Font Info:    Redeclaring font encoding T1 on input line 48.
-))
-(/usr/share/texlive/texmf-dist/tex/latex/geometry/geometry.sty
-Package: geometry 2010/09/12 v5.6 Page Geometry
-\Gm@cnth=\count103
-\Gm@cntv=\count104
-\c@Gm@tempcnt=\count105
-\Gm@bindingoffset=\dimen119
-\Gm@wd@mp=\dimen120
-\Gm@odd@mp=\dimen121
-\Gm@even@mp=\dimen122
-\Gm@layoutwidth=\dimen123
-\Gm@layoutheight=\dimen124
-\Gm@layouthoffset=\dimen125
-\Gm@layoutvoffset=\dimen126
-\Gm@dimlist=\toks20
-)
-(/usr/share/texlive/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
-\fancy@headwidth=\skip52
-\f@ncyO@elh=\skip53
-\f@ncyO@erh=\skip54
-\f@ncyO@olh=\skip55
-\f@ncyO@orh=\skip56
-\f@ncyO@elf=\skip57
-\f@ncyO@erf=\skip58
-\f@ncyO@olf=\skip59
-\f@ncyO@orf=\skip60
-)
 (/usr/share/texlive/texmf-dist/tex/latex/wrapfig/wrapfig.sty
-\wrapoverhang=\dimen127
-\WF@size=\dimen128
-\c@WF@wrappedlines=\count106
-\WF@box=\box26
-\WF@everypar=\toks21
+\wrapoverhang=\dimen130
+\WF@size=\dimen131
+\c@WF@wrappedlines=\count116
+\WF@box=\box28
+\WF@everypar=\toks25
 Package: wrapfig 2003/01/31  v 3.6
 )
 (/usr/share/texlive/texmf-dist/tex/latex/filecontents/filecontents.sty
@@ -586,13 +638,13 @@ Package: tikzsymbols 2015/10/13 v3.0h Some symbols created using tikz.
 (/usr/share/texlive/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty
 (/usr/share/texlive/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.tex
-\pgfutil@everybye=\toks22
-\pgfutil@tempdima=\dimen129
-\pgfutil@tempdimb=\dimen130
+\pgfutil@everybye=\toks26
+\pgfutil@tempdima=\dimen132
+\pgfutil@tempdimb=\dimen133
 
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfutil-common-lists.t
 ex)) (/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfutil-latex.def
-\pgfutil@abb=\box27
+\pgfutil@abb=\box29
 (/usr/share/texlive/texmf-dist/tex/latex/ms/everyshi.sty
 Package: everyshi 2001/05/15 v3.00 EveryShipout Package (MS)
 ))
@@ -607,30 +659,30 @@ Package: pgf 2015/08/07 v3.0.1a (rcs-revision 1.15)
 Package: pgfsys 2014/07/09 v3.0.1a (rcs-revision 1.48)
 
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex
-\pgfkeys@pathtoks=\toks23
-\pgfkeys@temptoks=\toks24
+\pgfkeys@pathtoks=\toks27
+\pgfkeys@temptoks=\toks28
 
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfkeysfiltered.code.t
 ex
-\pgfkeys@tmptoks=\toks25
+\pgfkeys@tmptoks=\toks29
 ))
-\pgf@x=\dimen131
-\pgf@y=\dimen132
-\pgf@xa=\dimen133
-\pgf@ya=\dimen134
-\pgf@xb=\dimen135
-\pgf@yb=\dimen136
-\pgf@xc=\dimen137
-\pgf@yc=\dimen138
+\pgf@x=\dimen134
+\pgf@y=\dimen135
+\pgf@xa=\dimen136
+\pgf@ya=\dimen137
+\pgf@xb=\dimen138
+\pgf@yb=\dimen139
+\pgf@xc=\dimen140
+\pgf@yc=\dimen141
 \w@pgf@writea=\write3
 \r@pgf@reada=\read1
-\c@pgf@counta=\count107
-\c@pgf@countb=\count108
-\c@pgf@countc=\count109
-\c@pgf@countd=\count110
-\t@pgf@toka=\toks26
-\t@pgf@tokb=\toks27
-\t@pgf@tokc=\toks28
+\c@pgf@counta=\count117
+\c@pgf@countb=\count118
+\c@pgf@countc=\count119
+\c@pgf@countd=\count120
+\t@pgf@toka=\toks30
+\t@pgf@tokb=\toks31
+\t@pgf@tokc=\toks32
  (/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgf.cfg
 File: pgf.cfg 2008/05/14  (rcs-revision 1.7)
 )
@@ -646,8 +698,8 @@ File: pgfsys-common-pdf.def 2013/10/10  (rcs-revision 1.13)
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsyssoftpath.code.
 tex
 File: pgfsyssoftpath.code.tex 2013/09/09  (rcs-revision 1.9)
-\pgfsyssoftpath@smallbuffer@items=\count111
-\pgfsyssoftpath@bigbuffer@items=\count112
+\pgfsyssoftpath@smallbuffer@items=\count121
+\pgfsyssoftpath@bigbuffer@items=\count122
 )
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsysprotocol.code.
 tex
@@ -676,12 +728,12 @@ Package: pgfcore 2010/04/11 v3.0.1a (rcs-revision 1.7)
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathcalc.code.tex
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathutil.code.tex)
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathparser.code.tex
-\pgfmath@dimen=\dimen139
-\pgfmath@count=\count113
-\pgfmath@box=\box28
-\pgfmath@toks=\toks29
-\pgfmath@stack@operand=\toks30
-\pgfmath@stack@operation=\toks31
+\pgfmath@dimen=\dimen142
+\pgfmath@count=\count123
+\pgfmath@box=\box30
+\pgfmath@toks=\toks33
+\pgfmath@stack@operand=\toks34
+\pgfmath@stack@operation=\toks35
 )
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.code.tex
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.basic.code
@@ -701,57 +753,57 @@ tex)
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.integerari
 thmetics.code.tex)))
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfloat.code.tex
-\c@pgfmathroundto@lastzeros=\count114
+\c@pgfmathroundto@lastzeros=\count124
 ))
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepoints.code.te
 x
 File: pgfcorepoints.code.tex 2013/10/07  (rcs-revision 1.27)
-\pgf@picminx=\dimen140
-\pgf@picmaxx=\dimen141
-\pgf@picminy=\dimen142
-\pgf@picmaxy=\dimen143
-\pgf@pathminx=\dimen144
-\pgf@pathmaxx=\dimen145
-\pgf@pathminy=\dimen146
-\pgf@pathmaxy=\dimen147
-\pgf@xx=\dimen148
-\pgf@xy=\dimen149
-\pgf@yx=\dimen150
-\pgf@yy=\dimen151
-\pgf@zx=\dimen152
-\pgf@zy=\dimen153
+\pgf@picminx=\dimen143
+\pgf@picmaxx=\dimen144
+\pgf@picminy=\dimen145
+\pgf@picmaxy=\dimen146
+\pgf@pathminx=\dimen147
+\pgf@pathmaxx=\dimen148
+\pgf@pathminy=\dimen149
+\pgf@pathmaxy=\dimen150
+\pgf@xx=\dimen151
+\pgf@xy=\dimen152
+\pgf@yx=\dimen153
+\pgf@yy=\dimen154
+\pgf@zx=\dimen155
+\pgf@zy=\dimen156
 )
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathconstruct.
 code.tex
 File: pgfcorepathconstruct.code.tex 2013/10/07  (rcs-revision 1.29)
-\pgf@path@lastx=\dimen154
-\pgf@path@lasty=\dimen155
+\pgf@path@lastx=\dimen157
+\pgf@path@lasty=\dimen158
 )
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathusage.code
 .tex
 File: pgfcorepathusage.code.tex 2014/11/02  (rcs-revision 1.24)
-\pgf@shorten@end@additional=\dimen156
-\pgf@shorten@start@additional=\dimen157
+\pgf@shorten@end@additional=\dimen159
+\pgf@shorten@start@additional=\dimen160
 )
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorescopes.code.te
 x
 File: pgfcorescopes.code.tex 2015/05/08  (rcs-revision 1.46)
-\pgfpic=\box29
-\pgf@hbox=\box30
-\pgf@layerbox@main=\box31
-\pgf@picture@serial@count=\count115
+\pgfpic=\box31
+\pgf@hbox=\box32
+\pgf@layerbox@main=\box33
+\pgf@picture@serial@count=\count125
 )
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoregraphicstate.c
 ode.tex
 File: pgfcoregraphicstate.code.tex 2014/11/02  (rcs-revision 1.12)
-\pgflinewidth=\dimen158
+\pgflinewidth=\dimen161
 )
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransformation
 s.code.tex
 File: pgfcoretransformations.code.tex 2015/08/07  (rcs-revision 1.20)
-\pgf@pt@x=\dimen159
-\pgf@pt@y=\dimen160
-\pgf@pt@temp=\dimen161
+\pgf@pt@x=\dimen162
+\pgf@pt@y=\dimen163
+\pgf@pt@temp=\dimen164
 )
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorequick.code.tex
 File: pgfcorequick.code.tex 2008/10/09  (rcs-revision 1.3)
@@ -767,12 +819,12 @@ File: pgfcorepathprocessing.code.tex 2013/09/09  (rcs-revision 1.9)
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorearrows.code.te
 x
 File: pgfcorearrows.code.tex 2015/05/14  (rcs-revision 1.43)
-\pgfarrowsep=\dimen162
+\pgfarrowsep=\dimen165
 )
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreshade.code.tex
 File: pgfcoreshade.code.tex 2013/07/15  (rcs-revision 1.15)
-\pgf@max=\dimen163
-\pgf@sys@shading@range@num=\count116
+\pgf@max=\dimen166
+\pgf@sys@shading@range@num=\count126
 )
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreimage.code.tex
 File: pgfcoreimage.code.tex 2013/07/15  (rcs-revision 1.18)
@@ -780,7 +832,7 @@ File: pgfcoreimage.code.tex 2013/07/15  (rcs-revision 1.18)
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreexternal.code.
 tex
 File: pgfcoreexternal.code.tex 2014/07/09  (rcs-revision 1.21)
-\pgfexternal@startupbox=\box32
+\pgfexternal@startupbox=\box34
 ))
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorelayers.code.te
 x
@@ -796,15 +848,15 @@ File: pgfcorepatterns.code.tex 2013/11/07  (rcs-revision 1.5)
 )))
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/modules/pgfmoduleshapes.code.tex
 File: pgfmoduleshapes.code.tex 2014/03/21  (rcs-revision 1.35)
-\pgfnodeparttextbox=\box33
+\pgfnodeparttextbox=\box35
 ) (/usr/share/texlive/texmf-dist/tex/generic/pgf/modules/pgfmoduleplot.code.tex
 File: pgfmoduleplot.code.tex 2015/08/03  (rcs-revision 1.13)
 )
 (/usr/share/texlive/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-0-65
 .sty
 Package: pgfcomp-version-0-65 2007/07/03 v3.0.1a (rcs-revision 1.7)
-\pgf@nodesepstart=\dimen164
-\pgf@nodesepend=\dimen165
+\pgf@nodesepstart=\dimen167
+\pgf@nodesepend=\dimen168
 )
 (/usr/share/texlive/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-1-18
 .sty
@@ -818,10 +870,10 @@ Package: pgfcomp-version-1-18 2007/07/23 v3.0.1a (rcs-revision 1.1)
 Package: pgffor 2013/12/13 v3.0.1a (rcs-revision 1.25)
 
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex)
-\pgffor@iter=\dimen166
-\pgffor@skip=\dimen167
-\pgffor@stack=\toks32
-\pgffor@toks=\toks33
+\pgffor@iter=\dimen169
+\pgffor@skip=\dimen170
+\pgffor@stack=\toks36
+\pgffor@toks=\toks37
 ))
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/tikz.code.tex
 Package: tikz 2015/08/07 v3.0.1a (rcs-revision 1.151)
@@ -829,31 +881,31 @@ Package: tikz 2015/08/07 v3.0.1a (rcs-revision 1.151)
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/pgflibraryplothandlers
 .code.tex
 File: pgflibraryplothandlers.code.tex 2013/08/31 v3.0.1a (rcs-revision 1.20)
-\pgf@plot@mark@count=\count117
-\pgfplotmarksize=\dimen168
+\pgf@plot@mark@count=\count127
+\pgfplotmarksize=\dimen171
 )
-\tikz@lastx=\dimen169
-\tikz@lasty=\dimen170
-\tikz@lastxsaved=\dimen171
-\tikz@lastysaved=\dimen172
-\tikzleveldistance=\dimen173
-\tikzsiblingdistance=\dimen174
-\tikz@figbox=\box34
-\tikz@figbox@bg=\box35
-\tikz@tempbox=\box36
-\tikz@tempbox@bg=\box37
-\tikztreelevel=\count118
-\tikznumberofchildren=\count119
-\tikznumberofcurrentchild=\count120
-\tikz@fig@count=\count121
+\tikz@lastx=\dimen172
+\tikz@lasty=\dimen173
+\tikz@lastxsaved=\dimen174
+\tikz@lastysaved=\dimen175
+\tikzleveldistance=\dimen176
+\tikzsiblingdistance=\dimen177
+\tikz@figbox=\box36
+\tikz@figbox@bg=\box37
+\tikz@tempbox=\box38
+\tikz@tempbox@bg=\box39
+\tikztreelevel=\count128
+\tikznumberofchildren=\count129
+\tikznumberofcurrentchild=\count130
+\tikz@fig@count=\count131
 
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/modules/pgfmodulematrix.code.tex
 File: pgfmodulematrix.code.tex 2013/09/17  (rcs-revision 1.8)
-\pgfmatrixcurrentrow=\count122
-\pgfmatrixcurrentcolumn=\count123
-\pgf@matrix@numberofcolumns=\count124
+\pgfmatrixcurrentrow=\count132
+\pgfmatrixcurrentcolumn=\count133
+\pgf@matrix@numberofcolumns=\count134
 )
-\tikz@expandcount=\count125
+\tikz@expandcount=\count135
 
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
 zlibrarytopaths.code.tex
@@ -867,15 +919,15 @@ Package: xkeyval 2014/12/03 v2.7a package option processing (HA)
 
 (/usr/share/texlive/texmf-dist/tex/generic/xkeyval/xkeyval.tex
 (/usr/share/texlive/texmf-dist/tex/generic/xkeyval/xkvutils.tex
-\XKV@toks=\toks34
-\XKV@tempa@toks=\toks35
+\XKV@toks=\toks38
+\XKV@tempa@toks=\toks39
 )
-\XKV@depth=\count126
+\XKV@depth=\count136
 File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
 ))
-\xargs@max=\count127
-\xargs@toksa=\toks36
-\xargs@toksb=\toks37
+\xargs@max=\count137
+\xargs@toksa=\toks40
+\xargs@toksb=\toks41
 )
 (/usr/share/texlive/texmf-dist/tex/latex/tools/xspace.sty
 Package: xspace 2014/10/28 v1.13 Space after command names (DPC,MH)
@@ -887,7 +939,7 @@ File: tikzlibraryarrows.code.tex 2008/01/09 v3.0.1a (rcs-revision 1.1)
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/pgflibraryarrows.code.
 tex
 File: pgflibraryarrows.code.tex 2013/09/23 v3.0.1a (rcs-revision 1.16)
-\arrowsize=\dimen175
+\arrowsize=\dimen178
 ))
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
 zlibrarydecorations.pathmorphing.code.tex
@@ -895,16 +947,16 @@ zlibrarydecorations.pathmorphing.code.tex
 zlibrarydecorations.code.tex
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/modules/pgfmoduledecorations.cod
 e.tex
-\pgfdecoratedcompleteddistance=\dimen176
-\pgfdecoratedremainingdistance=\dimen177
-\pgfdecoratedinputsegmentcompleteddistance=\dimen178
-\pgfdecoratedinputsegmentremainingdistance=\dimen179
-\pgf@decorate@distancetomove=\dimen180
-\pgf@decorate@repeatstate=\count128
-\pgfdecorationsegmentamplitude=\dimen181
-\pgfdecorationsegmentlength=\dimen182
+\pgfdecoratedcompleteddistance=\dimen179
+\pgfdecoratedremainingdistance=\dimen180
+\pgfdecoratedinputsegmentcompleteddistance=\dimen181
+\pgfdecoratedinputsegmentremainingdistance=\dimen182
+\pgf@decorate@distancetomove=\dimen183
+\pgf@decorate@repeatstate=\count138
+\pgfdecorationsegmentamplitude=\dimen184
+\pgfdecorationsegmentlength=\dimen185
 )
-\tikz@lib@dec@box=\box38
+\tikz@lib@dec@box=\box40
 )
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/decorations/pgflibrary
 decorations.pathmorphing.code.tex))
@@ -912,9 +964,9 @@ decorations.pathmorphing.code.tex))
 zlibrarytrees.code.tex
 File: tikzlibrarytrees.code.tex 2008/02/24 v3.0.1a (rcs-revision 1.2)
 )
-\tkzsymbls@scl=\skip61
-\tikzsymbols@draftboxlength=\skip62
-\tikzsymbols@draftboxheight=\skip63
+\tkzsymbls@scl=\skip66
+\tikzsymbols@draftboxlength=\skip67
+\tikzsymbols@draftboxheight=\skip68
 )
 (/usr/share/texlive/texmf-dist/tex/latex/metre/metre.sty
 Package: metre 2001/12/05 v. 1.0 A package for classicists
@@ -922,38 +974,51 @@ Package: metre 2001/12/05 v. 1.0 A package for classicists
 (/usr/share/texlive/texmf-dist/tex/latex/relsize/relsize.sty
 Package: relsize 2013/03/29 ver 4.1
 )
-\M@ibycus=\count129
-\M@metra=\count130
-\M@metra@font=\count131
-\M@box@m=\box39
-\M@box@b=\box40
-\M@box@tsmb=\box41
-\M@box@tsbm=\box42
-\M@box@tsmm=\box43
-\M@box@ps=\box44
-\M@box@a=\box45
-\M@box@o=\box46
-\M@box@k=\box47
-\M@box@K=\box48
-\M@box@p=\box49
-\M@box@A=\box50
-\M@box@G=\box51
-\M@dim@m=\dimen183
-\M@dim@b=\dimen184
-\M@dim@p=\dimen185
-\M@dim@s=\dimen186
-\M@dim@bsink=\dimen187
-\M@dim@sunk=\dimen188
-\M@metra@ex=\dimen189
-\M@text@ex=\dimen190
-\M@dim@c@ext=\dimen191
-\M@dim@c@int=\dimen192
-\M@dim@c@Ext=\dimen193
-\M@linea@indent=\dimen194
-\M@linea@height=\dimen195
-\M@linea@length=\dimen196
-)
-(/usr/share/texlive/texmf-dist/tex/latex/minted/minted.sty
+\M@ibycus=\count139
+\M@metra=\count140
+\M@metra@font=\count141
+\M@box@m=\box41
+\M@box@b=\box42
+\M@box@tsmb=\box43
+\M@box@tsbm=\box44
+\M@box@tsmm=\box45
+\M@box@ps=\box46
+\M@box@a=\box47
+\M@box@o=\box48
+\M@box@k=\box49
+\M@box@K=\box50
+\M@box@p=\box51
+\M@box@A=\box52
+\M@box@G=\box53
+\M@dim@m=\dimen186
+\M@dim@b=\dimen187
+\M@dim@p=\dimen188
+\M@dim@s=\dimen189
+\M@dim@bsink=\dimen190
+\M@dim@sunk=\dimen191
+\M@metra@ex=\dimen192
+\M@text@ex=\dimen193
+\M@dim@c@ext=\dimen194
+\M@dim@c@int=\dimen195
+\M@dim@c@Ext=\dimen196
+\M@linea@indent=\dimen197
+\M@linea@height=\dimen198
+\M@linea@length=\dimen199
+
+! Argument of \mathaccentV has an extra }.
+<inserted text> 
+                \par 
+l.1619 \edef\Breve{\breve}
+                          
+? 
+Runaway argument?
+! Paragraph ended before \mathaccentV was complete.
+<to be read again> 
+                   \par 
+l.1619 \edef\Breve{\breve}
+                          
+? 
+) (/usr/share/texlive/texmf-dist/tex/latex/minted/minted.sty
 Package: minted 2015/09/09 v2.1 Yet another Pygments shim for LaTeX
 
 (/usr/share/texlive/texmf-dist/tex/latex/fancyvrb/fancyvrb.sty
@@ -961,35 +1026,35 @@ Package: fancyvrb 2008/02/07
 
 Style option: `fancyvrb' v2.7a, with DG/SPQR fixes, and firstline=lastline fix 
 <2008/02/07> (tvz)
-\FV@CodeLineNo=\count132
+\FV@CodeLineNo=\count142
 \FV@InFile=\read2
-\FV@TabBox=\box52
-\c@FancyVerbLine=\count133
-\FV@StepNumber=\count134
+\FV@TabBox=\box54
+\c@FancyVerbLine=\count143
+\FV@StepNumber=\count144
 \FV@OutFile=\write4
 ) (/usr/share/texlive/texmf-dist/tex/latex/float/float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
-\c@float@type=\count135
-\float@exts=\toks38
-\float@box=\box53
-\@float@everytoks=\toks39
-\@floatcapt=\box54
+\c@float@type=\count145
+\float@exts=\toks42
+\float@box=\box55
+\@float@everytoks=\toks43
+\@floatcapt=\box56
 )
 (/usr/share/texlive/texmf-dist/tex/latex/base/ifthen.sty
 Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
 )
 (/usr/share/texlive/texmf-dist/tex/latex/tools/calc.sty
 Package: calc 2014/10/28 v4.3 Infix arithmetic (KKT,FJ)
-\calc@Acount=\count136
-\calc@Bcount=\count137
-\calc@Adimen=\dimen197
-\calc@Bdimen=\dimen198
-\calc@Askip=\skip64
-\calc@Bskip=\skip65
+\calc@Acount=\count146
+\calc@Bcount=\count147
+\calc@Adimen=\dimen256
+\calc@Bdimen=\dimen257
+\calc@Askip=\skip69
+\calc@Bskip=\skip70
 LaTeX Info: Redefining \setlength on input line 80.
 LaTeX Info: Redefining \addtolength on input line 81.
-\calc@Ccount=\count138
-\calc@Cskip=\skip66
+\calc@Ccount=\count148
+\calc@Cskip=\skip71
 )
 (/usr/share/texlive/texmf-dist/tex/latex/ifplatform/ifplatform.sty
 Package: ifplatform 2010/10/22 v0.4 Testing for the operating system
@@ -997,141 +1062,131 @@ Package: ifplatform 2010/10/22 v0.4 Testing for the operating system
 (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/catchfile.sty
 Package: catchfile 2011/03/01 v1.6 Catch the contents of a file (HO)
 )
-runsystem(uname -s > "test.w18")...executed.
+runsystem(uname -s > "test2_template.w18")...executed.
 
- (./test.w18)
-runsystem(rm -- "test.w18")...executed.
 
-) (/usr/share/texlive/texmf-dist/tex/latex/etoolbox/etoolbox.sty
+(./test2_template.w18)
+runsystem(rm -- "test2_template.w18")...executed.
+
+)
+(/usr/share/texlive/texmf-dist/tex/latex/etoolbox/etoolbox.sty
 Package: etoolbox 2015/08/02 v2.2a e-TeX tools for LaTeX (JAW)
-\etb@tempcnta=\count139
+\etb@tempcnta=\count149
 )
 (/usr/share/texlive/texmf-dist/tex/generic/xstring/xstring.sty
 (/usr/share/texlive/texmf-dist/tex/generic/xstring/xstring.tex
 \@xs@message=\write5
-\integerpart=\count140
-\decimalpart=\count141
+\integerpart=\count150
+\decimalpart=\count151
 )
 Package: xstring 2013/10/13  v1.7c  String manipulations (C Tellechea)
 )
 (/usr/share/texlive/texmf-dist/tex/latex/lineno/lineno.sty
 Package: lineno 2005/11/02 line numbers on paragraphs v4.41
-\linenopenalty=\count142
-\output=\toks40
-\linenoprevgraf=\count143
-\linenumbersep=\dimen199
-\linenumberwidth=\dimen256
-\c@linenumber=\count144
-\c@pagewiselinenumber=\count145
-\c@LN@truepage=\count146
-\c@internallinenumber=\count147
-\c@internallinenumbers=\count148
-\quotelinenumbersep=\dimen257
-\bframerule=\dimen258
-\bframesep=\dimen259
-\bframebox=\box55
+\linenopenalty=\count152
+\output=\toks44
+\linenoprevgraf=\count153
+\linenumbersep=\dimen258
+\linenumberwidth=\dimen259
+\c@linenumber=\count154
+\c@pagewiselinenumber=\count155
+\c@LN@truepage=\count156
+\c@internallinenumber=\count157
+\c@internallinenumbers=\count158
+\quotelinenumbersep=\dimen260
+\bframerule=\dimen261
+\bframesep=\dimen262
+\bframebox=\box57
 LaTeX Info: Redefining \\ on input line 3056.
 )
 \minted@appexistsfile=\read3
-\FV@BreakIndent=\dimen260
-\FV@BreakSymbolSepLeft=\dimen261
-\FV@BreakSymbolSepRight=\dimen262
-\FV@BreakSymbolIndentLeft=\dimen263
-LaTeX Font Info:    Try loading font information for T1+cmtt on input line 688.
-
-
-(/usr/share/texlive/texmf-dist/tex/latex/base/t1cmtt.fd
-File: t1cmtt.fd 2014/09/29 v2.5h Standard LaTeX font definitions
-)
-\FV@BreakSymbolIndentRight=\dimen264
-\c@FancyVerbLineBreakLast=\count149
-\FV@LineBox=\box56
-\FV@LineIndentBox=\box57
-\minted@bgbox=\box58
+\FV@BreakIndent=\dimen263
+\FV@BreakSymbolSepLeft=\dimen264
+\FV@BreakSymbolSepRight=\dimen265
+\FV@BreakSymbolIndentLeft=\dimen266
+\FV@BreakSymbolIndentRight=\dimen267
+\c@FancyVerbLineBreakLast=\count159
+\FV@LineBox=\box58
+\FV@LineIndentBox=\box59
+\minted@bgbox=\box60
 \minted@code=\write6
-\c@minted@FancyVerbLineTemp=\count150
-\@float@every@listing=\toks41
-\c@listing=\count151
+\c@minted@FancyVerbLineTemp=\count160
+\@float@every@listing=\toks45
+\c@listing=\count161
 )
-runsystem(mkdir -p "_minted-test")...executed.
+runsystem(mkdir -p "_minted-test2_template")...executed.
 
 
-(./_minted-test/default.pygstyle)
+(./_minted-test2_template/default.pygstyle)
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\spacefactor' on input line 38.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\@m' on input line 38.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\spacefactor' on input line 38.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\@m' on input line 38.
+
 
 LaTeX Warning: Overwriting file `./references.bib'.
 
 \openout15 = `references.bib'.
 
 
-*geometry* verbose mode - [ newgeometry ] result:
-* driver: 
-* paper: a4paper
-* layout: <same size as paper>
-* layoutoffset:(h,v)=(0.0pt,0.0pt)
-* modes: 
-* h-part:(L,W,R)=(89.62709pt, 418.25368pt, 89.6271pt)
-* v-part:(T,H,B)=(99.58464pt, 644.05556pt, 101.40665pt)
-* \paperwidth=597.50787pt
-* \paperheight=845.04684pt
-* \textwidth=418.25368pt
-* \textheight=644.05556pt
-* \oddsidemargin=17.3571pt
-* \evensidemargin=17.3571pt
-* \topmargin=-9.68535pt
-* \headheight=12.0pt
-* \headsep=25.0pt
-* \topskip=10.0pt
-* \footskip=30.0pt
-* \marginparwidth=57.0pt
-* \marginparsep=11.0pt
-* \columnsep=10.0pt
-* \skip\footins=9.0pt plus 4.0pt minus 2.0pt
-* \hoffset=0.0pt
-* \voffset=0.0pt
-* \mag=1000
-* \@twocolumnfalse
-* \@twosidefalse
-* \@mparswitchfalse
-* \@reversemarginfalse
-* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+runsystem(which "pygmentize" && touch "test2_template.aex")...executed.
 
-runsystem(which "pygmentize" && touch "test.aex")...executed.
+runsystem(rm "test2_template.aex")...executed.
 
-runsystem(rm "test.aex")...executed.
+(./test2_template.aux)
+\openout1 = `test2_template.aux'.
 
-(./test.aux)
-\openout1 = `test.aux'.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 98.
+LaTeX Font Info:    ... okay on input line 98.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 98.
+LaTeX Font Info:    ... okay on input line 98.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 98.
+LaTeX Font Info:    ... okay on input line 98.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 98.
+LaTeX Font Info:    ... okay on input line 98.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 98.
+LaTeX Font Info:    ... okay on input line 98.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 98.
+LaTeX Font Info:    ... okay on input line 98.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 98.
+LaTeX Font Info:    ... okay on input line 98.
+LaTeX Info: Redefining \degres on input line 98.
+LaTeX Info: Redefining \dots on input line 98.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 90.
-LaTeX Font Info:    ... okay on input line 90.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 90.
-LaTeX Font Info:    ... okay on input line 90.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 90.
-LaTeX Font Info:    ... okay on input line 90.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 90.
-LaTeX Font Info:    ... okay on input line 90.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 90.
-LaTeX Font Info:    ... okay on input line 90.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 90.
-LaTeX Font Info:    ... okay on input line 90.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 90.
-LaTeX Font Info:    ... okay on input line 90.
-LaTeX Info: Redefining \degres on input line 90.
-LaTeX Info: Redefining \dots on input line 90.
-LaTeX Info: Redefining \up on input line 90.
- (/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
+
+Package frenchb.ldf Warning: Please load the "natbib" package
+(frenchb.ldf)                BEFORE babel/frenchb; reported on input line 98.
+
+LaTeX Info: Redefining \up on input line 98.
+
+Package frenchb.ldf Warning: OT1 encoding should not be used for French.
+(frenchb.ldf)                Add \usepackage[T1]{fontenc} to the preamble
+(frenchb.ldf)                of your document, on input line 98.
+
+(/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count152
-\scratchdimen=\dimen265
-\scratchbox=\box59
-\nofMPsegments=\count153
-\nofMParguments=\count154
-\everyMPshowfont=\toks42
-\MPscratchCnt=\count155
-\MPscratchDim=\dimen266
-\MPnumerator=\count156
-\makeMPintoPDFobject=\count157
-\everyMPtoPDFconversion=\toks43
+\scratchcounter=\count162
+\scratchdimen=\dimen268
+\scratchbox=\box61
+\nofMPsegments=\count163
+\nofMParguments=\count164
+\everyMPshowfont=\toks46
+\MPscratchCnt=\count165
+\MPscratchDim=\dimen269
+\MPnumerator=\count166
+\makeMPintoPDFobject=\count167
+\everyMPtoPDFconversion=\toks47
 ) (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
 
@@ -1147,8 +1202,8 @@ G,.JBIG2,.JB2,.eps]
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-\AtBeginShipoutBox=\box60
-Package hyperref Info: Link coloring OFF on input line 90.
+\AtBeginShipoutBox=\box62
+Package hyperref Info: Link coloring OFF on input line 98.
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
@@ -1156,123 +1211,55 @@ Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
-\c@section@level=\count158
+\c@section@level=\count168
 )
-LaTeX Info: Redefining \ref on input line 90.
-LaTeX Info: Redefining \pageref on input line 90.
-LaTeX Info: Redefining \nameref on input line 90.
+LaTeX Info: Redefining \ref on input line 98.
+LaTeX Info: Redefining \pageref on input line 98.
+LaTeX Info: Redefining \nameref on input line 98.
 
-(./test.out) (./test.out)
+(./test2_template.out) (./test2_template.out)
 \@outlinefile=\write7
-\openout7 = `test.out'.
+\openout7 = `test2_template.out'.
 
-
-*geometry* driver: auto-detecting
-*geometry* detected driver: pdftex
-*geometry* verbose mode - [ preamble ] result:
-* driver: pdftex
-* paper: a4paper
-* layout: <same size as paper>
-* layoutoffset:(h,v)=(0.0pt,0.0pt)
-* modes: 
-* h-part:(L,W,R)=(89.62709pt, 418.25368pt, 89.6271pt)
-* v-part:(T,H,B)=(99.58464pt, 644.05556pt, 101.40665pt)
-* \paperwidth=597.50787pt
-* \paperheight=845.04684pt
-* \textwidth=418.25368pt
-* \textheight=644.05556pt
-* \oddsidemargin=17.3571pt
-* \evensidemargin=17.3571pt
-* \topmargin=-9.68535pt
-* \headheight=12.0pt
-* \headsep=25.0pt
-* \topskip=10.0pt
-* \footskip=30.0pt
-* \marginparwidth=57.0pt
-* \marginparsep=11.0pt
-* \columnsep=10.0pt
-* \skip\footins=9.0pt plus 4.0pt minus 2.0pt
-* \hoffset=0.0pt
-* \voffset=0.0pt
-* \mag=1000
-* \@twocolumnfalse
-* \@twosidefalse
-* \@mparswitchfalse
-* \@reversemarginfalse
-* (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 ABD: EveryShipout initializing macros
-(./_minted-test/default-pyg-prefix.pygstyle) (./title.tex
-<images/TelecomParisTech_logo_200_01.png, id=131, 212.795pt x 212.795pt>
+(./_minted-test2_template/default-pyg-prefix.pygstyle) (./title.tex
+<images/TelecomParisTech_logo_200_01.png, id=135, 212.795pt x 212.795pt>
 <use images/TelecomParisTech_logo_200_01.png>
-<images/Logo_SP.jpg, id=132, 250.9375pt x 250.9375pt> <use images/Logo_SP.jpg>
+<images/Logo_SP.jpg, id=136, 250.9375pt x 250.9375pt> <use images/Logo_SP.jpg>
 File: images/TelecomParisTech_logo_200_01.png Graphic file (type png)
 
 <use images/TelecomParisTech_logo_200_01.png>
 Package pdftex.def Info: images/TelecomParisTech_logo_200_01.png used on input 
 line 11.
-(pdftex.def)             Requested size: 83.64944pt x 83.64883pt.
+(pdftex.def)             Requested size: 91.17546pt x 91.17535pt.
 File: images/Logo_SP.jpg Graphic file (type jpg)
  <use images/Logo_SP.jpg>
 Package pdftex.def Info: images/Logo_SP.jpg used on input line 11.
-(pdftex.def)             Requested size: 83.64944pt x 83.64816pt.
+(pdftex.def)             Requested size: 91.17546pt x 91.17596pt.
 
 Underfull \hbox (badness 10000) in alignment at lines 11--11
 [][][][] 
  []
 
-
-Overfull \hbox (15.0pt too wide) in paragraph at lines 11--12
-[][] 
- []
-
 [1
-
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./images/TelecomParisTech_
 logo_200_01.png> <./images/Logo_SP.jpg>])
-Underfull \hbox (badness 10000) in paragraph at lines 100--100
+Underfull \hbox (badness 10000) in paragraph at lines 107--108
 
  []
-
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 15.60004pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
 
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.106 \newpage
-               [1] (./test.toc
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <14.4> on input line 3.
-
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 15.60004pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[2])
+l.115 \newpage
+               [1] (./test2_template.toc)
 \tf@toc=\write8
-\openout8 = `test.toc'.
+\openout8 = `test2_template.toc'.
 
-
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 15.60004pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[3] (./motivation_sdn.tex
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 1.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 1.
-
+ [2] (./motivation_sdn.tex
 Underfull \hbox (badness 10000) in paragraph at lines 1--2
 
  []
@@ -1287,17 +1274,17 @@ LaTeX Font Warning: Command \relsize invalid in math mode on input line 7.
 LaTeX Font Warning: Command \relsize invalid in math mode on input line 9.
 
 
+Overfull \hbox (14.88225pt too wide) in paragraph at lines 9--10
+[]\OT1/cmr/m/n/10.95 Les m^^Sethodes d'acc^^Res sont au-jour-d'hui bien diff^^S
+erentes. Pr^^Sec^^Sedemment le mod^^Rele client/serveur
+ []
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 9--10
 
  []
 
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 15.60004pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[4]
+[3]
 
 LaTeX Font Warning: Command \relsize invalid in math mode on input line 17.
 
@@ -1308,19 +1295,25 @@ LaTeX Font Warning: Command \relsize invalid in math mode on input line 18.
 LaTeX Font Warning: Command \relsize invalid in math mode on input line 19.
 
 )
-Underfull \hbox (badness 10000) in paragraph at lines 22--116
-
+Overfull \hbox (30.06563pt too wide) in paragraph at lines 22--125
+\OT1/cmr/m/n/10.95 De nom-breux probl^^Remes se r^^Sesolvent avec un ni-veau d'
+abs-trac-tion suppl^^Sementaire[][][]. Si le d^^Seveloppement
  []
 
 
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 15.60004pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
+Underfull \hbox (badness 10000) in paragraph at lines 22--125
 
-[5] (./concepts.tex
+ []
+
+(./concepts.tex
 Underfull \hbox (badness 10000) in paragraph at lines 1--2
 
+ []
+
+[4]
+Overfull \hbox (2.95403pt too wide) in paragraph at lines 3--4
+[]\OT1/cmr/m/n/10.95 Pour r^^Sealiser cela, il est n^^Secessaire, puis-qu'un r^
+^Seseau est constitu^^Se d'en-tit^^Ses phy-si-que-ment s^^Separ^^Sees,
  []
 
 
@@ -1328,50 +1321,26 @@ Underfull \hbox (badness 10000) in paragraph at lines 3--4
 
  []
 
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 15.60004pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[6] <images/routage_normal.png, id=215, 1018.80624pt x 359.3425pt>
+<images/routage_normal.png, id=209, 1018.80624pt x 359.3425pt>
 File: images/routage_normal.png Graphic file (type png)
 
 <use images/routage_normal.png>
 Package pdftex.def Info: images/routage_normal.png used on input line 9.
-(pdftex.def)             Requested size: 355.51817pt x 125.39342pt.
+(pdftex.def)             Requested size: 387.50443pt x 136.67767pt.
 
-<images/openflow.png, id=217, 1026.83624pt x 657.45625pt>
+<images/openflow.png, id=211, 1026.83624pt x 657.45625pt>
 File: images/openflow.png Graphic file (type png)
 
 <use images/openflow.png>
 Package pdftex.def Info: images/openflow.png used on input line 15.
-(pdftex.def)             Requested size: 334.60422pt x 214.24257pt.
+(pdftex.def)             Requested size: 364.70882pt x 233.51396pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
 
 
 LaTeX Font Warning: Command \relsize invalid in math mode on input line 23.
 
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 15.60004pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[7pdfTeX warning (ext4): destination with the same identifier (name{figure.1}) 
-has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.24 \item C
-            ela facilite donc √©norm√©ment le d√©veloppement d'applications ...
-pdfTeX warning (ext4): destination with the same identifier (name{figure.2}) ha
-s been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.24 \item C
-            ela facilite donc √©norm√©ment le d√©veloppement d'applications ...
- <./images/routage_normal.png> <./images/openflow.png>]
 
 LaTeX Font Warning: Command \relsize invalid in math mode on input line 24.
 
@@ -1382,32 +1351,20 @@ LaTeX Font Warning: Command \relsize invalid in math mode on input line 25.
 LaTeX Font Warning: Command \relsize invalid in math mode on input line 26.
 
 
-Overfull \hbox (8.28345pt too wide) in paragraph at lines 26--27
-\T1/cmr/m/n/14.4 tants (perte d'un lien, dis-fonc-tion-ne-ment, ra-len-tis-se-m
-ent ...) peuvent
- []
-
-
 LaTeX Font Warning: Command \relsize invalid in math mode on input line 27.
 
+[5pdfTeX warning (ext4): destination with the same identifier (name{figure.1}) 
+has been already used, duplicate ignored
 
-Overfull \hbox (8.85394pt too wide) in paragraph at lines 27--28
-[]\T1/cmr/m/n/14.4 Les co˚ts ma-tÈ-riels sont di-mi-nuÈs puisque seuls sub-sist
-ent les switchs
- []
-
-)
-Underfull \hbox (badness 10000) in paragraph at lines 30--119
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.28 \end{list}
+                <./images/routage_normal.png>])
+Underfull \hbox (badness 10000) in paragraph at lines 30--128
 
  []
 
 (./histoire.tex
-Overfull \hbox (10.8554pt too wide) in paragraph at lines 1--2
-[]\T1/cmr/m/n/14.4 La res-source "A Sur-vey of Software-De ned Net-wor-king : P
-ast, Present,
- []
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 1--2
 
  []
@@ -1417,13 +1374,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 3--4
 
  []
 
+[6pdfTeX warning (ext4): destination with the same identifier (name{figure.2}) 
+has been already used, duplicate ignored
 
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 15.60004pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[8]
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.4 
+     <./images/openflow.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 5--6
 
  []
@@ -1439,7 +1396,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 9--10
  []
 
 )
-Underfull \hbox (badness 10000) in paragraph at lines 11--122
+Underfull \hbox (badness 10000) in paragraph at lines 11--131
 
  []
 
@@ -1449,16 +1406,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 1--2
  []
 
 
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 15.60004pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[9]
-Overfull \hbox (174.96782pt too wide) in paragraph at lines 3--3
-[][][]\T1/cmr/m/n/8 .[][]$\T1/cmtt/m/n/8 http : / / www . networkworld . com / 
-article / 2189197 / lan-[]wan / google-[]s-[]software-[]defined-[]openflow-[]ba
-ckbone-[]drives-[]wan-[]links-[]to-[]100-[]-[]utilization .
+Overfull \hbox (202.65283pt too wide) in paragraph at lines 3--3
+[][][]\OT1/cmr/m/n/9 .[][]$\OT1/cmtt/m/n/9 http : / / www . networkworld . com 
+/ article / 2189197 / lan-[]wan / google-[]s-[]software-[]defined-[]openflow-[]
+backbone-[]drives-[]wan-[]links-[]to-[]100-[]-[]utilization .
  []
 
 
@@ -1466,11 +1417,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 3--4
 
  []
 
-
-Overfull \hbox (14.25621pt too wide) in paragraph at lines 5--5
-[][][]\T1/cmr/m/n/8 .[][]$\T1/cmtt/m/n/8 http : / / www . networkworld . com / 
-article / 2937396 / cloud-[]computing / microsoft-[]needs-[]sdn-[]for-[]azure-[
-]cloud .
+[7]
+Overfull \hbox (24.32986pt too wide) in paragraph at lines 5--5
+[][][]\OT1/cmr/m/n/9 .[][]$\OT1/cmtt/m/n/9 http : / / www . networkworld . com 
+/ article / 2937396 / cloud-[]computing / microsoft-[]needs-[]sdn-[]for-[]azure
+-[]cloud .
  []
 
 
@@ -1480,8 +1431,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 5--6
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 7--7
-[][][]\T1/cmr/m/n/8 .[][][]$\T1/cmtt/m/n/8 https : / / www . opennetworking . o
-rg / images / stories / downloads / sdn-[]resources / onf-[]specifications /
+[][][]\OT1/cmr/m/n/9 .[][][]$\OT1/cmtt/m/n/9 https : / / www . opennetworking .
+ org / images / stories / downloads / sdn-[]resources / onf-[]specifications /
  []
 
 
@@ -1490,20 +1441,15 @@ Underfull \hbox (badness 10000) in paragraph at lines 7--8
  []
 
 
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 15.60004pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[10]
-Overfull \hbox (9.33916pt too wide) in paragraph at lines 9--10
-\T1/cmr/m/n/14.4 lo-gie (les ma-chines vir-tuelles changent sou-vent d'em-pla-c
-e-ment/adresse)).
- []
-
-
 LaTeX Font Warning: Command \relsize invalid in math mode on input line 12.
 
+
+Overfull \hbox (12.26282pt too wide) in paragraph at lines 12--13
+[]\OT1/cmr/m/n/10.95 R^^Seseaux d'en-tre-prises/universit^^Ses : dans le cas de
+ nom-breux ^^Sequipements/protocoles diff^^Serents
+ []
+
+[8]
 
 LaTeX Font Warning: Command \relsize invalid in math mode on input line 13.
 
@@ -1518,73 +1464,48 @@ Underfull \hbox (badness 10000) in paragraph at lines 15--16
 
  []
 
-)
+) [9] (./problematique.tex)
+Overfull \hbox (8.63966pt too wide) in paragraph at lines 1--138
+\OT1/cmr/m/n/10.95 d'abord une ^^Setude des r^^Seseaux SDN (ne connais-sant pas
+ le do-maine), puis d^^Sebut d'exp^^Serimentations
+ []
 
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 15.60004pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[11]
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 15.60004pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[12] (./problematique.tex)
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 15.60004pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[13] (./openflow.tex
-<images/interfaces.jpg, id=278, 372.39125pt x 332.24126pt>
+(./openflow.tex <images/interfaces.jpg, id=262, 372.39125pt x 332.24126pt>
 File: images/interfaces.jpg Graphic file (type jpg)
 
 <use images/interfaces.jpg>
 Package pdftex.def Info: images/interfaces.jpg used on input line 4.
-(pdftex.def)             Requested size: 188.21288pt x 167.92499pt.
-
+(pdftex.def)             Requested size: 205.14653pt x 183.03235pt.
+ [10]
 Underfull \hbox (badness 10000) in paragraph at lines 8--9
 
  []
 
 
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 15.60004pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
+LaTeX Font Warning: Command \relsize invalid in math mode on input line 13.
 
-[14pdfTeX warning (ext4): destination with the same identifier (name{figure.3})
+[11pdfTeX warning (ext4): destination with the same identifier (name{figure.3})
  has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.9 
-     <./images/interfaces.jpg>]
-
-LaTeX Font Warning: Command \relsize invalid in math mode on input line 13.
-
+l.14 
+      <./images/interfaces.jpg>]
 
 LaTeX Font Warning: Command \relsize invalid in math mode on input line 15.
 
 
 LaTeX Font Warning: Command \relsize invalid in math mode on input line 17.
 
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 15.60004pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[15] <images/brocade_flow.png, id=289, 433.62pt x 301.125pt>
+<images/brocade_flow.png, id=273, 433.62pt x 301.125pt>
 File: images/brocade_flow.png Graphic file (type png)
 
 <use images/brocade_flow.png>
 Package pdftex.def Info: images/brocade_flow.png used on input line 25.
-(pdftex.def)             Requested size: 376.42575pt x 261.42065pt.
+(pdftex.def)             Requested size: 410.29308pt x 284.94139pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
 
 
 LaTeX Font Warning: Command \relsize invalid in math mode on input line 32.
@@ -1596,111 +1517,85 @@ LaTeX Font Warning: Command \relsize invalid in math mode on input line 34.
 LaTeX Font Warning: Command \relsize invalid in math mode on input line 36.
 
 
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 15.60004pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[16pdfTeX warning (ext4): destination with the same identifier (name{figure.4})
- has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.37 
-      <./images/brocade_flow.png>]
-
 LaTeX Font Warning: Command \relsize invalid in math mode on input line 45.
 
 
 LaTeX Font Warning: Command \relsize invalid in math mode on input line 47.
 
-
-Overfull \hbox (23.07156pt too wide) in paragraph at lines 47--48
-[]\T1/cmr/m/n/14.4 de mes-sages contrÙ-leur vers switch (res-sem-blant ‡ du re-
-quÍte/rÈponse),
- []
-
+[12]
 
 LaTeX Font Warning: Command \relsize invalid in math mode on input line 49.
 
-<images/session_openflow_whouaouh.png, id=298, 1358.07375pt x 442.65375pt>
+<images/session_openflow_whouaouh.png, id=281, 1358.07375pt x 442.65375pt>
 File: images/session_openflow_whouaouh.png Graphic file (type png)
 
 <use images/session_openflow_whouaouh.png>
 Package pdftex.def Info: images/session_openflow_whouaouh.png used on input lin
 e 55.
-(pdftex.def)             Requested size: 418.25368pt x 136.3229pt.
+(pdftex.def)             Requested size: 455.8843pt x 148.58879pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
+[13pdfTeX warning (ext4): destination with the same identifier (name{figure.4})
+ has been already used, duplicate ignored
 
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 15.60004pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[17]
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.61 L
+      e lecteur d√©sirant rentrer dans les d√©tails techniques peut se r√©f√...
+ <./images/brocade_flow.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 61--61
-[][][]\T1/cmr/m/n/8 .[][]https ://www.opennetworking.org/images/stories/downloa
-ds/sdn-resources/onf-
+[][][]\OT1/cmr/m/n/9 .[][]https ://www.opennetworking.org/images/stories/downlo
+ads/sdn-resources/onf-
  []
 
 ) (./controleur.tex
+Overfull \hbox (5.11969pt too wide) in paragraph at lines 3--5
+\OT1/cmr/m/n/10.95 pos-sible de la to-po-lo-gie r^^Seseau qu'il di-rige. Pour c
+ela, Open-flow pr^^Sevoit cer-tains pa-quets sp^^Secialis^^Ses.
+ []
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 3--5
 
  []
 
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 15.60004pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[18pdfTeX warning (ext4): destination with the same identifier (name{figure.5})
+[14pdfTeX warning (ext4): destination with the same identifier (name{figure.5})
  has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.5 
      <./images/session_openflow_whouaouh.png (PNG copy)>]
-<images/lldp.png, id=313, 423.5825pt x 271.0125pt>
+<images/lldp.png, id=297, 423.5825pt x 271.0125pt>
 File: images/lldp.png Graphic file (type png)
  <use images/lldp.png>
 Package pdftex.def Info: images/lldp.png used on input line 8.
-(pdftex.def)             Requested size: 250.95476pt x 160.56177pt.
+(pdftex.def)             Requested size: 273.53336pt x 175.01468pt.
 
 Underfull \hbox (badness 10000) in paragraph at lines 12--13
 
  []
 
 
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 15.60004pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[19pdfTeX warning (ext4): destination with the same identifier (name{figure.6})
- has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.14 L
-      e contr√¥leur offre finalement une API plus ou moins fournie qui perme...
- <./images/lldp.png (PNG copy)>]
 Underfull \hbox (badness 10000) in paragraph at lines 14--15
 
  []
 
-) (./onos.tex <images/ONOS_archi.png, id=322, 720.6925pt x 276.03125pt>
+) [15pdfTeX warning (ext4): destination with the same identifier (name{figure.6
+}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.144 		\subsubsection
+                      {ONOS} <./images/lldp.png (PNG copy)>] (./onos.tex
+<images/ONOS_archi.png, id=306, 720.6925pt x 276.03125pt>
 File: images/ONOS_archi.png Graphic file (type png)
 
 <use images/ONOS_archi.png>
 Package pdftex.def Info: images/ONOS_archi.png used on input line 10.
-(pdftex.def)             Requested size: 418.25368pt x 160.1951pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
+(pdftex.def)             Requested size: 455.8843pt x 174.6082pt.
 
 
 LaTeX Font Warning: Command \relsize invalid in math mode on input line 16.
@@ -1708,34 +1603,21 @@ LaTeX Font Warning: Command \relsize invalid in math mode on input line 16.
 
 LaTeX Font Warning: Command \relsize invalid in math mode on input line 18.
 
+[16pdfTeX warning (ext4): destination with the same identifier (name{figure.7})
+ has been already used, duplicate ignored
 
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 15.60004pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[20]
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.20 \item A
+            u Nord : une API (northbound) permettant d‚Äô√©crire des applica...
+ <./images/ONOS_archi.png (PNG copy)>]
 
 LaTeX Font Warning: Command \relsize invalid in math mode on input line 20.
 
 
 LaTeX Font Warning: Command \relsize invalid in math mode on input line 22.
 
-) (./faiblesses.tex)
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 15.60004pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[21pdfTeX warning (ext4): destination with the same identifier (name{figure.7})
- has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.139 		\subsubsection
-                      {Menaces au niveau de l'interaction avec les switchs} <./
-images/ONOS_archi.png (PNG copy)>] (./south_threat.tex
+) (./faiblesses.tex) (./south_threat.tex
 
 LaTeX Font Warning: Command \relsize invalid in math mode on input line 6.
 
@@ -1748,20 +1630,7 @@ LaTeX Font Warning: Command \relsize invalid in math mode on input line 10.
 
 LaTeX Font Warning: Command \relsize invalid in math mode on input line 12.
 
-)
-Overfull \hbox (3.30908pt too wide) in paragraph at lines 16--141
-[]\T1/cmr/m/n/14.4 Dans la suite, on tes-tera S,T,D. Mais tou-jours re-la-ti-ve
--ment au contrÙ-
- []
-
-(./north_threat.tex
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 15.60004pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[22]
+[17]) (./north_threat.tex
 
 LaTeX Font Warning: Command \relsize invalid in math mode on input line 6.
 
@@ -1777,17 +1646,17 @@ LaTeX Font Warning: Command \relsize invalid in math mode on input line 12.
 
 LaTeX Font Warning: Command \relsize invalid in math mode on input line 14.
 
-<images/secure_mode.png, id=342, 325.215pt x 192.2382pt>
+<images/secure_mode.png, id=323, 325.215pt x 192.2382pt>
 File: images/secure_mode.png Graphic file (type png)
 
 <use images/secure_mode.png>
 Package pdftex.def Info: images/secure_mode.png used on input line 22.
-(pdftex.def)             Requested size: 250.95476pt x 148.34653pt.
+(pdftex.def)             Requested size: 273.53336pt x 161.69897pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-) (./other_threat.tex
+) (./other_threat.tex [18]
 
 LaTeX Font Warning: Command \relsize invalid in math mode on input line 5.
 
@@ -1797,56 +1666,38 @@ Underfull \hbox (badness 10000) in paragraph at lines 5--6
  []
 
 
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 15.60004pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[23]
 Underfull \hbox (badness 10000) in paragraph at lines 7--8
 
  []
 
 
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 15.60004pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
+LaTeX Font Warning: Command \relsize invalid in math mode on input line 11.
 
-[24pdfTeX warning (ext4): destination with the same identifier (name{figure.8})
+[19pdfTeX warning (ext4): destination with the same identifier (name{figure.8})
  has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.11 \item S
-            ur les √©changes inter-contr√¥leurs : le concept SDN pr√©voit la...
- <./images/secure_mode.png>]
-
-LaTeX Font Warning: Command \relsize invalid in math mode on input line 11.
-
+l.12 
+      <./images/secure_mode.png>]
 
 LaTeX Font Warning: Command \relsize invalid in math mode on input line 13.
 
 
 LaTeX Font Warning: Command \relsize invalid in math mode on input line 15.
 
-<images/threats.png, id=357, 745.8264pt x 330.2739pt>
+<images/threats.png, id=338, 745.8264pt x 330.2739pt>
 File: images/threats.png Graphic file (type png)
  <use images/threats.png>
 Package pdftex.def Info: images/threats.png used on input line 22.
-(pdftex.def)             Requested size: 418.25368pt x 185.21416pt.
-)
+(pdftex.def)             Requested size: 455.8843pt x 201.88pt.
+) (./scenarios.tex [20pdfTeX warning (ext4): destination with the same identifi
+er (name{figure.9}) has been already used, duplicate ignored
 
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-(./scenarios.tex
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 15.60004pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[25]
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.2 
+     <./images/threats.png>]
 
 LaTeX Font Warning: Command \relsize invalid in math mode on input line 7.
 
@@ -1865,75 +1716,48 @@ LaTeX Font Warning: Command \relsize invalid in math mode on input line 19.
 
 LaTeX Font Warning: Command \relsize invalid in math mode on input line 22.
 
+) [21] (./scenario1.tex
+Underfull \hbox (badness 10000) in paragraph at lines 1--8
 
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 15.60004pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
+ []
 
-[26pdfTeX warning (ext4): destination with the same identifier (name{figure.9})
- has been already used, duplicate ignored
+[22])
+Overfull \hbox (0.12292pt too wide) in paragraph at lines 34--161
+\OT1/cmr/m/n/10.95 -d'une part l'uti-li-sa-tion d'un chif-fre-ment entre contr^
+oleur et switch per-met th^^Seoriquement d'^^Seviter
+ []
 
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.24 
-      <./images/threats.png>])
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 15.60004pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[27] (./scenario1.tex) (./scenario2.tex) (./scenario3.tex)
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 15.60004pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[28] (./tutoriel.tex
-\openout4 = `test.pyg'.
+[23] (./scenario2.tex [24]) [25] (./scenario3.tex) [26] (./tutoriel.tex
+\openout4 = `test2_template.pyg'.
 
 
-(./_minted-test/210628CC691972310DE43065917D6E770DE0FEAB0484F323C0938DF41228E2B
-4.pygtex
-LaTeX Font Info:    Font shape `T1/cmtt/bx/n' in size <14.4> not available
-(Font)              Font shape `T1/cmtt/m/n' tried instead on input line 3.
-)
-\openout4 = `test.pyg'.
+(./_minted-test2_template/9D7D7FC2A13A5FCC1D71E55C23CB3E21A64D4ABF6BB2AC84A5BFF
+69D50CE1732.pygtex)) [27]
+No file test2_template.bbl.
+runsystem(rm "test2_template.pyg")...executed.
 
-
-(./_minted-test/1F1D118134BF06CD6D92F30548B1717F0DE0FEAB0484F323C0938DF41228E2B
-4.pygtex))
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 15.60004pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[29]
-No file test.bbl.
-runsystem(rm "test.pyg")...executed.
-
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 183.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 183.
-(./test.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 183.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 183.
-Package rerunfilecheck Info: File `test.out' has not changed.
-(rerunfilecheck)             Checksum: 70E850158282DA18937241E9E8F0C4BB;2320.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 183.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 187.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 187.
+(./test2_template.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 187.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 187.
+Package rerunfilecheck Info: File `test2_template.out' has not changed.
+(rerunfilecheck)             Checksum: 5DAE36BC961448E663CB0F5E47727D45;2383.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 187.
  ) 
 Here is how much of TeX's memory you used:
- 22136 strings out of 494883
- 411082 string characters out of 6178692
- 550816 words of memory out of 5000000
- 24862 multiletter control sequences out of 15000+600000
- 19007 words of font info for 42 fonts, out of 8000000 for 9000
+ 22458 strings out of 494883
+ 413953 string characters out of 6178692
+ 558089 words of memory out of 5000000
+ 25180 multiletter control sequences out of 15000+600000
+ 12428 words of font info for 45 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
- 62i,13n,67p,1333b,613s stack positions out of 5000i,500n,10000p,200000b,80000s
-pdfTeX warning (dest): name{Hfootnote.18} has been referenced but does not ex
+ 62i,13n,67p,1344b,477s stack positions out of 5000i,500n,10000p,200000b,80000s
+pdfTeX warning (dest): name{Hfootnote.19} has been referenced but does not ex
 ist, replaced by a fixed one
+
+pdfTeX warning (dest): name{Hfootnote.18} has been referenced but does not exis
+t, replaced by a fixed one
 
 pdfTeX warning (dest): name{Hfootnote.17} has been referenced but does not exis
 t, replaced by a fixed one
@@ -1986,25 +1810,22 @@ pdfTeX warning (dest): name{Hfootnote.2} has been referenced but does not exist
 pdfTeX warning (dest): name{Hfootnote.1} has been referenced but does not exist
 , replaced by a fixed one
 
- </home/alka/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecti1440.600pk> </home/alka
-/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecit1440.600pk> </home/alka/.texmf-var/
-fonts/pk/ljfour/jknappen/ec/ectt1440.600pk> </home/alka/.texmf-var/fonts/pk/ljf
-our/jknappen/ec/ecbx1000.600pk> </home/alka/.texmf-var/fonts/pk/ljfour/jknappen
-/ec/ecrm0700.600pk> </home/alka/.texmf-var/fonts/pk/ljfour/jknappen/ec/eccc1000
-.600pk> </home/alka/.texmf-var/fonts/pk/ljfour/jknappen/ec/ectt0800.600pk> </ho
-me/alka/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm0800.600pk> </home/alka/.tex
-mf-var/fonts/pk/ljfour/jknappen/ec/ecbx1200.600pk> </home/alka/.texmf-var/fonts
-/pk/ljfour/jknappen/ec/ecbx1440.600pk> </home/alka/.texmf-var/fonts/pk/ljfour/j
-knappen/ec/ecrm1000.600pk> </home/alka/.texmf-var/fonts/pk/ljfour/jknappen/ec/e
-crm1440.600pk> </home/alka/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1728.600p
-k> </home/alka/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1728.600pk> </home/al
-ka/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx2488.600pk> </home/alka/.texmf-va
-r/fonts/pk/ljfour/jknappen/ec/ecrm2074.600pk></usr/share/texlive/texmf-dist/fon
-ts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on test.pdf (30 pages, 1119598 bytes).
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/
+share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/
+texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/share/texli
+ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texm
+f-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/
+fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/t
+ype1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/pub
+lic/amsfonts/cm/cmr9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsf
+onts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/c
+m/cmsy6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti1
+0.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt9.pfb>
+Output written on test2_template.pdf (28 pages, 1133523 bytes).
 PDF statistics:
- 997 PDF objects out of 1000 (max. 8388607)
- 413 compressed objects within 5 object streams
+ 451 PDF objects out of 1000 (max. 8388607)
+ 387 compressed objects within 4 object streams
  91 named destinations out of 1000 (max. 500000)
- 316 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 324 words of extra memory for PDF output out of 10000 (max. 10000000)
 

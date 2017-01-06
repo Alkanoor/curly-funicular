@@ -1,4 +1,4 @@
-Pour éclairer de manière expérimentale le large spectre de menaces auquel peut être soumis un réseau SDN, j'ai mis en place au fur et à mesure 6 preuves de concept, certaines n'étant pas très complexes mais démontrant toutefois certaines faiblesses. Même si parmi les scénarios envisagés il y en a certains qui sont spécifiques à ONOS (notamment ceux qui concernent l'interface nord), on verra que les attaques sont globalement les mêmes que dans un réseau classique, avec toutefois des impacts plus lourds.
+Pour éclairer de manière expérimentale le large spectre de menaces auquel peut être soumis un réseau SDN, j'ai mis en place au fur et à mesure 6 preuves de concept, certaines n'étant pas très complexes mais démontrent toutefois certaines faiblesses. Même si parmi les scénarios envisagés il y en a certains qui sont spécifiques à ONOS (notamment ceux qui concernent l'interface nord), on verra que les attaques sont globalement les mêmes que dans un réseau classique, avec toutefois des impacts plus lourds.
 
 Pour rester dans la nomenclature précédente, voici les attaques envisagées :
 
@@ -16,4 +16,12 @@ Pour rester dans la nomenclature précédente, voici les attaques envisagées :
 \item \underline{Scénario 4 :} DoS (interface nord) \\
 \underline{But :} Altérer les performances du contrôleur, tester certaines permissions critiques avec le Secure-Mode.
 
+\item \underline{Scénario 5 :} Information disclosure (interface nord) \\
+\underline{But :} A partir d'une application banale qui n'a pas le droit de regarder quelles sont les autres applications présentes sur le contrôleur, observer quels éléments peuvent quand même être rendus accessibles sans que cela soit explicitement prévu.
+
+\item \underline{Scénario 6 :} Spoofing (interface nord) \\
+\underline{But :} Tester la frontière entre permission liée à une application et permission liée à l'API REST.
+
 \end{list}
+
+Chacun de ces 6 scénarios est détaillé séparément dans la partie suivante.

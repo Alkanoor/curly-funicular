@@ -1,0 +1,5 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYGZdl{} sudo apt install docker.io
+\PYGZdl{} sudo usermod \PYGZhy{}aG docker \PYG{k}{\PYGZdl{}(}whoami\PYG{k}{)} \PYG{c+c1}{\PYGZsh{} pour ajouter}
+\PYG{c+c1}{\PYGZsh{}l\PYGZsq{}utilisateur actuel au groupe docker}
+\end{Verbatim}

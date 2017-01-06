@@ -1,0 +1,27 @@
+Cette partie montre comment mettre en place tous les éléments pour reproduire les attaques évoquées précédemment. On commencera donc par installer ONOS, mininet, puis on téléchargera certains outils pour reproduire les attaques.
+
+\subsection{Installation d'ONOS}
+
+Choisir une machine (virtuelle ou non) sur laquelle installer le contrôleur (durant le stage j'ai utilisé une debian serveur avec accès ssh pour y mettre ONOS). Sur la machine, installer java8 si il ne l'est pas encore. Se rendre à l'adresse \url{https://wiki.onosproject.org/display/ONOS/Downloads}. Télécharger la dernière release (à l'heure actuelle, Hummingbird).
+
+\begin{minted}{bash}
+$ wget http://downloads.onosproject.org/release/onos-1.7.1.tar.gz
+$ tar -xvf onos-1.7.1.tar.gz
+$ cd onos-1.7.1
+$ cd 
+\end{minted}
+
+Créer un
+
+\subsection{Installation de Mininet}
+
+Il est possible de suivre les instructions à l'adresse \url{http://mininet.org/download/}. Télécharger l'image qui convient la plus récente sur github (actuellement 2.2.1) : \url{https://github.com/mininet/mininet/wiki/Mininet-VM-Images}. La machine virtuelle offre un accès ssh avec les identifiants \textit{mininet / mininet}.
+
+Il est également possible d'installer mininet sur une machine virtuelle déjà existante en clonant \url{git://github.com/mininet/mininet} et en exécutant \textit{mininet/util/install.sh} dans le dossier mininet.
+
+C'est déjà fini.
+
+
+\subsection{Configuration}
+
+Pour des raisons de simplicité, il n'est pas nécessaire de modifier trop d'éléments. Par contre, pour que le contrôleur puisse au moins communiquer aux switchs virtuels, il est nécessaire de créer une interface commune entre ONOS et Mininet.
