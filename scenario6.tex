@@ -1,0 +1,22 @@
+\underline{Prérequis/Hypothèses :}\\
+- Un contrôleur ONOS mal configuré (mot de passe faible pour l'API REST)\\
+- Un utilisateur malveillant qui obtient en conséquence des droits d’utilisation de l’API Rest\\
+
+
+\underline{Buts :}\\
+Tirer parti de la politique de gestion d’accès en mode role-based pour qu’un utilisateur avec des droits suffisants puisse altérer de manière non prévue le fonctionnement du contrôleur ou de certaines applications.
+
+\underline{Déroulement :}\\
+Un utilisateur mal intentionné utilise des fonctionnalités de l’API Rest d’ONOS pour modifier le plus possible le bon fonctionnement du contrôleur.
+
+\underline{Détails techniques :}\\
+Se référer au scénario 6 décrit dans l'annexe (page).
+
+\underline{Résultat :}\\
+Depuis l'API REST il est possible d'avoir un impact conséquent sur toutes les parties du contrôleur (applications, mais aussi éléments du réseau et configuration interne). On peut par exemple choisir le comportement par défaut associé à la réception d'un PACKET\_IN depuis l'API (et donc éventuellement court-circuiter la réception du paquet par des applications quelconques si on choisit de tout renvoyer automatiquement en tant que PACKET\_OUT \footnote{\label{ONOS_REST}http://nss.kaist.ac.kr/wp-content/uploads/2016/05/p23-lee.compressed.pdf}), désactiver ou activer une application, supprimer un élément réseau connecté ...
+
+\underline{Parades proposées :}\\
+Le fait de mélanger des droits utilisateurs en rôle et des droits pour chaque application est relativement embêtant dans la mesure où un utilisateur avec des droits suffisants peut théoriquement agir sur toutes les applications existantes sans distinction. Il faudrait je pense ajouter la possibilité de pouvoir agir uniquement sur certaines applications (créer des groupes d’applications qu’on associe à un droit particulier, de cette manière un utilisateur peut avoir les droits de modifications sur certaines applications et pas sur d’autres). Mais là encore, si l'administrateur configure les permissions de manière correcte et si peu de gens ont un accès à l'API REST d'administration, cela constitue une bonne première défense.
+
+\underline{Limitations/Impact/probabilité :}\\
+L’impact de cette "attaque" est fort (la modification de certaines options peut entraîner de nombreux DoS potentiels). La probabilité elle, reste faible, car l’utilisateur malveillant doit tout de même disposer des droits liés à l’utilisation de l’API ainsi que d’un accès à l’API. Il faut donc veiller à changer les identifiants par défaut sur l’interface nord pour éviter qu’un utilisateur quelconque puisse utiliser cette API et prévoir une politique de gestion de mot de passe robuste à ce niveau.
