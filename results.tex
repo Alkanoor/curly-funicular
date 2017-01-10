@@ -1,12 +1,14 @@
 6 attaques ont donc été réalisées et s'avèrent fonctionnelles (même si les impacts et risques pour chacune sont assez différents). Dans les différentes conclusions tirées, on trouve principalement deux éléments communs :
 
-\begin{list}{\Asteriskus}{}
+\begin{list}{$\Asteriscus$}{}
 
-\item La possibilité de contrer certaines attaques lorsqu'on rajoute de l'intelligence humaine dans le contrôleur (algorithmes factorisant la création de règles, gestion des paquets ARP par le contrôleur ...). Cela nécessite cependant du temps et peut s'avérer coûteux au niveau des ressources supplémentaires utilisées sur le contrôleur.
+\item La possibilité de contrer certaines attaques lorsqu'on rajoute de l'intelligence humaine dans le contrôleur (algorithmes factorisant la création de règles, gestion des paquets ARP par le contrôleur ...). Cela nécessite cependant du temps (de développement) et peut s'avérer coûteux au niveau du temps de traitement sur le contrôleur.
 
 \item La nécessité de configurer correctement ONOS au niveau de l'interface nord, et d'être conscient de l'implication éventuelle de chaque permission octroyée en terme de potentiel d'action sur le contrôleur. Cela étant primordial pour éviter la prise de contrôle du contrôleur par une entité externe.
 
 \end{list}
 
-Les trois premières attaques permettent de montrer qu'on retrouve les vulnérabilités de réseaux classiques sur un réseau SDN. Les impacts y sont globalement plus élevés mais les contre mesure plus simple à prendre (avoir une vue globale du réseau permet rapidement de bien estimer l'impact d'une action quelconque, ce qui n'est pas forcément réalisé sur un réseau décentralisé).
-Les trois dernières sont propres à ONOS mais on retrouve les mêmes problématiques sur tous les contrôleurs SDN. ONOS et OpenDayLight sont les contrôleurs les plus avancés en la matière, grâce aux modes additionnels qu'ils proposent (secure mode pour ONOS et AAA (Authentification-Authorization-A) pour OpenDayLight). OpenDayLight implémente même un module anti DoS.
+Les trois premières attaques permettent de montrer qu'on retrouve les vulnérabilités de réseaux classiques sur un réseau SDN. Les impacts y sont globalement plus élevés mais les contre-mesures plus simple à prendre (avoir une vue globale du réseau permet rapidement de bien estimer l'impact d'une action quelconque, ce qui n'est pas forcément réalisé sur un réseau décentralisé).
+Les trois dernières sont propres à ONOS mais on retrouve les mêmes problématiques sur tous les contrôleurs SDN. ONOS et OpenDayLight restent à ma connaissance les contrôleurs les plus avancés en matière de sécurité, grâce aux modes additionnels qu'ils proposent (secure mode pour ONOS et AAA (Authentification-Authorization-Accounting) pour OpenDayLight). OpenDayLight implémente même un module anti DoS. En revanche, on trouve un grand nombre de documents qui prouvent la dangerosité liée à l'utilisation de nombreux contrôleurs ne proposant pas au minimum une restriction des possibilités offertes à l'utilisateur externe qui a le droit de rajouter une application.
+
+Les tests effectués sont cependant loin de couvrir l'intégralité des menaces qui existent sur le contrôleur, c'est pourquoi la partie suivante tente de compléter celles-ci.

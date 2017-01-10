@@ -1,33 +1,34 @@
 \select@language {french}
-\contentsline {section}{\numberline {1}R\IeC {\'e}seau SDN (Software Defined Network)}{3}{section.1}
-\contentsline {subsection}{\numberline {1.1}Motivation}{3}{subsection.1.1}
-\contentsline {subsection}{\numberline {1.2}Concepts}{4}{subsection.1.2}
-\contentsline {subsection}{\numberline {1.3}Historique}{6}{subsection.1.3}
-\contentsline {subsection}{\numberline {1.4}Exemples d'applications}{7}{subsection.1.4}
-\contentsline {section}{\numberline {2}Cadre de l'\IeC {\'e}tude}{10}{section.2}
-\contentsline {subsection}{\numberline {2.1}Probl\IeC {\'e}matique et objectifs}{10}{subsection.2.1}
-\contentsline {subsection}{\numberline {2.2}Architecture d'un r\IeC {\'e}seau SDN}{10}{subsection.2.2}
-\contentsline {subsubsection}{\numberline {2.2.1}Openflow}{11}{subsubsection.2.2.1}
-\contentsline {subsubsection}{\numberline {2.2.2}Contr\IeC {\^o}leur SDN}{14}{subsubsection.2.2.2}
-\contentsline {subsubsection}{\numberline {2.2.3}ONOS}{16}{subsubsection.2.2.3}
-\contentsline {subsection}{\numberline {2.3}Surface d'attaque}{17}{subsection.2.3}
-\contentsline {subsubsection}{\numberline {2.3.1}Menaces au niveau de l'interaction avec les switchs}{17}{subsubsection.2.3.1}
-\contentsline {subsubsection}{\numberline {2.3.2}Menaces au niveau de l'interaction utilisateur}{18}{subsubsection.2.3.2}
-\contentsline {subsubsection}{\numberline {2.3.3}Autres menaces}{19}{subsubsection.2.3.3}
-\contentsline {subsection}{\numberline {2.4}Sc\IeC {\'e}narios envisag\IeC {\'e}s}{20}{subsection.2.4}
-\contentsline {section}{\numberline {3}Audit}{22}{section.3}
-\contentsline {subsection}{\numberline {3.1}Man in the middle au niveau de l'interface sud}{22}{subsection.3.1}
-\contentsline {subsection}{\numberline {3.2}Alt\IeC {\'e}ration de la topologie depuis l'interface sud}{24}{subsection.3.2}
-\contentsline {subsection}{\numberline {3.3}Deni de service au niveau de l'interface sud}{26}{subsection.3.3}
-\contentsline {subsection}{\numberline {3.4}Deni de service au niveau de l'interface nord}{28}{subsection.3.4}
-\contentsline {subsection}{\numberline {3.5}Fuites d'information au niveau de l'interface nord}{30}{subsection.3.5}
-\contentsline {subsection}{\numberline {3.6}Mauvaise configuration au niveau de l'interface nord}{32}{subsection.3.6}
-\contentsline {section}{\numberline {4}Validation et \IeC {\'e}valuation}{34}{section.4}
-\contentsline {subsection}{\numberline {4.1}R\IeC {\'e}sultats de l'\IeC {\'e}tude}{34}{subsection.4.1}
-\contentsline {subsection}{\numberline {4.2}Autres consid\IeC {\'e}rations}{34}{subsection.4.2}
-\contentsline {section}{\numberline {5}Perspectives \IeC {\`a} l'issue du stage}{34}{section.5}
-\contentsline {section}{\numberline {6}Ressources}{34}{section.6}
-\contentsline {section}{\numberline {7}Annexe}{35}{section.7}
-\contentsline {subsection}{\numberline {7.1}Installation d'ONOS}{35}{subsection.7.1}
-\contentsline {subsection}{\numberline {7.2}Installation de Mininet}{35}{subsection.7.2}
-\contentsline {subsection}{\numberline {7.3}Configuration}{35}{subsection.7.3}
+\contentsline {section}{\numberline {1}R\IeC {\'e}seau SDN (Software Defined Network)}{4}{section.1}
+\contentsline {subsection}{\numberline {1.1}Motivation}{4}{subsection.1.1}
+\contentsline {subsection}{\numberline {1.2}Concepts}{5}{subsection.1.2}
+\contentsline {subsection}{\numberline {1.3}Historique}{7}{subsection.1.3}
+\contentsline {subsection}{\numberline {1.4}Exemples d'applications}{8}{subsection.1.4}
+\contentsline {section}{\numberline {2}Cadre de l'\IeC {\'e}tude}{11}{section.2}
+\contentsline {subsection}{\numberline {2.1}Probl\IeC {\'e}matique et objectifs}{11}{subsection.2.1}
+\contentsline {subsection}{\numberline {2.2}Architecture d'un r\IeC {\'e}seau SDN}{11}{subsection.2.2}
+\contentsline {subsubsection}{\numberline {2.2.1}Openflow}{12}{subsubsection.2.2.1}
+\contentsline {subsubsection}{\numberline {2.2.2}Contr\IeC {\^o}leur SDN}{15}{subsubsection.2.2.2}
+\contentsline {subsubsection}{\numberline {2.2.3}ONOS}{17}{subsubsection.2.2.3}
+\contentsline {subsection}{\numberline {2.3}Surface d'attaque}{18}{subsection.2.3}
+\contentsline {subsubsection}{\numberline {2.3.1}Menaces au niveau de l'interaction avec les switchs}{18}{subsubsection.2.3.1}
+\contentsline {subsubsection}{\numberline {2.3.2}Menaces au niveau de l'interaction utilisateur}{19}{subsubsection.2.3.2}
+\contentsline {subsubsection}{\numberline {2.3.3}Autres menaces}{20}{subsubsection.2.3.3}
+\contentsline {subsection}{\numberline {2.4}Sc\IeC {\'e}narios envisag\IeC {\'e}s}{21}{subsection.2.4}
+\contentsline {section}{\numberline {3}Audit}{23}{section.3}
+\contentsline {subsection}{\numberline {3.1}Man in the middle au niveau de l'interface sud}{23}{subsection.3.1}
+\contentsline {subsection}{\numberline {3.2}Alt\IeC {\'e}ration de la topologie depuis l'interface sud}{25}{subsection.3.2}
+\contentsline {subsection}{\numberline {3.3}Deni de service au niveau de l'interface sud}{27}{subsection.3.3}
+\contentsline {subsection}{\numberline {3.4}Deni de service au niveau de l'interface nord}{29}{subsection.3.4}
+\contentsline {subsection}{\numberline {3.5}Fuites d'information au niveau de l'interface nord}{31}{subsection.3.5}
+\contentsline {subsection}{\numberline {3.6}Mauvaise configuration au niveau de l'interface nord}{33}{subsection.3.6}
+\contentsline {section}{\numberline {4}Validation et \IeC {\'e}valuation}{35}{section.4}
+\contentsline {subsection}{\numberline {4.1}R\IeC {\'e}sultats de l'\IeC {\'e}tude}{35}{subsection.4.1}
+\contentsline {subsection}{\numberline {4.2}Autres consid\IeC {\'e}rations}{35}{subsection.4.2}
+\contentsline {subsection}{\numberline {4.3}Conclusion}{37}{subsection.4.3}
+\contentsline {section}{\numberline {5}Perspectives \IeC {\`a} l'issue du stage}{37}{section.5}
+\contentsline {section}{\numberline {6}Ressources}{37}{section.6}
+\contentsline {section}{\numberline {7}Annexe}{38}{section.7}
+\contentsline {subsection}{\numberline {7.1}Installation d'ONOS}{38}{subsection.7.1}
+\contentsline {subsection}{\numberline {7.2}Installation de Mininet}{38}{subsection.7.2}
+\contentsline {subsection}{\numberline {7.3}Configuration}{38}{subsection.7.3}

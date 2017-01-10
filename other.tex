@@ -1,0 +1,33 @@
+Je ne l'ai découvert que trop tard, mais durant la blackhat 2016, s'est déroulée une présentation sur le sujet du stage \footnote{\url{https://www.blackhat.com/docs/us-16/materials/us-16-Yoon-Attacking-SDN-Infrastructure-Are-We-Ready-For-The-Next-Gen-Networking.pdf}}. Cette présentation résume les différents points névralgiques d'ONOS et d'OpenDayLight, et les schémas y sont limpides (pour les lecteurs désirant bien se figurer certaines attaques). 
+
+Parmi les principales attaques qui n'ont pas encore été évoquées, on trouve :
+
+\begin{list}{$\Asteriscus$}{}
+
+\item les attaques sur les switchs : si ceux-ci n'implémentent pas correctement le protocole Openflow ou sont faiblement configurés et qu'il est possible d'en prendre le contrôle, on se retrouve dans le cas où on peut plus facilement exécuter les attaques précédentes sur l'interface sud d'homme au milieu et de deni de service.
+
+\item les attaques liées à la gestion multi-contrôleurs éventuelle : il existe une possibilité de contrôler un switch depuis plusieurs contrôleurs à la fois (par exemple pour assurer le service si un contrôleur tombe en panne) et également une possibilité d'échange d'informations entre contrôleurs. Or il n'existe pas encore ni de mécanisme standardisé ni de sécurité très élevée pour de tels échanges, et la capacité des switchs à être contrôlés par plusieurs contrôleurs repose sur la notion de contrôleurs maître/esclaves qui peut aboutir à un deni de service si un contrôleur malveillant monopolise le rôle de maître sur un switch (sans parler des vulnérabilités existantes sur les switchs qui permettent même en étant un contrôleur esclave de modifier les tables de flux \footnote{Un collègue à Telecom Sudparis a travaillé sur ce point et montré la vulnérabilité sur certains switchs}).
+
+\item les attaques sur le plan de communication : comme on l'a déjà dit, sans TLS, pas de confidentialité ni de confiance dans les données qui transitent via Openflow et donc possibilité pour un attaquant situé dans le réseau de prendre le contrôle d'une partie de celui-ci et de créer des messages malicieux dirigés contre le contrôleur. Mais l'activation de TLS avec authentification mutuelle n'est pas évidente à mettre en place (PKI fiable, qui puisse assurer la révocation, ...).
+
+\item les attaques sur les environnements de développement et de déploiement : lors de la construction du contrôleur avec maven le code mais aussi d'autres éléments nécessaires peuvent être (et le sont même dans tous les cas réels) obtenus de manière distante sur des dépôts externes. Si la machine utilisée est corrompue (fichiers de configurations modifiés, DNS cache poisoning, ARP spoofing, malware, ...) alors toute l'installation qui en découle sur les contrôleurs peut fournir une opportunité énorme à l'attaquant de contrôler l'ensemble du réseau. C'est une menace très importante en terme d'impact et dont la probabilité n'est pas si faible qu'on pourrait le penser (social engineering, concentration des efforts sur une seule cible).
+
+\item les attaques sur les stations de contrôle et d'administration : vu que certains éléments du conteneur OSGi d'ONOS permettent d'obtenir des droits importants sur le réseau, il est, comme sur un réseau classique, crucial de bien protéger les machines utilisées pour l'administration (là encore le social engineering peut être utilisé).
+
+\end{list}
+
+Pour bien mettre en valeur les spécificités éventuelles d'ONOS, le tableau suivant récapitule impacts et parades des différentes catégories d'attaque qu'on est susceptible de retrouver.
+
+\begin{small}
+
+\begin{tabularx}{\textwidth}{|X|X|X|}
+
+\hline
+Catégorie\newline d'attaque et spécificité & Impact & Parade\\
+\hline
+Flux réseaux forgés \newline -non spécifique SDN \newline -non spécifique ONOS & Injection de trafic pouvant conduire à du DoS ou de l'homme au milieu avec des conséquences plus grandes que sur un réseau classique & Programmation intelligente du contrôleur\\ 
+\hline 
+
+\end{tabularx}
+
+\end{small}
