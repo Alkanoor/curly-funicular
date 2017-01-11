@@ -25,10 +25,11 @@
 \contentsline {section}{\numberline {4}Validation et \IeC {\'e}valuation}{35}{section.4}
 \contentsline {subsection}{\numberline {4.1}R\IeC {\'e}sultats de l'\IeC {\'e}tude}{35}{subsection.4.1}
 \contentsline {subsection}{\numberline {4.2}Autres consid\IeC {\'e}rations}{35}{subsection.4.2}
-\contentsline {subsection}{\numberline {4.3}Conclusion}{37}{subsection.4.3}
-\contentsline {section}{\numberline {5}Perspectives \IeC {\`a} l'issue du stage}{37}{section.5}
-\contentsline {section}{\numberline {6}Ressources}{37}{section.6}
-\contentsline {section}{\numberline {7}Annexe}{38}{section.7}
-\contentsline {subsection}{\numberline {7.1}Installation d'ONOS}{38}{subsection.7.1}
-\contentsline {subsection}{\numberline {7.2}Installation de Mininet}{38}{subsection.7.2}
-\contentsline {subsection}{\numberline {7.3}Configuration}{38}{subsection.7.3}
+\contentsline {subsection}{\numberline {4.3}Retour sur la m\IeC {\'e}thode STRIDE}{39}{subsection.4.3}
+\contentsline {subsection}{\numberline {4.4}Conclusion}{39}{subsection.4.4}
+\contentsline {section}{\numberline {5}Perspectives \IeC {\`a} l'issue du stage}{40}{section.5}
+\contentsline {section}{\numberline {6}Ressources}{41}{section.6}
+\contentsline {section}{\numberline {7}Annexe}{42}{section.7}
+\contentsline {subsection}{\numberline {7.1}Installation d'ONOS}{42}{subsection.7.1}
+\contentsline {subsection}{\numberline {7.2}Installation de Mininet}{42}{subsection.7.2}
+\contentsline {subsection}{\numberline {7.3}Configuration}{42}{subsection.7.3}

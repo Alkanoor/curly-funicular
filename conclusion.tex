@@ -1,1 +1,20 @@
-conclu
+Comme on peut le constater, la route est encore longue avant de pouvoir disposer d'un contrôleur complètement fiable et imprenable, et de moyens permettant de vérifier cette fiabilité.
+
+Le paradigme SDN est de toute façon, par nature, soumis à des menaces plus importantes. En effet, toute abstraction simplifiant ce sur quoi elle repose, permet avec beaucoup moins d'efforts d'obtenir un résultat équivalent (pensons aux systèmes d'exploitation actuels et à quel point ils nous simplifient la vie de manière considérable en abstrayant les instructions machines). Le même raisonnement peut s'appliquer ici : on peut s'attendre à ce que la gestion du réseau soit beaucoup plus agréable et simple avec l'adoption de SDN, mais cela repose sur 2 choses :
+
+\begin{list}{$\Asteriscus$}{}
+
+\item le système d'exploitation réseau doit être fiable (on vient de le voir, c'est très difficile à obtenir, car les menaces sont nombreuses et distantes. Si on revient à la comparaison avec les systèmes d'exploitation au sens classique, certes il est relativement "simple" de compromettre une machine lorsqu'on y a un accès physique, mais ça l'est beaucoup moins en cas d'accès distant. Or avec un système d'exploitation réseau tout n'est qu'accès distant, donc l'accès aux primitives de base du système est plus simple que sur un PC (plus simple de s'immiscer sur un réseau pour y envoyer une instruction Openflow que de s'immiscer sur un PC pour y exécuter une instruction assembleur)). Si des efforts suffisants sont déployés, il est envisageable d'obtenir ce point, mais cela demande une visions globale et une vigilance très importante sur ce qui est déployé sur le contrôleur. Dans l'idéal on peut supprimer un risque important en interdisant le déploiement d'applications qui n'ont pas été scrupuleusement vérifiées sur le contrôleur.
+\item le système d'exploitation réseau doit être performant. Certes l'exemple de google montre qu'il est possible d'utiliser quasiment 100\% des liens, mais la présence du contrôleur et la nécessité de rediriger certains paquets vers lui peut ralentir le débit global. De plus on ne dispose pas encore de données sur les performances réelles obtenues en production (ce qui est dommage puisque cela ne pousse pas l'industrie frileuse à envisager une adoption progressive de SDN).
+
+\end{list}
+
+Si ces deux points réunis, il n'y a pas de raison pour que le déploiement de SDN ne se poursuive pas en dehors des gros data centers (mais cela reste un avis personnel uniquement basé sur une logique qui ne prend pas trop en compte la façon dont les réseaux actuels se déploient réellement). ONOS, pour l'avoir étudié d'avantage en détail, me semble un contrôleur prometteur (mais est assez proche d'OpenDayLight dans la structure et la philosophie, donc il est assez difficile de se prononcer sur un éventuel contrôleur représentant SDN qui soit beaucoup plus avancé que ses concurrents). Même si certains contrôleurs comme RoseMary ou SE-floodlight proposent des protections supplémentaires notamment concernant la mémoire bien isolée pour chaque application, la possibilité de distribution d'ONOS (et d'OpenDayLight d'ailleurs) et sa grande extensibilité lui confère un potentiel de déploiement industriel intéressant. 
+
+Bien que l'ordre des opérations indiqué soit assez subjectif, on pourra si on souhaite déployer un réseau SDN avec le contrôleur ONOS vérifier dans l'ordre les points suivants :\\
+- Déployer le contrôleur sur un réseau privé\\
+- Séparer le réseau privé de gestion et le réseau privé de commutation\\
+- Sécuriser le conteneur OSGi (donc ici Apache-Karaf), c'est à dire changer tous les identifiants par défaut\\
+- Sécuriser les éventuels bundle OSGi rajoutés (permissions les plus basses pour tout nouveau bundle par défaut notamment)\\
+- Changer tous les identifiants par défaut\\
+-

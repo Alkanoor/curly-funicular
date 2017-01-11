@@ -20,14 +20,36 @@ Pour bien mettre en valeur les spécificités éventuelles d'ONOS, le tableau su
 
 \begin{small}
 
-\begin{tabularx}{\textwidth}{|X|X|X|}
+\begin{longtable}{| p{.26\textwidth} | p{.37\textwidth} | p{.37\textwidth}|}
 
 \hline
-Catégorie\newline d'attaque et spécificité & Impact & Parade\\
+\textbf{Catégorie\newline d'attaque et spécificité} & \textbf{Impact} & \textbf{Parade} \\
 \hline
 Flux réseaux forgés \newline -non spécifique SDN \newline -non spécifique ONOS & Injection de trafic pouvant conduire à du DoS ou de l'homme au milieu avec des conséquences plus grandes que sur un réseau classique & Programmation intelligente du contrôleur\\ 
-\hline 
+\hline
+Vulnérabilités sur les \newline switchs \newline -non spécifique SDN \newline -non spécifique ONOS & Attaque directe sur les switchs pouvant là encore avoir des conséquences plus grandes que sur un réseau classique à cause des communications avec le contrôleur & TLS avec authentification mutuelle au niveau du plan de contrôle pour diminuer l'impact d'une prise de contrôle d'un switch, ou modèle de confiance à implémenter\\ 
+\hline
+Vulnérabilités sur les communications au niveau du plan de contrôle \newline -spécifique SDN \newline -non spécifique ONOS &  Si TLS n'est pas activé, ou si c'est une version vulnérable qui est utilisée, ou si la gestion des certificats est faible, impact significatif sur le réseau en cas d'entité malveillante connectée (possibilité de modifier du trafic réseau local et de falsifier les informations demandées par le contrôleur) & Duplication de contrôleurs, modèle de confiance oligarchique (ordre accepté uniquement si il est reçu en provenance de plusieurs sources). A noter que cela reste théorique (ça n'est pas encore implémenté ni prévu dans le protocole Openflow)\\ 
+\hline
+\textbf{Vulnérabilités sur le\newline contrôleur (ONOS)} \newline -spécifique SDN \newline -spécifique ONOS \newline Point le plus important & Compromission totale du réseau en cas de compromission du contrôleur, possibilité de nuisance proportionelle à l'offre fournie en matière d'exécution de code (plusieurs niveaux de compromission : au sein du contrôleur avec un accès plus ou moins restreint au système, puis compromission de la machine hébergeant le contrôleur, et enfin compromission avec droits administrateurs sur la machine)  & Secure-mode obligatoire !\newline Restrictions des interfaces, restrictions des permissions, configuration soigneusement effectuée (CLI, GUI, ssh, options du contrôleur). Duplication des contrôleurs et mécanismes de restauration à prévoir\\ 
+\hline
+Manque de confiance entre contrôleur et applications \newline -spécifique SDN \newline -non spécifique ONOS & Impact significatif en cas d'application malveillante avec des permissions trop élevées. Danger critique au niveau des dépôts de code externe (code source, ou dépôt maven pour les dépendances) utilisés pour le développement et la mise en production automatique & Applications critiques signées, applications externes avec des permissions peu critiques, mécanismes de log permettant de sauvegarder les appels clés. Signature du code (coeur d'ONOS notamment), mécanismes de protection d'intégrité des fonctions critiques\\ 
+\hline
+Vulnérabilités sur les stations d'administration \newline -non spécifique SDN \newline -non spécifique ONOS & Impact beaucoup plus élevé que dans un réseau classique (avec les droits d'utilisation de l'API REST par exemple on peut modifier l'intégralité du réseau en téléchargeant une seule application sur le contrôleur) & Politique stricte de gestion des accès (double authentification, peu de personnes autorisées à accéder aux fonctionnalités de l'API REST ...). L'idéal serait qu'ONOS offre le même niveau de séparation des privilèges à ce niveau qu'au niveau applicatif avec le Secure-mode.\newline Mécanismes de restauration en cas d'attaque détectée ou de disfonctionnement majeur\\ 
+\hline
+Manque de solutions efficaces pour l'analyse forensique \newline -non spécifique SDN \newline -non spécifique ONOS & Ca n'est pas vraiment une attaque mais en cas de problèmes/d'attaque il est nécessaire d'avoir les outils qui permettent une restauration efficace et une compréhension rapide des évènements & Fichiers de logs (concernant les décisions prises au niveau du contrôleur mais aussi les paquets Openflow circulant sur le réseau) indélébiles et stockés de manière sécurisée\\ 
+\hline
 
-\end{tabularx}
+\end{longtable}
 
 \end{small}
+
+Ainsi, la réplication des contrôleurs permet d'obtenir une redondance qui pallie à certains problèmes (si en plus on place différents responsables avec différents identifiants/clés à la tête de chaque contrôleur, on peut avoir un réseau fonctionnel alors qu'un des contrôleurs est compromis par exemple).\\
+Par contre, en mettant en place un tel système, on perd nécessairement en performances puisque les mêmes opérations sont globalement effectuées sur chaque. Et malgré le mode maître/esclave qui permet à un switch de savoir qui est son chef, le protocole Openflow ne prend pas encore en compte un mode multi-contrôleur complexe, donc un switch ne peut pas encore réagir en fonction de la confiance associée à un ordre (si un contrôleur maître envoie un ordre contradictoire par rapport à deux autres, le switch tentera tout de même d'exécuter cet ordre). Pour l'instant la réplication aurait donc tendance à compliquer énormément les choses (d'autant que, si un contrôleur maître est compromis, il peut dans tous les cas agir négativement sur le switch même si il existe d'autres contrôleurs maîtres qui envoient des ordres contraires, provoquant ainsi de toute façon un déni de service).\\
+Cela offre toutefois une réflexion intéressante sur un moyen de solutionner l'un des plus gros problèmes des réseaux SDN à l'heure actuelle à savoir l'impact d'une compromission totale du contrôleur.
+
+\begin{figure}[h]
+  	\centering
+  	\includegraphics[width=0.5\textwidth]{replication.png}
+  	\caption{Réplication des contrôleurs : duplication des ordres, résilience en cas de problème sur un contrôleur}
+\end{figure}
