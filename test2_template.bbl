@@ -1,34 +1,45 @@
 \begin{thebibliography}{1}
 
-\bibitem{of_def}
-Avantages sdn.
-
 \bibitem{indirection}
-Niveau d'indirection supplémentaire.
+{Fundamental theorem of software engineering}.
+\newblock
+  \url{https://en.wikipedia.org/wiki/Fundamental_theorem_of_software_engineering}.
 
 \bibitem{OF_10}
 Spécification openflow 1.0.
+\newblock \url{http://archive.openflow.org/documents/openflow-spec-v1.0.0.pdf}.
 
 \bibitem{OF_13}
 Spécification openflow 1.3.
+\newblock
+  \url{https://www.opennetworking.org/images/stories/downloads/sdn-resources/onf-specifications/openflow/openflow-spec-v1.3.0.pdf}.
 
 \bibitem{OF_15}
 Spécification openflow 1.5.
+\newblock
+  \url{https://www.opennetworking.org/images/stories/downloads/sdn-resources/onf-specifications/openflow/openflow-switch-v1.5.0.noipr.pdf}.
+
+\bibitem{histoire}
+{Bruno Nunes Astuto, Marc Mendonça, Xuan Nam Nguyen, Katia Obraczka, Thierry
+  Turletti}.
+\newblock A survey of software-de ned networking: Past, present, and future of
+  programmable networks.
+
+\bibitem{of_def}
+Open~Networking Foundation.
+\newblock {Software-Defined Networking (SDN) Definition}.
+\newblock \url{https://www.opennetworking.org/sdn-resources/sdn-definition}.
 
 \bibitem{ONOS_REST}
-Seungsoo Lee & Changhoon Yoon &~Seungwon Shin.
+{Seungsoo Lee, Changhoon Yoon, Seungwon Shin}.
 \newblock The smaller, the shrewder: A simple malicious application can kill an
   entire sdn environment.
 
 \bibitem{openflow_google}
 Hoelzle Tue.
 \newblock Openflow at google.
-
-\bibitem{histoire}
-Bruno Nunes Astuto & Marc Mendonça & Xuan Nam Nguyen & Katia Obraczka
-  &~Thierry Turletti.
-\newblock A survey of software-de ned networking: Past, present, and future of
-  programmable networks.
+\newblock
+  \url{http://opennetsummit.org/archives/apr12/hoelzle-tue-openflow.pdf}.
 
 \bibitem{rapport_maxence}
 Maxence Tury.

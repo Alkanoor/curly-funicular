@@ -1,11 +1,11 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.12.13)  12 JAN 2017 17:52
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.12.20)  12 JAN 2017 20:56
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
 **test2_template.tex
 (./test2_template.tex
 LaTeX2e <2016/02/01>
-Babel <3.9q> and hyphenation patterns for 7 language(s) loaded.
+Babel <3.9q> and hyphenation patterns for 5 language(s) loaded.
 (/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
 (/usr/share/texlive/texmf-dist/tex/latex/base/size11.clo
@@ -1250,9 +1250,9 @@ LaTeX Info: Redefining \nameref on input line 114.
 
 ABD: EveryShipout initializing macros
 (./_minted-test2_template/default-pyg-prefix.pygstyle) (./title.tex
-<images/TelecomParisTech_logo_200_01.png, id=147, 212.795pt x 212.795pt>
+<images/TelecomParisTech_logo_200_01.png, id=143, 212.795pt x 212.795pt>
 <use images/TelecomParisTech_logo_200_01.png>
-<images/Logo_SP.jpg, id=148, 250.9375pt x 250.9375pt> <use images/Logo_SP.jpg>
+<images/Logo_SP.jpg, id=144, 250.9375pt x 250.9375pt> <use images/Logo_SP.jpg>
 File: images/TelecomParisTech_logo_200_01.png Graphic file (type png)
 
 <use images/TelecomParisTech_logo_200_01.png>
@@ -1347,14 +1347,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 3--4
 
  []
 
-<images/routage_normal.png, id=228, 1018.80624pt x 359.3425pt>
+<images/routage_normal.png, id=223, 1018.80624pt x 359.3425pt>
 File: images/routage_normal.png Graphic file (type png)
 
 <use images/routage_normal.png>
 Package pdftex.def Info: images/routage_normal.png used on input line 9.
 (pdftex.def)             Requested size: 387.50443pt x 136.67767pt.
 
-<images/openflow.png, id=230, 1026.83624pt x 657.45625pt>
+<images/openflow.png, id=225, 1026.83624pt x 657.45625pt>
 File: images/openflow.png Graphic file (type png)
 
 <use images/openflow.png>
@@ -1496,7 +1496,7 @@ Overfull \hbox (8.63966pt too wide) in paragraph at lines 1--154
  le do-maine), puis d^^Sebut d'exp^^Serimentations
  []
 
-(./openflow.tex <images/interfaces.jpg, id=281, 372.39125pt x 332.24126pt>
+(./openflow.tex <images/interfaces.jpg, id=276, 372.39125pt x 332.24126pt>
 File: images/interfaces.jpg Graphic file (type jpg)
 
 <use images/interfaces.jpg>
@@ -1523,7 +1523,7 @@ LaTeX Font Warning: Command \relsize invalid in math mode on input line 15.
 
 LaTeX Font Warning: Command \relsize invalid in math mode on input line 17.
 
-<images/brocade_flow.png, id=293, 433.62pt x 301.125pt>
+<images/brocade_flow.png, id=288, 433.62pt x 301.125pt>
 File: images/brocade_flow.png Graphic file (type png)
 
 <use images/brocade_flow.png>
@@ -1552,7 +1552,7 @@ LaTeX Font Warning: Command \relsize invalid in math mode on input line 47.
 
 LaTeX Font Warning: Command \relsize invalid in math mode on input line 49.
 
-<images/session_openflow_whouaouh.png, id=300, 1358.07375pt x 442.65375pt>
+<images/session_openflow_whouaouh.png, id=295, 1358.07375pt x 442.65375pt>
 File: images/session_openflow_whouaouh.png Graphic file (type png)
 
 <use images/session_openflow_whouaouh.png>
@@ -1594,7 +1594,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 3--5
                                                   \fi \fi 
 l.5 
      <./images/session_openflow_whouaouh.png (PNG copy)>]
-<images/lldp.png, id=316, 423.5825pt x 271.0125pt>
+<images/lldp.png, id=311, 423.5825pt x 271.0125pt>
 File: images/lldp.png Graphic file (type png)
  <use images/lldp.png>
 Package pdftex.def Info: images/lldp.png used on input line 8.
@@ -1616,7 +1616,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 14--15
                                                   \fi \fi 
 l.160 		\subsubsection
                       {ONOS} <./images/lldp.png (PNG copy)>] (./onos.tex
-<images/ONOS_archi.png, id=326, 720.6925pt x 276.03125pt>
+<images/ONOS_archi.png, id=320, 720.6925pt x 276.03125pt>
 File: images/ONOS_archi.png Graphic file (type png)
 
 <use images/ONOS_archi.png>
@@ -1672,7 +1672,7 @@ LaTeX Font Warning: Command \relsize invalid in math mode on input line 12.
 
 LaTeX Font Warning: Command \relsize invalid in math mode on input line 14.
 
-<images/secure_mode.png, id=343, 325.215pt x 192.2382pt>
+<images/secure_mode.png, id=338, 325.215pt x 192.2382pt>
 File: images/secure_mode.png Graphic file (type png)
 
 <use images/secure_mode.png>
@@ -1712,7 +1712,7 @@ LaTeX Font Warning: Command \relsize invalid in math mode on input line 13.
 
 LaTeX Font Warning: Command \relsize invalid in math mode on input line 15.
 
-<images/threats.png, id=357, 745.8264pt x 330.2739pt>
+<images/threats.png, id=352, 745.8264pt x 330.2739pt>
 File: images/threats.png Graphic file (type png)
  <use images/threats.png>
 Package pdftex.def Info: images/threats.png used on input line 22.
@@ -1917,7 +1917,7 @@ Overfull \hbox (5.69167pt too wide) in alignment at lines 23--43
 Underfull \vbox (badness 10000) detected at line 43
  []
 
-[37] [38] <images/replication.png, id=452, 350.30875pt x 238.8925pt>
+[37] [38] <images/replication.png, id=446, 350.30875pt x 238.8925pt>
 File: images/replication.png Graphic file (type png)
 
 <use images/replication.png>
@@ -1978,30 +1978,47 @@ Underfull \hbox (badness 10000) in paragraph at lines 6--7
  []
 
 [43]) [44] (./test2_template.bbl
-! Misplaced alignment tab character &.
-l.19 Seungsoo Lee &
-                    Changhoon Yoon &~Seungwon Shin.
-? 
-! Misplaced alignment tab character &.
-l.19 Seungsoo Lee & Changhoon Yoon &
-                                    ~Seungwon Shin.
-? 
-! Misplaced alignment tab character &.
-l.28 Bruno Nunes Astuto &
-                          Marc Mendonça & Xuan Nam Nguyen & Katia Obraczka
-? 
-! Misplaced alignment tab character &.
-l.28 Bruno Nunes Astuto & Marc Mendonça &
-                                           Xuan Nam Nguyen & Katia Obraczka
-? 
-! Misplaced alignment tab character &.
-l.28 ...stuto & Marc Mendonça & Xuan Nam Nguyen &
-                                                   Katia Obraczka
-? 
-! Misplaced alignment tab character &.
-l.29   &
-        ~Thierry Turletti.
-? 
+Underfull \hbox (badness 3108) in paragraph at lines 4--7
+[]\OT1/cmr/m/n/10.95 Fundamental theo-rem of soft-ware en-gi-nee-ring.  []$\OT1
+/cmtt/m/n/10.95 https : / / en . wikipedia . org / wiki /
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 9--11
+[]\OT1/cmr/m/n/10.95 Sp^^Secification open-flow 1.0.  []$\OT1/cmtt/m/n/10.95 ht
+tp : / / archive . openflow . org / documents /
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 13--16
+[]\OT1/cmr/m/n/10.95 Sp^^Secification open-flow 1.3.  []$\OT1/cmtt/m/n/10.95 ht
+tps : / / www . opennetworking . org / images / stories /
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 13--16
+\OT1/cmtt/m/n/10.95 downloads / sdn-[]resources / onf-[]specifications / openfl
+ow / openflow-[]spec-[]v1 . 3 . 0 .
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 18--21
+[]\OT1/cmr/m/n/10.95 Sp^^Secification open-flow 1.5.  []$\OT1/cmtt/m/n/10.95 ht
+tps : / / www . opennetworking . org / images / stories /
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 18--21
+\OT1/cmtt/m/n/10.95 downloads / sdn-[]resources / onf-[]specifications / openfl
+ow / openflow-[]switch-[]v1 . 5 .
+ []
+
+
+Underfull \hbox (badness 2035) in paragraph at lines 39--43
+[]\OT1/cmr/m/n/10.95 Hoelzle Tue.  Open-flow at google.  []$\OT1/cmtt/m/n/10.95
+ http : / / opennetsummit . org / archives / apr12 /
+ []
+
 ) [45] (./tutoriel.tex
 \openout4 = `test2_template.pyg'.
 
@@ -2016,24 +2033,17 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 220.
  (./test2_template.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 220.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 220.
-
-
-Package rerunfilecheck Warning: File `test2_template.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `test2_template.out':
-(rerunfilecheck)             Before: A45CACEFAC4E8ADF6388E296371539C3;2574
-(rerunfilecheck)             After:  FDB2DA2E4013A17C2A4CF1D5BBE8DF56;2532.
+Package rerunfilecheck Info: File `test2_template.out' has not changed.
+(rerunfilecheck)             Checksum: FDB2DA2E4013A17C2A4CF1D5BBE8DF56;2532.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 220.
  ) 
 Here is how much of TeX's memory you used:
- 22787 strings out of 494883
- 418666 string characters out of 6178692
- 574605 words of memory out of 5000000
- 25419 multiletter control sequences out of 15000+600000
+ 22781 strings out of 494924
+ 418596 string characters out of 6179707
+ 575455 words of memory out of 5000000
+ 25411 multiletter control sequences out of 15000+600000
  12963 words of font info for 47 fonts, out of 8000000 for 9000
- 36 hyphenation exceptions out of 8191
+ 14 hyphenation exceptions out of 8191
  62i,13n,67p,1630b,665s stack positions out of 5000i,500n,10000p,200000b,80000s
 pdfTeX warning (dest): name{Hfootnote.29} has been referenced but does not ex
 ist, replaced by a fixed one
@@ -2122,21 +2132,6 @@ pdfTeX warning (dest): name{Hfootnote.2} has been referenced but does not exist
 pdfTeX warning (dest): name{Hfootnote.1} has been referenced but does not exist
 , replaced by a fixed one
 
-pdfTeX warning (dest): name{subsection.7.3} has been referenced but does not ex
-ist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.7.2} has been referenced but does not ex
-ist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.7.1} has been referenced but does not ex
-ist, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.7} has been referenced but does not exist, 
-replaced by a fixed one
-
-pdfTeX warning (dest): name{section.6} has been referenced but does not exist, 
-replaced by a fixed one
-
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/
 share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/
 texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/share/texli
@@ -2149,10 +2144,10 @@ onts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/c
 m/cmsy6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti1
 0.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt9.pfb>
-Output written on test2_template.pdf (47 pages, 1226492 bytes).
+Output written on test2_template.pdf (47 pages, 1245922 bytes).
 PDF statistics:
- 608 PDF objects out of 1000 (max. 8388607)
- 522 compressed objects within 6 object streams
- 147 named destinations out of 1000 (max. 500000)
- 353 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 611 PDF objects out of 1000 (max. 8388607)
+ 525 compressed objects within 6 object streams
+ 142 named destinations out of 1000 (max. 500000)
+ 345 words of extra memory for PDF output out of 10000 (max. 10000000)
 
