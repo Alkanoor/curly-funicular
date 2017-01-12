@@ -21,6 +21,8 @@
 \usepackage{minted}
 \usepackage{tabularx}
 \usepackage{longtable}
+\usepackage{tikz}
+\usepackage[nottoc, notlof, notlot]{tocbibind}
 
 %====================== INFORMATION ET REGLES ======================
 
@@ -40,6 +42,11 @@ pdfstartview = {FitH}}
 
 \graphicspath{ {images/} }
 
+\newcommand*\circledred[1]{\tikz[baseline=(char.base)]{\node[shape=circle,fill=red,draw,inner sep=2pt] (char) {#1};}}
+\newcommand*\circledorange[1]{\tikz[baseline=(char.base)]{\node[shape=circle,fill=orange,draw,inner sep=2pt] (char) {#1};}}
+\newcommand*\circledgreen[1]{\tikz[baseline=(char.base)]{\node[shape=circle,fill=green,draw,inner sep=2pt] (char) {#1};}}
+\newcommand*\circledcyan[1]{\tikz[baseline=(char.base)]{\node[shape=circle,fill=cyan,draw,inner sep=2pt] (char) {#1};}}
+\newcommand*\circled[1]{\tikz[baseline=(char.base)]{\node[shape=circle,draw,inner sep=2pt] (char) {#1};}}
 
 %====================== Bibliographie ======================
 
@@ -62,7 +69,7 @@ pdfstartview = {FitH}}
 @online{histoire,
   title = {A Survey of Software-De ned Networking:  Past,
 Present, and Future of Programmable Networks},
-  author = {Bruno Nunes Astuto, Marc Mendonça, Xuan Nam Nguyen, Katia Obraczka,Thierry Turletti},
+  author = {Bruno Nunes Astuto & Marc Mendonça & Xuan Nam Nguyen & Katia Obraczka & Thierry Turletti},
   url = {https://hal.inria.fr/hal-00825087/file/hal_final.pdf}
 }
 
@@ -90,7 +97,7 @@ Present, and Future of Programmable Networks},
 @online{ONOS_REST,
   title = {The Smaller, the Shrewder: A Simple Malicious Application
 Can Kill an Entire SDN Environment},
-  author = {Seungsoo Lee, Changhoon Yoon, Seungwon Shin},
+  author = {Seungsoo Lee & Changhoon Yoon & Seungwon Shin},
   url = {http://nss.kaist.ac.kr/wp-content/uploads/2016/05/p23-lee.compressed.pdf}
 }
 
@@ -182,7 +189,8 @@ Avant d'entamer la lecture de ce rapport, je tiens avant tout à remercier toute
 		\newpage
 	\subsection{Mauvaise configuration au niveau de l'interface nord}
 		\input{./scenario6.tex}
-		\newpage
+\newpage
+\fancyhead[L]{4- Evaluation et recommandations}
 \section{Validation et évaluation}
 	\subsection{Résultats de l'étude}
 		\input{./results.tex}
@@ -190,21 +198,23 @@ Avant d'entamer la lecture de ce rapport, je tiens avant tout à remercier toute
 		\input{./other.tex}
 	\subsection{Retour sur la méthode STRIDE}
 		\input{./stride.tex}
+	\newpage
 	\subsection{Conclusion}
 		\input{./conclusion.tex}
+\newpage
+\fancyhead[L]{5- Conclusion}
 \section{Perspectives à l'issue du stage}
 	\input{./perspectives.tex}
-\section{Ressources}
-\newpage
-\fancyhead[L]{7- Annexe}
-\section{Annexe}
-	\input{./tutoriel.tex}
-
-
-~
 
 \newpage
 \bibliographystyle{plain}
-\bibliography{biblist}
+\bibliography*{references}
+\nocite{*}
+
+\newpage
+\appendix
+\section{Annexe}
+	\input{./tutoriel.tex}
+
 
 \end{document}

@@ -16,11 +16,11 @@ Parmi les principales attaques qui n'ont pas encore été évoquées, on trouve 
 
 \end{list}
 
-Pour bien mettre en valeur les spécificités éventuelles d'ONOS, le tableau suivant récapitule impacts et parades des différentes catégories d'attaque qu'on est susceptible de retrouver.
+Pour bien mettre en valeur les spécificités éventuelles d'ONOS, le tableau suivant récapitule impacts et parades des différentes catégories d'attaque qu'on est susceptible de retrouver : \\~\\
 
 \begin{small}
 
-\begin{longtable}{| p{.26\textwidth} | p{.37\textwidth} | p{.37\textwidth}|}
+\begin{longtable}{| p{.25\textwidth} | p{.35\textwidth} | p{.33\textwidth}|}
 
 \hline
 \textbf{Catégorie\newline d'attaque et spécificité} & \textbf{Impact} & \textbf{Parade} \\
@@ -31,7 +31,7 @@ Vulnérabilités sur les \newline switchs \newline -non spécifique SDN \newline
 \hline
 Vulnérabilités sur les communications au niveau du plan de contrôle \newline -spécifique SDN \newline -non spécifique ONOS &  Si TLS n'est pas activé, ou si c'est une version vulnérable qui est utilisée, ou si la gestion des certificats est faible, impact significatif sur le réseau en cas d'entité malveillante connectée (possibilité de modifier du trafic réseau local et de falsifier les informations demandées par le contrôleur) & Duplication de contrôleurs, modèle de confiance oligarchique (ordre accepté uniquement si il est reçu en provenance de plusieurs sources). A noter que cela reste théorique (ça n'est pas encore implémenté ni prévu dans le protocole Openflow)\\ 
 \hline
-\textbf{Vulnérabilités sur le\newline contrôleur (ONOS)} \newline -spécifique SDN \newline -spécifique ONOS \newline Point le plus important & Compromission totale du réseau en cas de compromission du contrôleur, possibilité de nuisance proportionelle à l'offre fournie en matière d'exécution de code (plusieurs niveaux de compromission : au sein du contrôleur avec un accès plus ou moins restreint au système, puis compromission de la machine hébergeant le contrôleur, et enfin compromission avec droits administrateurs sur la machine)  & Secure-mode obligatoire !\newline Restrictions des interfaces, restrictions des permissions, configuration soigneusement effectuée (CLI, GUI, ssh, options du contrôleur). Duplication des contrôleurs et mécanismes de restauration à prévoir\\ 
+\textbf{Vulnérabilités sur le\newline contrôleur (ONOS)} \newline -spécifique SDN \newline -spécifique ONOS \newline \newline \textbf{Point le plus\newline important} & Compromission totale du réseau en cas de compromission du contrôleur, possibilité de nuisance proportionelle à l'offre fournie en matière d'exécution de code (plusieurs niveaux de compromission : au sein du contrôleur avec un accès plus ou moins restreint au système, puis compromission de la machine hébergeant le contrôleur, et enfin compromission avec droits administrateurs sur la machine)  & Secure-mode obligatoire !\newline Restrictions des interfaces, restrictions des permissions, configuration soigneusement effectuée (CLI, GUI, ssh, options du contrôleur). Duplication des contrôleurs et mécanismes de restauration à prévoir\\ 
 \hline
 Manque de confiance entre contrôleur et applications \newline -spécifique SDN \newline -non spécifique ONOS & Impact significatif en cas d'application malveillante avec des permissions trop élevées. Danger critique au niveau des dépôts de code externe (code source, ou dépôt maven pour les dépendances) utilisés pour le développement et la mise en production automatique & Applications critiques signées, applications externes avec des permissions peu critiques, mécanismes de log permettant de sauvegarder les appels clés. Signature du code (coeur d'ONOS notamment), mécanismes de protection d'intégrité des fonctions critiques\\ 
 \hline

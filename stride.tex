@@ -1,1 +1,46 @@
-Comme l'audit a été fait en suivant partiellement la méthode STRIDE, et bien que le tableau du paragraphe précédent soit beaucoup plus important à suivre, on va formuler la conclusion de l'étude sous la forme de la matrice habituelle (différents éléments du système à gauche, différents risques en haut du tableau).
+Comme l'audit a été fait en suivant partiellement la méthode STRIDE, et bien que le tableau du paragraphe précédent soit important à suivre, on va formuler la conclusion de l'étude sous la forme de la matrice habituellement utilisée avec cette méthode (différents éléments du système à gauche, différents risques en haut du tableau).\\
+Parmi les éléments du système, on trouve :\\
+- le processus principal (coeur du contrôleur)\\
+- les flux de données (deux au niveau de l'interface nord (gestion, et applications), un autre au niveau de l'interface sud)\\
+- les entités en interaction avec le contrôleur (switchs, applications, et machines d'administration)
+
+\begin{small}
+
+\begin{tabular}{|c|c|c|c|c|c|c|c|} 
+    
+\hline
+Type & Composant & \textbf{S} & \textbf{T} & \textbf{R} & \textbf{I} & \textbf{D} & \textbf{E} \\
+\hline
+Processus & Coeur du contrôleur &  \circled{-} & \circled{-} & \circledgreen{1} & \circledcyan{2} & \circledorange{3} & \circledcyan{2}\\
+\hline
+ & Interface nord (gestion) &  & \circledcyan{4} &  & \circledcyan{4} & & \\
+Flux de données & Interface nord (applications) &  & \circledcyan{4} &  & \circledcyan{4} & \circled{-} & \\
+ & Interface sud &  & \circledcyan{4} &  & \circledcyan{4} & \circledred{5} & \\
+\hline
+& Machines d'administration & \circledcyan{6} &  & \circledorange{1} &  &  &  \\
+Entités en interaction & Applications & \circled{-} &  & \circledorange{1} &  &  &  \\
+& Switchs & \circledorange{7} &  & \circledgreen{1} &  &  &  \\
+\hline
+\end{tabular}
+\begin{figure}[h]
+\caption{Matrice STRIDE appliquée au contrôleur}
+\end{figure}
+
+\circledgreen{X} : mécanismes de protection déjà existants et activés par défaut\\
+\circledcyan{X} : mécanismes de protection déjà existants mais à activer\\
+\circledorange{X} : mécanismes de protection incomplets ou incertains\\
+\circledred{X} : mécanismes de protection non existants\\
+\circled{-} : mécanisme de protection inconnu ou ne pouvant pas être défini
+
+\end{small}
+
+Pour compléter le tableau précédent, voici les explications des chiffres :
+\begin{list}{$\Asteriscus$}{}
+\item 1 : Si le coeur d'ONOS est intègre, les logs sont enregistrés en permanence sur le disque par défaut ce qui permet à la fois le debug d'application et la tracabilité des connexions et évènements réseau divers. Cependant, mettre en place un système de sauvegarde distant ou empêcher une application avec des droits d'écriture de réécrire le fichier de log n'est pas aisé.
+\item 2 : Le Secure-Mode permet à la fois d'empêcher des applications un peu trop curieuses d'accéder à ce qu'elles n'ont pas le droit d'accéder et d'exécuter des actions qu'elles ne sont pas sensées faire. Encore faut-il l'activer.
+\item 3 : ONOS génère de nombreuses exceptions au cours de son fonctionnement, et toutes ces exceptions sont sauvegardées, générant une trace énorme et consommant une certaine quantité de ressources. Il n'est pas impossible de créer une application qui exploite cela. Il existait d'ailleurs une vulnérabilité importante (CVE-2015-7516\footnote{https://wiki.onosproject.org/display/ONOS/Security+advisories}) sur la version 1.3 du contrôleur qui provoquait la déconnexion de switchs lors du non traitement d'une exception.
+\item 4 : L'utilisation de TLS, inactivé par défaut, permet de solutionner les problèmes de fuites d'informations et de modifications non souhaitées du flux au niveau des interfaces nord et sud (modulo la sûreté du protocole, comme toujours).
+\item 5 : Le protocole Openflow n'a pas été conçu pour empêcher le deni de service, donc il est possible d'utiliser certaines parties de la spécification pour provoquer ce type d'attaque (voir les deux dernières attaques de l'audit sur l'interface sud).
+\item 6 : L'usurpation d'identité d'un administrateur peut se faire si la configuration de l'authentification au niveau du contrôleur (GUI, CLI, ssh) est celle par défaut. Il ne faut pas oublier de changer les identifiants, ou de désactiver les services qu'on ne souhaite pas utiliser.
+\item 7 : La deuxième attaque réalisée prouve qu'ONOS ne gère pas d'authentification pour les entités réseau au sud, ce qui permet l'usurpation d'identité de switchs. Cependant il existe maintenant une application en cours de développement (AAA, comme sur OpenDayLight) qui permet de corriger en partie le problème\footnote{https://wiki.onosproject.org/pages/viewpage.action?pageId=6357336}.
+\end{list}

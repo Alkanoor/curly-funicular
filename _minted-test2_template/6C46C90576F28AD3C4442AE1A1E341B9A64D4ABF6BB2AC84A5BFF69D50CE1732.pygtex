@@ -2,5 +2,4 @@
 \PYGZdl{} wget http://downloads.onosproject.org/release/onos\PYGZhy{}1.7.1.tar.gz
 \PYGZdl{} tar \PYGZhy{}xvf onos\PYGZhy{}1.7.1.tar.gz
 \PYGZdl{} \PYG{n+nb}{cd} onos\PYGZhy{}1.7.1
-\PYGZdl{} \PYG{n+nb}{cd}
 \end{Verbatim}
