@@ -1,9 +1,13 @@
-\begin{thebibliography}{1}
+\begin{thebibliography}{10}
 
 \bibitem{indirection}
 {Fundamental theorem of software engineering}.
 \newblock
   \url{https://en.wikipedia.org/wiki/Fundamental_theorem_of_software_engineering}.
+
+\bibitem{Wireshark}
+Openflow for wireshark.
+\newblock \url{http://wiki.wireshark.org/OpenFlow}.
 
 \bibitem{OF_10}
 Spécification openflow 1.0.
@@ -24,16 +28,76 @@ Spécification openflow 1.5.
   Turletti}.
 \newblock A survey of software-de ned networking: Past, present, and future of
   programmable networks.
+\newblock \url{https://hal.inria.fr/hal-00825087/file/hal_final.pdf}.
+
+\bibitem{next_gen}
+Seungsoo~Lee Changhoon~Yoon.
+\newblock Attacking sdn infrastructure are we ready for the next gen networking
+  ?
+\newblock
+  \url{https://www.blackhat.com/docs/us-16/materials/us-16-Yoon-Attacking-SDN-Infrastructure-Are-We-Ready-For-The-Next-Gen-Networking.pdf}.
+
+\bibitem{towards}
+{Diego Kreutz, Fernando M. V. Ramos, Paulo Verissimo}.
+\newblock Towards secure and dependable software-defined networks.
+\newblock
+  \url{https://www.ietf.org/proceedings/87/slides/slides-87-sdnrg-2.pdf}.
 
 \bibitem{of_def}
 Open~Networking Foundation.
 \newblock {Software-Defined Networking (SDN) Definition}.
 \newblock \url{https://www.opennetworking.org/sdn-resources/sdn-definition}.
 
+\bibitem{sdn_security}
+David Jorm.
+\newblock Sdn and security.
+\newblock \url{http://onosproject.org/2015/04/03/sdn-and-security-david-jorm/}.
+
+\bibitem{Vulns}
+L.J.~Camp K.~Benton and C.~Small.
+\newblock Openflow vulnerability assessment.
+\newblock
+  \url{http://conferences.sigcomm.org/sigcomm/2012/paper/hotsdn/p121.pdf}.
+
+\bibitem{anomaly_detection}
+{K. Giotis, C. Argyropoulos, G. Androulidakis, D. Kalogeras, V. Maglaris}.
+\newblock Combining openflow and sflow for an effective and scalable anomaly
+  detection and mitigation mechanism on sdn environments.
+\newblock
+  \url{http://www.sciencedirect.com/science/article/pii/S1389128613004003}.
+
+\bibitem{Security_analysis_protocols}
+{Markus Brandt, Rahamatullah Khondoker, Kpatcha Bayarou, Frank Weber}.
+\newblock Security analysis of software defined networking
+  protocols—openflow, of-config and ovsdb.
+\newblock
+  \url{http://publica.fraunhofer.de/eprints/urn_nbn_de_0011-n-3238618.pdf}.
+
+\bibitem{debugger}
+{Nikhil Handigol, Brandon Heller, Vimalkumar Jeyakumar}.
+\newblock Where is the debugger for my software-defined network?
+\newblock
+  \url{https://users.ece.cmu.edu/~vsekar/Teaching/Fall14/18859K/papers/ndb.pdf}.
+
+\bibitem{Security_analysis_controllers}
+{Ramachandra Kamath Arbettu, Kpatcha Bayarou, Frank Weber}.
+\newblock Security analysis of opendaylight, onos, rosemary and ryu sdn
+  controllers.
+\newblock
+  \url{http://publica.fraunhofer.de/eprints/urn_nbn_de_0011-n-4046948.pdf}.
+
 \bibitem{ONOS_REST}
 {Seungsoo Lee, Changhoon Yoon, Seungwon Shin}.
 \newblock The smaller, the shrewder: A simple malicious application can kill an
   entire sdn environment.
+\newblock
+  \url{http://nss.kaist.ac.kr/wp-content/uploads/2016/05/p23-lee.compressed.pdf}.
+
+\bibitem{poisoning}
+{Sungmin Hong, Lei Xu, Haopei Wang, Guofei Gu}.
+\newblock Poisoning network visibility in software-defined networks: New
+  attacks and countermeasures.
+\newblock \url{http://www.internetsociety.org/sites/default/files/10_4_2.pdf}.
 
 \bibitem{openflow_google}
 Hoelzle Tue.
@@ -45,5 +109,11 @@ Hoelzle Tue.
 Maxence Tury.
 \newblock Mémoire de stage : Étude d’openflow dans le contexte de la
   sécurité.
+
+\bibitem{security_mode}
+Changhoon Yoon.
+\newblock Security-mode onos.
+\newblock
+  \url{http://events.linuxfoundation.org/sites/events/files/slides/smonos_ons2016.pdf}.
 
 \end{thebibliography}

@@ -68,7 +68,7 @@ pdfstartview = {FitH}}
   author = {Maxence Tury}
 }
 
-@article{histoire,
+@misc{histoire,
   title = {A Survey of Software-De ned Networking:  Past, Present, and Future of Programmable Networks},
   author = {{Bruno Nunes Astuto, Marc Mendonça, Xuan Nam Nguyen, Katia Obraczka, Thierry Turletti}},
   howpublished = "\url{https://hal.inria.fr/hal-00825087/file/hal_final.pdf}"
@@ -95,10 +95,75 @@ pdfstartview = {FitH}}
   howpublished = "\url{https://www.opennetworking.org/images/stories/downloads/sdn-resources/onf-specifications/openflow/openflow-switch-v1.5.0.noipr.pdf}"
 }
 
-@article{ONOS_REST,
+@misc{Vulns,
+  author = {K. Benton, L.J. Camp, and C. Small},
+  title = {OpenFlow Vulnerability Assessment},
+  howpublished = "\url{http://conferences.sigcomm.org/sigcomm/2012/paper/hotsdn/p121.pdf}"
+}
+
+@misc{Security_analysis_controllers,
+  title = {Security Analysis of OpenDayLight, ONOS, RoseMary and RYU SDN Controllers},
+  author = {{Ramachandra Kamath Arbettu, Kpatcha Bayarou, Frank Weber}},
+  howpublished = "\url{http://publica.fraunhofer.de/eprints/urn_nbn_de_0011-n-4046948.pdf}"
+}
+
+@misc{Security_analysis_protocols,
+  title = {Security Analysis of Software Defined Networking Protocols—OpenFlow, OF-Config and OVSDB},
+  author = {{Markus Brandt, Rahamatullah Khondoker, Kpatcha Bayarou, Frank Weber}},
+  howpublished = "\url{http://publica.fraunhofer.de/eprints/urn_nbn_de_0011-n-3238618.pdf}"
+}
+
+@misc{anomaly_detection,
+  title = {Combining OpenFlow and sFlow for an effective and scalable anomaly detection and mitigation mechanism on SDN environments},
+  author = {{K. Giotis, C. Argyropoulos, G. Androulidakis, D. Kalogeras, V. Maglaris}},
+  howpublished = "\url{http://www.sciencedirect.com/science/article/pii/S1389128613004003}"
+}
+
+@misc{debugger,
+  title = {Where is the Debugger for my Software-Defined Network?},
+  author = {{Nikhil Handigol, Brandon Heller, Vimalkumar Jeyakumar}},
+  howpublished = "\url{https://users.ece.cmu.edu/~vsekar/Teaching/Fall14/18859K/papers/ndb.pdf}"
+}
+
+@misc{sdn_security,
+  author = {David Jorm},
+  title = {SDN and Security},
+  howpublished = "\url{http://onosproject.org/2015/04/03/sdn-and-security-david-jorm/}"
+}
+
+@misc{poisoning,
+  title = {Poisoning Network Visibility in Software-Defined Networks: New Attacks and Countermeasures},
+  author = {{Sungmin Hong, Lei Xu, Haopei Wang, Guofei Gu}},
+  howpublished = "\url{http://www.internetsociety.org/sites/default/files/10_4_2.pdf}"
+}
+
+@misc{towards,
+  title = {Towards Secure and Dependable Software-Defined Networks},
+  author = {{Diego Kreutz, Fernando M. V. Ramos, Paulo Verissimo}},
+  howpublished = "\url{https://www.ietf.org/proceedings/87/slides/slides-87-sdnrg-2.pdf}"
+}
+
+@misc{security_mode,
+  author = {Changhoon Yoon},
+  title = {Security-Mode ONOS},
+  howpublished = "\url{http://events.linuxfoundation.org/sites/events/files/slides/smonos_ons2016.pdf}"
+}
+
+@misc{next_gen,
+  author = {Changhoon Yoon, Seungsoo Lee},
+  title = {Attacking SDN Infrastructure Are We Ready For The Next Gen Networking ?},
+  howpublished = "\url{https://www.blackhat.com/docs/us-16/materials/us-16-Yoon-Attacking-SDN-Infrastructure-Are-We-Ready-For-The-Next-Gen-Networking.pdf}"
+}
+
+@misc{ONOS_REST,
   title = {The Smaller, the Shrewder: A Simple Malicious Application Can Kill an Entire SDN Environment},
   author = {{Seungsoo Lee, Changhoon Yoon, Seungwon Shin}},
   howpublished = "\url{http://nss.kaist.ac.kr/wp-content/uploads/2016/05/p23-lee.compressed.pdf}"
+}
+
+@misc{Wireshark,
+  title = {OpenFlow for Wireshark},
+  howpublished = "\url{http://wiki.wireshark.org/OpenFlow}"
 }
 
 \end{filecontents}
@@ -207,11 +272,15 @@ Avant d'entamer la lecture de ce rapport, je tiens avant tout à remercier toute
 	\input{./perspectives.tex}
 
 \newpage
+\fancyhead[L]{6- Ressources}
+\begin{small}
 \bibliographystyle{plain}
 \bibliography{references.bib}
+\end{small}
 \nocite{*}
 
 \newpage
+\fancyhead[L]{~\\}
 \appendix
 \section{Annexe}
 	\input{./tutoriel.tex}
