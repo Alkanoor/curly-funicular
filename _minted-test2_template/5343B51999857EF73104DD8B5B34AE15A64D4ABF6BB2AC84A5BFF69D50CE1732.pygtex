@@ -1,0 +1,5 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYGZdl{} nano \PYG{k}{\PYGZdl{}(}\PYG{n+nb}{pwd}\PYG{k}{)}/Applications/apache\PYGZhy{}karaf\PYGZhy{}3.0.5/etc/org.apache.karaf.features.cfg
+\PYGZdl{} \PYG{c+c1}{\PYGZsh{}modifier la ligne featuresRepositories en y ajoutant mvn:org.onosproject/onos\PYGZhy{}}
+\PYGZdl{} \PYG{c+c1}{\PYGZsh{}features/1.9.0\PYGZhy{}SNAPSHOT/xml/features}
+\end{Verbatim}

@@ -2,12 +2,18 @@ Cette partie montre comment mettre en place tous les éléments pour reproduire 
 
 \subsection{Installation d'ONOS}
 
-Choisir une machine (virtuelle ou non) sur laquelle installer le contrôleur (durant le stage j'ai utilisé une debian serveur avec accès ssh pour y mettre ONOS). Sur la machine, installer java8 si il ne l'est pas encore. Se rendre à l'adresse \url{https://wiki.onosproject.org/display/ONOS/Downloads}. Télécharger la dernière release (à l'heure actuelle, Hummingbird).
+Choisir une machine (virtuelle ou non) sur laquelle installer le contrôleur (durant le stage j'ai utilisé une debian serveur avec accès ssh pour y mettre ONOS). Sur la machine, installer java8 si il ne l'est pas encore. Cloner le dépôt des sources du contrôleur à l'adresse \url{https://gerrit.onosproject.org/onos}. Cloner également le dépôt git à l'adresse \url{https://github.com/Alkanoor/ONOS-Attack.git}. Télécharger apache-karaf et maven.
 
 \begin{minted}{bash}
-$ wget http://downloads.onosproject.org/release/onos-1.7.1.tar.gz
-$ tar -xvf onos-1.7.1.tar.gz
-$ cd onos-1.7.1
+$ git clone https://gerrit.onosproject.org/onos
+$ git clone https://github.com/Alkanoor/ONOS-Attack.git
+$ mkdir Downloads Applications
+$ cd Downloads
+$ wget http://archive.apache.org/dist/karaf/3.0.5/apache-karaf-3.0.5.tar.gz
+$ wget http://archive.apache.org/dist/maven/maven-3/3.3.9/binaries/apache-maven -3.3.9-bin.tar.gz
+$ tar -zxvf apache-karaf-3.0.5.tar.gz -C ../Applications/
+$ tar -zxvf apache-maven-3.3.9-bin.tar.gz -C ../Applications/
+$ cd ..
 \end{minted}
 
 \subsection{Installation de Mininet}
@@ -16,9 +22,38 @@ Il est possible de suivre les instructions à l'adresse \url{http://mininet.org/
 
 Il est également possible d'installer mininet sur une machine virtuelle déjà existante en clonant \url{git://github.com/mininet/mininet} et en exécutant \textit{mininet/util/install.sh} dans le dossier mininet.
 
-C'est déjà fini.
-
+Sur la machine virtuelle utilisée (si ça n'est pas la même que celle contenant ONOS), cloner également le dépôt \url{https://github.com/Alkanoor/ONOS-Attack.git}
 
 \subsection{Configuration}
 
-Le tutoriel sera complété dans les prochains jours et fournira un environnement de test et d'attaque fonctionnel.
+Pour que les attaques soient faciles à exécuter, les identifiants par défaut ne seront pas changés. Par contre il faut évidemment que la machine virtuelle contenant ONOS et celle contenant Mininet soient sur un même sous réseau.
+
+Après avoir cloné le dépôt contenant les attaques sur les 2 machines, on va faire un test basique pour vérifier que tout fonctionne. Pour commencer on va configurer rapidement ONOS. Tout d'abord il faut éditer le fichier \textit{org.apache.karaf.features.cfg} en ajoutant mvn:org.onosproject/onos-features/1.9.0-SNAP-SHOT/xml/features (avec une virgule pour séparer le nouvel élément des attributs déjà présents) au niveau de la ligne "featuresRepositories" du fichier.
+
+\begin{minted}{bash}
+$ nano $(pwd)/Applications/apache-karaf-3.0.5/etc/org.apache.karaf.features.cfg
+$ #modifier la ligne featuresRepositories en y ajoutant mvn:org.onosproject/onos-
+$ #features/1.9.0-SNAPSHOT/xml/features
+\end{minted}
+
+Pour cela, on édite le fichier \textit{onos/tools/dev/bash\_profile} et on le charge dans le .bashrc (cela permet de bien mettre à jour l'environnement). Utiliser maven une première fois pour remplir le fichier profile.
+
+\begin{minted}{bash}
+$ echo '#ONOS environment'>>~/.bashrc
+$ echo . $(pwd)/onos/tools/dev/bash_profile>>~/.bashrc
+$ cd onos
+$ mvn clean
+\end{minted}
+
+Pour changer les identifiants par défaut (\textit{grep \$(pwd)/onos/tools/dev/bash\_profile -e "ONOS"} changer les variables ONOS\_USER et ONOS\_GROUP avec le nom de l'utilisateur actuel, et éventuellement les variables ONOS\_WEB\_USER, ONOS\_WEB\_PASS (identifiants pour l'interface web)).
+Quitter le shell en cours pour charger le nouveau .bashrc (ou le charger directement avec source).
+Puis compiler ONOS (ceci prend un certain temps (au minimum une quinzaine de minutes)).
+
+\begin{minted}{bash}
+$ mvn clean install
+\end{minted}
+
+Lancer ONOS avec
+\begin{minted}{bash}
+$ ok clean #onos-karaf clean
+\end{minted}

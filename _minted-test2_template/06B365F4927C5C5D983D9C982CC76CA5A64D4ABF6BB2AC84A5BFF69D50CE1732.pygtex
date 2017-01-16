@@ -1,0 +1,11 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYGZdl{} git clone https://gerrit.onosproject.org/onos
+\PYGZdl{} git clone https://github.com/Alkanoor/ONOS\PYGZhy{}Attack.git
+\PYGZdl{} mkdir Downloads Applications
+\PYGZdl{} \PYG{n+nb}{cd} Downloads
+\PYGZdl{} wget http://archive.apache.org/dist/karaf/3.0.5/apache\PYGZhy{}karaf\PYGZhy{}3.0.5.tar.gz
+\PYGZdl{} wget http://archive.apache.org/dist/maven/maven\PYGZhy{}3/3.3.9/binaries/apache\PYGZhy{}maven \PYGZhy{}3.3.9\PYGZhy{}bin.tar.gz
+\PYGZdl{} tar \PYGZhy{}zxvf apache\PYGZhy{}karaf\PYGZhy{}3.0.5.tar.gz \PYGZhy{}C ../Applications/
+\PYGZdl{} tar \PYGZhy{}zxvf apache\PYGZhy{}maven\PYGZhy{}3.3.9\PYGZhy{}bin.tar.gz \PYGZhy{}C ../Applications/
+\PYGZdl{} \PYG{n+nb}{cd} ..
+\end{Verbatim}

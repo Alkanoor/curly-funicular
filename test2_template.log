@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.12.13)  13 JAN 2017 12:13
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.12.13)  16 JAN 2017 17:54
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -1173,32 +1173,32 @@ runsystem(rm "test2_template.aex")...executed.
 (./test2_template.aux)
 \openout1 = `test2_template.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 179.
-LaTeX Font Info:    ... okay on input line 179.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 179.
-LaTeX Font Info:    ... okay on input line 179.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 179.
-LaTeX Font Info:    ... okay on input line 179.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 179.
-LaTeX Font Info:    ... okay on input line 179.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 179.
-LaTeX Font Info:    ... okay on input line 179.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 179.
-LaTeX Font Info:    ... okay on input line 179.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 179.
-LaTeX Font Info:    ... okay on input line 179.
-LaTeX Info: Redefining \degres on input line 179.
-LaTeX Info: Redefining \dots on input line 179.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 185.
+LaTeX Font Info:    ... okay on input line 185.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 185.
+LaTeX Font Info:    ... okay on input line 185.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 185.
+LaTeX Font Info:    ... okay on input line 185.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 185.
+LaTeX Font Info:    ... okay on input line 185.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 185.
+LaTeX Font Info:    ... okay on input line 185.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 185.
+LaTeX Font Info:    ... okay on input line 185.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 185.
+LaTeX Font Info:    ... okay on input line 185.
+LaTeX Info: Redefining \degres on input line 185.
+LaTeX Info: Redefining \dots on input line 185.
 
 
 Package frenchb.ldf Warning: Please load the "natbib" package
-(frenchb.ldf)                BEFORE babel/frenchb; reported on input line 179.
+(frenchb.ldf)                BEFORE babel/frenchb; reported on input line 185.
 
-LaTeX Info: Redefining \up on input line 179.
+LaTeX Info: Redefining \up on input line 185.
 
 Package frenchb.ldf Warning: OT1 encoding should not be used for French.
 (frenchb.ldf)                Add \usepackage[T1]{fontenc} to the preamble
-(frenchb.ldf)                of your document, on input line 179.
+(frenchb.ldf)                of your document, on input line 185.
 
 (/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
@@ -1229,7 +1229,7 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
 \AtBeginShipoutBox=\box66
-Package hyperref Info: Link coloring OFF on input line 179.
+Package hyperref Info: Link coloring OFF on input line 185.
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
@@ -1239,9 +1239,9 @@ Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
 \c@section@level=\count173
 )
-LaTeX Info: Redefining \ref on input line 179.
-LaTeX Info: Redefining \pageref on input line 179.
-LaTeX Info: Redefining \nameref on input line 179.
+LaTeX Info: Redefining \ref on input line 185.
+LaTeX Info: Redefining \pageref on input line 185.
+LaTeX Info: Redefining \nameref on input line 185.
 
 (./test2_template.out) (./test2_template.out)
 \@outlinefile=\write7
@@ -1272,7 +1272,7 @@ Underfull \hbox (badness 10000) in alignment at lines 11--11
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./images/TelecomParisTech_
 logo_200_01.png> <./images/Logo_SP.jpg>])
-Underfull \hbox (badness 10000) in paragraph at lines 188--189
+Underfull \hbox (badness 10000) in paragraph at lines 194--195
 
  []
 
@@ -1280,7 +1280,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.196 \newpage
+l.202 \newpage
                [1] (./test2_template.toc [2])
 \tf@toc=\write8
 \openout8 = `test2_template.toc'.
@@ -1312,7 +1312,7 @@ LaTeX Font Warning: Command \relsize invalid in math mode on input line 18.
 LaTeX Font Warning: Command \relsize invalid in math mode on input line 19.
 
 )
-Underfull \hbox (badness 10000) in paragraph at lines 22--206
+Underfull \hbox (badness 10000) in paragraph at lines 22--212
 
  []
 
@@ -1371,7 +1371,7 @@ has been already used, duplicate ignored
                                                   \fi \fi 
 l.28 \end{list}
                 <./images/routage_normal.png>])
-Underfull \hbox (badness 10000) in paragraph at lines 30--209
+Underfull \hbox (badness 10000) in paragraph at lines 30--215
 
  []
 
@@ -1407,7 +1407,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 9--10
  []
 
 )
-Underfull \hbox (badness 10000) in paragraph at lines 11--212
+Underfull \hbox (badness 10000) in paragraph at lines 11--218
 
  []
 
@@ -1476,7 +1476,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 15--16
  []
 
 ) [10] (./problematique.tex)
-Overfull \hbox (8.63966pt too wide) in paragraph at lines 1--219
+Overfull \hbox (8.63966pt too wide) in paragraph at lines 1--225
 \OT1/cmr/m/n/10.95 d'abord une ^^Setude des r^^Seseaux SDN (ne connais-sant pas
  le do-maine), puis d^^Sebut d'exp^^Serimentations
  []
@@ -1599,7 +1599,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 14--15
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.225 		\subsubsection
+l.231 		\subsubsection
                       {ONOS} <./images/lldp.png (PNG copy)>] (./onos.tex
 <images/ONOS_archi.png, id=320, 720.6925pt x 276.03125pt>
 File: images/ONOS_archi.png Graphic file (type png)
@@ -1733,7 +1733,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 1--8
  []
 
 [23])
-Overfull \hbox (0.12292pt too wide) in paragraph at lines 34--242
+Overfull \hbox (0.12292pt too wide) in paragraph at lines 34--248
 \OT1/cmr/m/n/10.95 -d'une part l'uti-li-sa-tion d'un chif-fre-ment entre contr^
 oleur et switch per-met th^^Seoriquement d'^^Seviter
  []
@@ -1975,31 +1975,31 @@ Underfull \hbox (badness 1584) in paragraph at lines 22--25
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 34--39
+Underfull \hbox (badness 10000) in paragraph at lines 40--45
 []\OT1/cmr/m/n/10 Seungsoo Lee Chan-ghoon Yoon.  At-ta-cking sdn in-fra-struc-t
 ure are we ready for
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 34--39
+Underfull \hbox (badness 10000) in paragraph at lines 40--45
 \OT1/cmr/m/n/10 the next gen net-wor-king ?  []$\OT1/cmtt/m/n/10 https : / / ww
 w . blackhat . com / docs / us-[]16 / materials /
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 34--39
+Underfull \hbox (badness 10000) in paragraph at lines 40--45
 \OT1/cmtt/m/n/10 us-[]16-[]Yoon-[]Attacking-[]SDN-[]Infrastructure-[]Are-[]We-[
 ]Ready-[]For-[]The-[]Next-[]Gen-[]Networking .
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 52--55
+Underfull \hbox (badness 10000) in paragraph at lines 58--61
 []\OT1/cmr/m/n/10 David Jorm.  Sdn and se-cu-rity.  []$\OT1/cmtt/m/n/10 http : 
 / / onosproject . org / 2015 / 04 / 03 /
  []
 
 [45]
-Underfull \hbox (badness 10000) in paragraph at lines 103--107
+Underfull \hbox (badness 10000) in paragraph at lines 109--113
 []\OT1/cmr/m/n/10 Hoelzle Tue.  Open-flow at google.  []$\OT1/cmtt/m/n/10 http 
 : / / opennetsummit . org / archives / apr12 /
  []
@@ -2008,26 +2008,59 @@ Underfull \hbox (badness 10000) in paragraph at lines 103--107
 \openout4 = `test2_template.pyg'.
 
 
-(./_minted-test2_template/6C46C90576F28AD3C4442AE1A1E341B9A64D4ABF6BB2AC84A5BFF
+(./_minted-test2_template/06B365F4927C5C5D983D9C982CC76CA5A64D4ABF6BB2AC84A5BFF
+69D50CE1732.pygtex) [47]
+Overfull \hbox (8.69464pt too wide) in paragraph at lines 31--32
+\OT1/cmr/m/n/10.95 d'abord il faut ^^Sediter le fi-chier \OT1/cmr/m/it/10.95 or
+g.apache.karaf.features.cfg \OT1/cmr/m/n/10.95 en ajou-tant mvn :org.onosprojec
+t/onos-
+ []
+
+\openout4 = `test2_template.pyg'.
+
+
+(./_minted-test2_template/5343B51999857EF73104DD8B5B34AE15A64D4ABF6BB2AC84A5BFF
+69D50CE1732.pygtex
+LaTeX Font Info:    Font shape `OT1/cmtt/bx/n' in size <10.95> not available
+(Font)              Font shape `OT1/cmtt/m/n' tried instead on input line 2.
+)
+\openout4 = `test2_template.pyg'.
+
+
+(./_minted-test2_template/98E00A3FB6DF4317D455CB2AB66E2577A64D4ABF6BB2AC84A5BFF
+69D50CE1732.pygtex)
+\openout4 = `test2_template.pyg'.
+
+
+(./_minted-test2_template/C50F85C9A930FEC1DE6F3CD8B7FC92DCA64D4ABF6BB2AC84A5BFF
+69D50CE1732.pygtex)
+\openout4 = `test2_template.pyg'.
+
+runsystem(pygmentize -l bash -f latex -P commandprefix=PYG -F tokenmerge -o "_m
+inted-test2_template/EFB200D0A26FF1F37B75B3247C1E5640A64D4ABF6BB2AC84A5BFF69D50
+CE1732.pygtex" "test2_template.pyg" )...executed.
+
+
+(./_minted-test2_template/EFB200D0A26FF1F37B75B3247C1E5640A64D4ABF6BB2AC84A5BFF
 69D50CE1732.pygtex))
 runsystem(rm "test2_template.pyg")...executed.
 
- [47]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 289.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 289.
+ [48]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 295.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 295.
  (./test2_template.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 289.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 289.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 295.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 295.
 Package rerunfilecheck Info: File `test2_template.out' has not changed.
 (rerunfilecheck)             Checksum: FDB2DA2E4013A17C2A4CF1D5BBE8DF56;2532.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 289.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 295.
  ) 
 Here is how much of TeX's memory you used:
- 22827 strings out of 494883
- 419513 string characters out of 6178692
- 575781 words of memory out of 5000000
- 25452 multiletter control sequences out of 15000+600000
- 13131 words of font info for 48 fonts, out of 8000000 for 9000
+ 22854 strings out of 494883
+ 421054 string characters out of 6178692
+ 576016 words of memory out of 5000000
+ 25463 multiletter control sequences out of 15000+600000
+ 13652 words of font info for 50 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
  62i,13n,67p,1630b,665s stack positions out of 5000i,500n,10000p,200000b,80000s
 pdfTeX warning (dest): name{Hfootnote.29} has been referenced but does not ex
@@ -2120,19 +2153,21 @@ pdfTeX warning (dest): name{Hfootnote.1} has been referenced but does not exist
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/
 share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/
 texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/share/texli
-ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texm
-f-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/
-fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/t
-ype1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/pub
-lic/amsfonts/cm/cmr9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsf
-onts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/c
-m/cmsy6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti1
-0.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt9.pfb>
-Output written on test2_template.pdf (48 pages, 1234370 bytes).
+ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmitt10.pfb></usr/share/texlive/te
+xmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dis
+t/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts
+/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/
+public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/a
+msfonts/cm/cmr9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/
+cm/cmsl10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cms
+y10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb
+></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr
+/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/share
+/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt9.pfb>
+Output written on test2_template.pdf (49 pages, 1257957 bytes).
 PDF statistics:
- 651 PDF objects out of 1000 (max. 8388607)
- 564 compressed objects within 6 object streams
- 154 named destinations out of 1000 (max. 500000)
+ 669 PDF objects out of 1000 (max. 8388607)
+ 579 compressed objects within 6 object streams
+ 156 named destinations out of 1000 (max. 500000)
  345 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -30,6 +30,12 @@ Spécification openflow 1.5.
   programmable networks.
 \newblock \url{https://hal.inria.fr/hal-00825087/file/hal_final.pdf}.
 
+\bibitem{inter_clustering}
+{bubakar Siddique Muqaddas, Andrea Bianco, Paolo Giaccone, Guido Maier}.
+\newblock Inter-controller traffic in onos clusters for sdn networks.
+\newblock
+  \url{http://www.telematica.polito.it/~giaccone/papers/icc16-onos.pdf}.
+
 \bibitem{next_gen}
 Seungsoo~Lee Changhoon~Yoon.
 \newblock Attacking sdn infrastructure are we ready for the next gen networking
@@ -54,7 +60,7 @@ David Jorm.
 \newblock \url{http://onosproject.org/2015/04/03/sdn-and-security-david-jorm/}.
 
 \bibitem{Vulns}
-L.J.~Camp K.~Benton and C.~Small.
+{K. Benton, L.J. Camp, and C. Small}.
 \newblock Openflow vulnerability assessment.
 \newblock
   \url{http://conferences.sigcomm.org/sigcomm/2012/paper/hotsdn/p121.pdf}.

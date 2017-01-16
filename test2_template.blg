@@ -7,52 +7,48 @@ Warning--to sort, need author or key in indirection
 Warning--to sort, need author or key in OF_10
 Warning--to sort, need author or key in OF_13
 Warning--to sort, need author or key in OF_15
-Name 1 in "K. Benton, L.J. Camp, and C. Small" has a comma at the end for entry Vulns
-while executing---line 1049 of file plain.bst
 Warning--to sort, need author or key in Wireshark
-Name 1 in "K. Benton, L.J. Camp, and C. Small" has a comma at the end for entry Vulns
-while executing---line 1090 of file plain.bst
 Warning--empty journal in rapport_maxence
 Warning--empty year in rapport_maxence
-You've used 20 entries,
+You've used 21 entries,
             2118 wiz_defined-function locations,
-            579 strings with 7552 characters,
-and the built_in function-call counts, 3912 in all, are:
-= -- 361
-> -- 116
+            583 strings with 7768 characters,
+and the built_in function-call counts, 4080 in all, are:
+= -- 377
+> -- 117
 < -- 0
-+ -- 54
++ -- 55
 - -- 32
-* -- 112
-:= -- 614
-add.period$ -- 54
-call.type$ -- 20
-change.case$ -- 76
+* -- 113
+:= -- 642
+add.period$ -- 57
+call.type$ -- 21
+change.case$ -- 79
 chr.to.int$ -- 0
-cite$ -- 27
-duplicate$ -- 143
-empty$ -- 441
+cite$ -- 28
+duplicate$ -- 150
+empty$ -- 463
 format.name$ -- 32
-if$ -- 876
+if$ -- 914
 int.to.chr$ -- 0
-int.to.str$ -- 20
+int.to.str$ -- 21
 missing$ -- 1
-newline$ -- 97
-num.names$ -- 30
-pop$ -- 161
+newline$ -- 102
+num.names$ -- 32
+pop$ -- 168
 preamble$ -- 1
-purify$ -- 56
+purify$ -- 58
 quote$ -- 0
-skip$ -- 158
+skip$ -- 165
 stack$ -- 0
-substring$ -- 102
-swap$ -- 19
+substring$ -- 107
+swap$ -- 20
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 80
+type$ -- 84
 warning$ -- 7
-while$ -- 30
-width$ -- 22
-write$ -- 170
-(There were 2 error messages)
+while$ -- 32
+width$ -- 23
+write$ -- 179
+(There were 7 warnings)
