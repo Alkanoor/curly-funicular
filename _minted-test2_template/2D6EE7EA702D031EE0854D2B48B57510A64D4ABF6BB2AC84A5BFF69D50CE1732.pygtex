@@ -2,5 +2,5 @@
 \PYGZdl{} \PYG{n+nb}{echo} \PYG{l+s+s1}{\PYGZsq{}\PYGZsh{}ONOS environment\PYGZsq{}}\PYGZgt{}\PYGZgt{}\PYGZti{}/.bashrc
 \PYGZdl{} \PYG{n+nb}{echo} . \PYG{k}{\PYGZdl{}(}\PYG{n+nb}{pwd}\PYG{k}{)}/onos/tools/dev/bash\PYGZus{}profile\PYGZgt{}\PYGZgt{}\PYGZti{}/.bashrc
 \PYGZdl{} \PYG{n+nb}{cd} onos
-\PYGZdl{} mvn clean
+\PYGZdl{} ../Applications/apache\PYGZhy{}maven\PYGZhy{}3.3.9/bin/mvn clean
 \end{Verbatim}
