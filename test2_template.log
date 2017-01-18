@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.12.13)  17 JAN 2017 18:27
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.12.13)  18 JAN 2017 18:24
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -1250,9 +1250,9 @@ LaTeX Info: Redefining \nameref on input line 185.
 
 ABD: EveryShipout initializing macros
 (./_minted-test2_template/default-pyg-prefix.pygstyle) (./title.tex
-<images/TelecomParisTech_logo_200_01.png, id=143, 212.795pt x 212.795pt>
+<images/TelecomParisTech_logo_200_01.png, id=179, 212.795pt x 212.795pt>
 <use images/TelecomParisTech_logo_200_01.png>
-<images/Logo_SP.jpg, id=144, 250.9375pt x 250.9375pt> <use images/Logo_SP.jpg>
+<images/Logo_SP.jpg, id=180, 250.9375pt x 250.9375pt> <use images/Logo_SP.jpg>
 File: images/TelecomParisTech_logo_200_01.png Graphic file (type png)
 
 <use images/TelecomParisTech_logo_200_01.png>
@@ -1281,11 +1281,11 @@ been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.202 \newpage
-               [1] (./test2_template.toc)
+               [1] (./test2_template.toc [2])
 \tf@toc=\write8
 \openout8 = `test2_template.toc'.
 
- [2] (./motivation_sdn.tex
+ [3] (./motivation_sdn.tex
 
 LaTeX Font Warning: Command \relsize invalid in math mode on input line 5.
 
@@ -1301,7 +1301,7 @@ Overfull \hbox (14.88225pt too wide) in paragraph at lines 9--10
 erentes. Pr^^Sec^^Sedemment le mod^^Rele client/serveur
  []
 
-[3]
+[4]
 
 LaTeX Font Warning: Command \relsize invalid in math mode on input line 17.
 
@@ -1321,7 +1321,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 1--2
 
  []
 
-[4]
+[5]
 Overfull \hbox (2.95403pt too wide) in paragraph at lines 3--4
 []\OT1/cmr/m/n/10.95 Pour r^^Sealiser cela, il est n^^Secessaire, puis-qu'un r^
 ^Seseau est constitu^^Se d'en-tit^^Ses phy-si-que-ment s^^Separ^^Sees,
@@ -1332,14 +1332,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 3--4
 
  []
 
-<images/routage_normal.png, id=183, 1018.80624pt x 359.3425pt>
+<images/routage_normal.png, id=268, 1018.80624pt x 359.3425pt>
 File: images/routage_normal.png Graphic file (type png)
 
 <use images/routage_normal.png>
 Package pdftex.def Info: images/routage_normal.png used on input line 9.
 (pdftex.def)             Requested size: 387.50443pt x 136.67767pt.
 
-<images/openflow.png, id=185, 1026.83624pt x 657.45625pt>
+<images/openflow.png, id=270, 1026.83624pt x 657.45625pt>
 File: images/openflow.png Graphic file (type png)
 
 <use images/openflow.png>
@@ -1364,7 +1364,7 @@ LaTeX Font Warning: Command \relsize invalid in math mode on input line 26.
 
 LaTeX Font Warning: Command \relsize invalid in math mode on input line 27.
 
-[5pdfTeX warning (ext4): destination with the same identifier (name{figure.1}) 
+[6pdfTeX warning (ext4): destination with the same identifier (name{figure.1}) 
 has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
@@ -1385,7 +1385,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 3--4
 
  []
 
-[6pdfTeX warning (ext4): destination with the same identifier (name{figure.2}) 
+[7pdfTeX warning (ext4): destination with the same identifier (name{figure.2}) 
 has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
@@ -1428,7 +1428,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 3--4
 
  []
 
-[7]
+[8]
 Overfull \hbox (24.32986pt too wide) in paragraph at lines 5--5
 [][][]\OT1/cmr/m/n/9 .[][]$\OT1/cmtt/m/n/9 http : / / www . networkworld . com 
 / article / 2937396 / cloud-[]computing / microsoft-[]needs-[]sdn-[]for-[]azure
@@ -1463,7 +1463,7 @@ Overfull \hbox (12.26282pt too wide) in paragraph at lines 12--13
 
 LaTeX Font Warning: Command \relsize invalid in math mode on input line 13.
 
-[8]
+[9]
 
 LaTeX Font Warning: Command \relsize invalid in math mode on input line 14.
 
@@ -1475,19 +1475,19 @@ Underfull \hbox (badness 10000) in paragraph at lines 15--16
 
  []
 
-) [9] (./problematique.tex)
+) [10] (./problematique.tex)
 Overfull \hbox (8.63966pt too wide) in paragraph at lines 1--225
 \OT1/cmr/m/n/10.95 d'abord une ^^Setude des r^^Seseaux SDN (ne connais-sant pas
  le do-maine), puis d^^Sebut d'exp^^Serimentations
  []
 
-(./openflow.tex <images/interfaces.jpg, id=237, 372.39125pt x 332.24126pt>
+(./openflow.tex <images/interfaces.jpg, id=321, 372.39125pt x 332.24126pt>
 File: images/interfaces.jpg Graphic file (type jpg)
 
 <use images/interfaces.jpg>
 Package pdftex.def Info: images/interfaces.jpg used on input line 4.
 (pdftex.def)             Requested size: 205.14653pt x 183.03235pt.
- [10]
+ [11]
 Underfull \hbox (badness 10000) in paragraph at lines 8--9
 
  []
@@ -1495,7 +1495,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 8--9
 
 LaTeX Font Warning: Command \relsize invalid in math mode on input line 13.
 
-[11pdfTeX warning (ext4): destination with the same identifier (name{figure.3})
+[12pdfTeX warning (ext4): destination with the same identifier (name{figure.3})
  has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
@@ -1508,7 +1508,7 @@ LaTeX Font Warning: Command \relsize invalid in math mode on input line 15.
 
 LaTeX Font Warning: Command \relsize invalid in math mode on input line 17.
 
-<images/brocade_flow.png, id=249, 433.62pt x 301.125pt>
+<images/brocade_flow.png, id=334, 433.62pt x 301.125pt>
 File: images/brocade_flow.png Graphic file (type png)
 
 <use images/brocade_flow.png>
@@ -1533,11 +1533,11 @@ LaTeX Font Warning: Command \relsize invalid in math mode on input line 45.
 
 LaTeX Font Warning: Command \relsize invalid in math mode on input line 47.
 
-[12]
+[13]
 
 LaTeX Font Warning: Command \relsize invalid in math mode on input line 49.
 
-<images/session_openflow_whouaouh.png, id=257, 1358.07375pt x 442.65375pt>
+<images/session_openflow_whouaouh.png, id=341, 1358.07375pt x 442.65375pt>
 File: images/session_openflow_whouaouh.png Graphic file (type png)
 
 <use images/session_openflow_whouaouh.png>
@@ -1548,7 +1548,7 @@ e 55.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[13pdfTeX warning (ext4): destination with the same identifier (name{figure.4})
+[14pdfTeX warning (ext4): destination with the same identifier (name{figure.4})
  has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
@@ -1572,14 +1572,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 3--5
 
  []
 
-[14pdfTeX warning (ext4): destination with the same identifier (name{figure.5})
+[15pdfTeX warning (ext4): destination with the same identifier (name{figure.5})
  has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.5 
      <./images/session_openflow_whouaouh.png (PNG copy)>]
-<images/lldp.png, id=273, 423.5825pt x 271.0125pt>
+<images/lldp.png, id=357, 423.5825pt x 271.0125pt>
 File: images/lldp.png Graphic file (type png)
  <use images/lldp.png>
 Package pdftex.def Info: images/lldp.png used on input line 8.
@@ -1594,14 +1594,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 14--15
 
  []
 
-) [15pdfTeX warning (ext4): destination with the same identifier (name{figure.6
+) [16pdfTeX warning (ext4): destination with the same identifier (name{figure.6
 }) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.231 		\subsubsection
                       {ONOS} <./images/lldp.png (PNG copy)>] (./onos.tex
-<images/ONOS_archi.png, id=282, 720.6925pt x 276.03125pt>
+<images/ONOS_archi.png, id=366, 720.6925pt x 276.03125pt>
 File: images/ONOS_archi.png Graphic file (type png)
 
 <use images/ONOS_archi.png>
@@ -1614,7 +1614,7 @@ LaTeX Font Warning: Command \relsize invalid in math mode on input line 16.
 
 LaTeX Font Warning: Command \relsize invalid in math mode on input line 18.
 
-[16pdfTeX warning (ext4): destination with the same identifier (name{figure.7})
+[17pdfTeX warning (ext4): destination with the same identifier (name{figure.7})
  has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
@@ -1641,7 +1641,7 @@ LaTeX Font Warning: Command \relsize invalid in math mode on input line 10.
 
 LaTeX Font Warning: Command \relsize invalid in math mode on input line 12.
 
-[17]) (./north_threat.tex
+[18]) (./north_threat.tex
 
 LaTeX Font Warning: Command \relsize invalid in math mode on input line 6.
 
@@ -1657,7 +1657,7 @@ LaTeX Font Warning: Command \relsize invalid in math mode on input line 12.
 
 LaTeX Font Warning: Command \relsize invalid in math mode on input line 14.
 
-<images/secure_mode.png, id=298, 325.215pt x 192.2382pt>
+<images/secure_mode.png, id=383, 325.215pt x 192.2382pt>
 File: images/secure_mode.png Graphic file (type png)
 
 <use images/secure_mode.png>
@@ -1667,7 +1667,7 @@ Package pdftex.def Info: images/secure_mode.png used on input line 22.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-) (./other_threat.tex [18]
+) (./other_threat.tex [19]
 
 LaTeX Font Warning: Command \relsize invalid in math mode on input line 5.
 
@@ -1684,7 +1684,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 7--8
 
 LaTeX Font Warning: Command \relsize invalid in math mode on input line 11.
 
-[19pdfTeX warning (ext4): destination with the same identifier (name{figure.8})
+[20pdfTeX warning (ext4): destination with the same identifier (name{figure.8})
  has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
@@ -1697,12 +1697,12 @@ LaTeX Font Warning: Command \relsize invalid in math mode on input line 13.
 
 LaTeX Font Warning: Command \relsize invalid in math mode on input line 15.
 
-<images/threats.png, id=313, 745.8264pt x 330.2739pt>
+<images/threats.png, id=397, 745.8264pt x 330.2739pt>
 File: images/threats.png Graphic file (type png)
  <use images/threats.png>
 Package pdftex.def Info: images/threats.png used on input line 22.
 (pdftex.def)             Requested size: 455.8843pt x 201.88pt.
-) (./scenarios.tex [20pdfTeX warning (ext4): destination with the same identifi
+) (./scenarios.tex [21pdfTeX warning (ext4): destination with the same identifi
 er (name{figure.9}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
@@ -1727,43 +1727,43 @@ LaTeX Font Warning: Command \relsize invalid in math mode on input line 19.
 
 LaTeX Font Warning: Command \relsize invalid in math mode on input line 22.
 
-) [21] (./scenario1.tex
+) [22] (./scenario1.tex
 Underfull \hbox (badness 10000) in paragraph at lines 1--8
 
  []
 
-[22])
+[23])
 Overfull \hbox (0.12292pt too wide) in paragraph at lines 34--248
 \OT1/cmr/m/n/10.95 -d'une part l'uti-li-sa-tion d'un chif-fre-ment entre contr^
 oleur et switch per-met th^^Seoriquement d'^^Seviter
  []
 
-[23] (./scenario2.tex
+[24] (./scenario2.tex
 Underfull \hbox (badness 10000) in paragraph at lines 1--5
 
  []
 
-[24]) [25] (./scenario3.tex
+[25]) [26] (./scenario3.tex
 Underfull \hbox (badness 10000) in paragraph at lines 1--4
 
  []
 
-) [26] [27] (./scenario4.tex
+) [27] [28] (./scenario4.tex
 Underfull \hbox (badness 10000) in paragraph at lines 1--3
 
  []
 
-) [28] [29] (./scenario5.tex
+) [29] [30] (./scenario5.tex
 Underfull \hbox (badness 10000) in paragraph at lines 1--3
 
  []
 
-) [30] [31] (./scenario6.tex
+) [31] [32] (./scenario6.tex
 Underfull \hbox (badness 10000) in paragraph at lines 1--4
 
  []
 
-) [32] [33] (./results.tex
+) [33] [34] (./results.tex
 
 LaTeX Font Warning: Command \relsize invalid in math mode on input line 5.
 
@@ -1777,7 +1777,7 @@ ocs / us-[]16 / materials / us-[]16-[]Yoon-[]Attacking-[]SDN-[]Infrastructure-[
 ]Are-[]We-[]Ready-[]For-[]The-[]Next-[]Gen-[]Networking .
  []
 
-[34]
+[35]
 
 LaTeX Font Warning: Command \relsize invalid in math mode on input line 7.
 
@@ -1803,7 +1803,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 19--20
 
  []
 
-[35]
+[36]
 Underfull \hbox (badness 10000) in paragraph at lines 28--29
 []|\OT1/cmr/m/n/10 Programmation in-tel-li-gente du
  []
@@ -1902,13 +1902,13 @@ Overfull \hbox (5.69167pt too wide) in alignment at lines 23--43
 Underfull \vbox (badness 10000) detected at line 43
  []
 
-[36] [37] <images/replication.png, id=408, 350.30875pt x 238.8925pt>
+[37] [38] <images/replication.png, id=492, 350.30875pt x 238.8925pt>
 File: images/replication.png Graphic file (type png)
 
 <use images/replication.png>
 Package pdftex.def Info: images/replication.png used on input line 53.
 (pdftex.def)             Requested size: 227.94214pt x 155.4496pt.
-) (./stride.tex [38pdfTeX warning (ext4): destination with the same identifier 
+) (./stride.tex [39pdfTeX warning (ext4): destination with the same identifier 
 (name{figure.10}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
@@ -1942,7 +1942,7 @@ LaTeX Font Warning: Command \relsize invalid in math mode on input line 44.
 
 LaTeX Font Warning: Command \relsize invalid in math mode on input line 45.
 
-) [39] (./conclusion.tex
+) [40] (./conclusion.tex
 
 LaTeX Font Warning: Command \relsize invalid in math mode on input line 7.
 
@@ -1952,7 +1952,7 @@ LaTeX Font Warning: Command \relsize invalid in math mode on input line 8.
 
 LaTeX Font Warning: Command \relsize invalid in math mode on input line 9.
 
-[40]) [41] (./perspectives.tex
+[41]) [42] (./perspectives.tex
 Underfull \hbox (badness 10000) in paragraph at lines 1--5
 
  []
@@ -1962,7 +1962,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 6--7
 
  []
 
-[42]) [43] (./test2_template.bbl
+[43]) [44] (./test2_template.bbl
 Underfull \hbox (badness 1584) in paragraph at lines 17--20
 []\OT1/cmr/m/n/10 Sp^^Secification open-flow 1.3.  []$\OT1/cmtt/m/n/10 https : 
 / / www . opennetworking . org / images / stories / downloads /
@@ -1998,18 +1998,18 @@ Underfull \hbox (badness 10000) in paragraph at lines 58--61
 / / onosproject . org / 2015 / 04 / 03 /
  []
 
-[44]
+[45]
 Underfull \hbox (badness 10000) in paragraph at lines 109--113
 []\OT1/cmr/m/n/10 Hoelzle Tue.  Open-flow at google.  []$\OT1/cmtt/m/n/10 http 
 : / / opennetsummit . org / archives / apr12 /
  []
 
-) [45] (./tutoriel.tex
+) [46] (./tutoriel.tex
 \openout4 = `test2_template.pyg'.
 
 
 (./_minted-test2_template/B7DC51D4D35F4F25ACA6D312637F762CA64D4ABF6BB2AC84A5BFF
-69D50CE1732.pygtex) [46]
+69D50CE1732.pygtex) [47]
 Overfull \hbox (8.69464pt too wide) in paragraph at lines 32--33
 \OT1/cmr/m/n/10.95 d'abord il faut ^^Sediter le fi-chier \OT1/cmr/m/it/10.95 or
 g.apache.karaf.features.cfg \OT1/cmr/m/n/10.95 en ajou-tant mvn :org.onosprojec
@@ -2043,41 +2043,189 @@ ables ONOS[]WEB[]USER, ONOS[]WEB[]PASS
 
 
 (./_minted-test2_template/EFB200D0A26FF1F37B75B3247C1E5640A64D4ABF6BB2AC84A5BFF
-69D50CE1732.pygtex) [47]
+69D50CE1732.pygtex) [48]
 \openout4 = `test2_template.pyg'.
 
 
-(./_minted-test2_template/C5785B344C402A898B657A69F9A966AEA64D4ABF6BB2AC84A5BFF
-69D50CE1732.pygtex) <images/onos_GUI.png, id=544, 1675.25874pt x 870.25125pt>
+(./_minted-test2_template/758AD23A58A42815703FB3FB5B381F02A64D4ABF6BB2AC84A5BFF
+69D50CE1732.pygtex) <images/onos_GUI.png, id=631, 1675.25874pt x 870.25125pt>
 File: images/onos_GUI.png Graphic file (type png)
 
 <use images/onos_GUI.png>
 Package pdftex.def Info: images/onos_GUI.png used on input line 75.
 (pdftex.def)             Requested size: 455.8843pt x 236.81674pt.
+) [49pdfTeX warning (ext4): destination with the same identifier (name{figure.1
+2}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.293 	\newpage
+                <./images/onos_GUI.png (PNG copy)>] (./annexe_scenario1.tex
+\openout4 = `test2_template.pyg'.
+
+
+(./_minted-test2_template/D404F951EB309657D3F887D6B1ED3072A64D4ABF6BB2AC84A5BFF
+69D50CE1732.pygtex)
+\openout4 = `test2_template.pyg'.
+
+
+(./_minted-test2_template/3043071C49BDA49A77A9A81CF501AAB1A64D4ABF6BB2AC84A5BFF
+69D50CE1732.pygtex)
+Underfull \hbox (badness 10000) in paragraph at lines 25--27
+
+ []
+
+<images/ping_before.png, id=637, 1241.63875pt x 125.46875pt>
+File: images/ping_before.png Graphic file (type png)
+
+<use images/ping_before.png>
+Package pdftex.def Info: images/ping_before.png used on input line 30.
+(pdftex.def)             Requested size: 455.8843pt x 46.0666pt.
+
+<images/ping_after.png, id=642, 1259.70625pt x 171.64125pt>
+File: images/ping_after.png Graphic file (type png)
+
+<use images/ping_after.png>
+Package pdftex.def Info: images/ping_after.png used on input line 36.
+(pdftex.def)             Requested size: 455.8843pt x 62.11555pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 40--41
+
+ []
+
+[50pdfTeX warning (ext4): destination with the same identifier (name{figure.13}
+) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.41 
+      <./images/ping_before.png (PNG copy)>]) [51pdfTeX warning (ext4): destina
+tion with the same identifier (name{figure.14}) has been already used, duplicat
+e ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.295 	\newpage
+                <./images/ping_after.png (PNG copy)>] (./annexe_scenario2.tex
+\openout4 = `test2_template.pyg'.
+
+
+(./_minted-test2_template/2DDB70277EEDF68D69D023590FB58D55A64D4ABF6BB2AC84A5BFF
+69D50CE1732.pygtex)
+\openout4 = `test2_template.pyg'.
+
+
+(./_minted-test2_template/4C907E8EEA679671923DD6023D46ECA8A64D4ABF6BB2AC84A5BFF
+69D50CE1732.pygtex)
+<images/scenario2_no_attack.png, id=659, 1674.255pt x 743.77875pt>
+File: images/scenario2_no_attack.png Graphic file (type png)
+
+<use images/scenario2_no_attack.png>
+Package pdftex.def Info: images/scenario2_no_attack.png used on input line 27.
+(pdftex.def)             Requested size: 455.8843pt x 202.51396pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 32--33
+
+ []
+
+[52pdfTeX warning (ext4): destination with the same identifier (name{figure.15}
+) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.33 
+      <./images/scenario2_no_attack.png (PNG copy)>]
+<images/scenario2_success_colored.png, id=665, 1673.25125pt x 784.9325pt>
+File: images/scenario2_success_colored.png Graphic file (type png)
+
+<use images/scenario2_success_colored.png>
+Package pdftex.def Info: images/scenario2_success_colored.png used on input lin
+e 36.
+(pdftex.def)             Requested size: 455.8843pt x 213.85094pt.
+) [53pdfTeX warning (ext4): destination with the same identifier (name{figure.1
+6}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.297 	\newpage
+                <./images/scenario2_success_colored.png (PNG copy)>]
+(./annexe_scenario3.tex
+\openout4 = `test2_template.pyg'.
+
+
+(./_minted-test2_template/3909411178131A311601E5B37B16B478A64D4ABF6BB2AC84A5BFF
+69D50CE1732.pygtex) <images/packets_in.png, id=671, 791.95876pt x 168.63pt>
+File: images/packets_in.png Graphic file (type png)
+
+<use images/packets_in.png>
+Package pdftex.def Info: images/packets_in.png used on input line 23.
+(pdftex.def)             Requested size: 455.8843pt x 97.07213pt.
+
+<images/surcharge.png, id=672, 1665.22125pt x 731.73375pt>
+File: images/surcharge.png Graphic file (type png)
+
+<use images/surcharge.png>
+Package pdftex.def Info: images/surcharge.png used on input line 31.
+(pdftex.def)             Requested size: 455.8843pt x 200.32858pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<images/DOS.png, id=673, 562.1pt x 624.3325pt>
+File: images/DOS.png Graphic file (type png)
+ <use images/DOS.png>
+Package pdftex.def Info: images/DOS.png used on input line 37.
+(pdftex.def)             Requested size: 364.70882pt x 405.0873pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
 )
+Underfull \hbox (badness 10000) in paragraph at lines 41--299
+
+ []
+
 runsystem(rm "test2_template.pyg")...executed.
 
- [48pdfTeX warning (ext4): destination with the same identifier (name{figure.12
+[54pdfTeX warning (ext4): destination with the same identifier (name{figure.17}
+) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.300 \end{document}
+                     <./images/packets_in.png (PNG copy)>]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 300.
+ [55pdfTeX warning (ext4): destination with the same identifier (name{figure.18
 }) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.295 \end{document}
-                     <./images/onos_GUI.png (PNG copy)>]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 295.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 295.
+l.300 \end{document}
+                     <./images/surcharge.png (PNG copy)>] [56pdfTeX warning (ex
+t4): destination with the same identifier (name{figure.19}) has been already us
+ed, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.300 \end{document}
+                     <./images/DOS.png (PNG copy)>]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 300.
  (./test2_template.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 295.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 295.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 300.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 300.
 Package rerunfilecheck Info: File `test2_template.out' has not changed.
-(rerunfilecheck)             Checksum: FDB2DA2E4013A17C2A4CF1D5BBE8DF56;2532.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 295.
+(rerunfilecheck)             Checksum: 3B92AE8E77CE9F4F085D2414B6957CDD;3147.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 300.
  ) 
 Here is how much of TeX's memory you used:
- 22864 strings out of 494883
- 421509 string characters out of 6178692
- 576162 words of memory out of 5000000
- 25468 multiletter control sequences out of 15000+600000
+ 22962 strings out of 494883
+ 424753 string characters out of 6178692
+ 576527 words of memory out of 5000000
+ 25511 multiletter control sequences out of 15000+600000
  13652 words of font info for 50 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
  62i,13n,67p,1630b,665s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -2182,10 +2330,10 @@ y10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb
 ></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr
 /share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/share
 /texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt9.pfb>
-Output written on test2_template.pdf (49 pages, 1362353 bytes).
+Output written on test2_template.pdf (57 pages, 3400872 bytes).
 PDF statistics:
- 638 PDF objects out of 1000 (max. 8388607)
- 547 compressed objects within 6 object streams
- 157 named destinations out of 1000 (max. 500000)
- 350 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 782 PDF objects out of 1000 (max. 8388607)
+ 671 compressed objects within 7 object streams
+ 181 named destinations out of 1000 (max. 500000)
+ 457 words of extra memory for PDF output out of 10000 (max. 10000000)
 

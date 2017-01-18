@@ -50,7 +50,7 @@ $ ../Applications/apache-maven-3.3.9/bin/mvn clean
 
 Pour changer les identifiants par défaut (\textit{grep \$(pwd)/onos/tools/dev/bash\_profile -e "ONOS"} changer les variables ONOS\_USER et ONOS\_GROUP avec le nom de l'utilisateur actuel (elles valent normalement "sdn"), et éventuellement les variables ONOS\_WEB\_USER, ONOS\_WEB\_PASS (identifiants pour l'interface web)).
 Quitter le shell en cours pour charger le nouveau .bashrc (ou le charger directement avec source).
-Puis compiler ONOS (ceci prend un certain temps (au minimum une quinzaine de minutes)).
+Puis compiler ONOS (ceci prend un certain temps (au minimum une dizaine de minutes)).
 
 \begin{minted}{bash}
 $ mvn clean install
@@ -62,11 +62,11 @@ $ ok clean #onos-karaf clean
 \end{minted}
 
 Il est possible que toutes les variables nécessaires ne soient pas encore présentes dans l'environnement. Dans ce cas, redémarrer la VM. Si après cela il y a encore des erreurs de programmes non trouvables (onos-karaf, karaf), exporter les variables KARAF\_ROOT et ONOS\_ROOT en cherchant où sont localisés les exécutables.
-Pour vérifier que l'installation a fonctionné, on peut accéder à l'URL http://[adresse du contrôleur sur le réseau]:8181/onos/ui/login.html\#/topo avec les logins indiqués (si rien n'a été changé, karaf/karaf permet de se connecter à l'interface graphique).
+Pour vérifier que l'installation a fonctionné, on peut accéder à l'URL \url{http://}[adresse du contrôleur sur le réseau]\url{:8181/onos/ui/login.html\#/topo} avec les logins indiqués (si rien n'a été changé, karaf/karaf permet de se connecter à l'interface graphique).
 
 Sur la machine contenant mininet, se placer dans le dossier ONOS-Attack et exécuter le fichier general\_topology.py en lui indiquant l'adresse du contrôleur sur le réseau :
 \begin{minted}{bash}
-$ sudo python general_topology.py [addresse d'ONOS]
+$ sudo python general_topology.py [addresse IP du contrôleur]
 \end{minted}
 
 Ensuite activer l'affichage des hôtes sur ONOS et éxecuter la commande \textit{pingall} dans Mininet. Si quelque chose de semblable est obtenu sur l'interface graphique, tout s'est bien déroulé :
