@@ -1,0 +1,3 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYGZdl{} onos\PYGZhy{}app localhost install target/app1\PYGZhy{}1.7\PYGZhy{}SNAPSHOT.oar
+\end{Verbatim}

@@ -1,0 +1,12 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{n+nt}{\PYGZlt{}dependency\PYGZgt{}}
+    \PYG{n+nt}{\PYGZlt{}groupId\PYGZgt{}}org.slf4j\PYG{n+nt}{\PYGZlt{}/groupId\PYGZgt{}}
+    \PYG{n+nt}{\PYGZlt{}artifactId\PYGZgt{}}slf4j\PYGZhy{}api\PYG{n+nt}{\PYGZlt{}/artifactId\PYGZgt{}}
+    \PYG{n+nt}{\PYGZlt{}version\PYGZgt{}}1.7.5\PYG{n+nt}{\PYGZlt{}/version\PYGZgt{}}
+\PYG{n+nt}{\PYGZlt{}/dependency\PYGZgt{}}
+\PYG{n+nt}{\PYGZlt{}dependency\PYGZgt{}}
+    \PYG{n+nt}{\PYGZlt{}groupId\PYGZgt{}}org.slf4j\PYG{n+nt}{\PYGZlt{}/groupId\PYGZgt{}}
+    \PYG{n+nt}{\PYGZlt{}artifactId\PYGZgt{}}slf4j\PYGZhy{}log4j12\PYG{n+nt}{\PYGZlt{}/artifactId\PYGZgt{}}
+    \PYG{n+nt}{\PYGZlt{}version\PYGZgt{}}1.7.5\PYG{n+nt}{\PYGZlt{}/version\PYGZgt{}}
+\PYG{n+nt}{\PYGZlt{}/dependency\PYGZgt{}}
+\end{Verbatim}

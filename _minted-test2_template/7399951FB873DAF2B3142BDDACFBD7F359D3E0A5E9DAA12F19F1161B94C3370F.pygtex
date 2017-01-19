@@ -1,0 +1,10 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{c}{\PYGZlt{}!\PYGZhy{}\PYGZhy{} Uncomment to generate ONOS app from this module.\PYGZhy{}\PYGZhy{}\PYGZgt{}}
+\PYG{n+nt}{\PYGZlt{}onos.app.name\PYGZgt{}}org.app1\PYG{n+nt}{\PYGZlt{}/onos.app.name\PYGZgt{}}
+\PYG{n+nt}{\PYGZlt{}onos.app.title\PYGZgt{}}App1\PYG{n+nt}{\PYGZlt{}/onos.app.title\PYGZgt{}}
+\PYG{n+nt}{\PYGZlt{}onos.app.origin\PYGZgt{}}App1, Inc.\PYG{n+nt}{\PYGZlt{}/onos.app.origin\PYGZgt{}}
+\PYG{n+nt}{\PYGZlt{}onos.app.category\PYGZgt{}}default\PYG{n+nt}{\PYGZlt{}/onos.app.category\PYGZgt{}}
+\PYG{n+nt}{\PYGZlt{}onos.app.url\PYGZgt{}}http://onosproject.org\PYG{n+nt}{\PYGZlt{}/onos.app.url\PYGZgt{}}
+\PYG{n+nt}{\PYGZlt{}onos.app.readme\PYGZgt{}}ONOS OSGi bundle archetype.\PYG{n+nt}{\PYGZlt{}/onos.app.readme\PYGZgt{}}
+\PYG{c}{\PYGZlt{}!\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZgt{}}
+\end{Verbatim}

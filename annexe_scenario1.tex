@@ -40,4 +40,4 @@ Ouvrir le fichier dump\_victime.pcap : on constate que les pings proviennent et 
 Si wireshark a été utilisé au niveau du contrôleur, on peut constater les nombreux PACKET\_IN reçus encapsulant de l'ARP au début de l'attaque (h6 cherchant à obtenir les adresses mac de tous les équipements possibles sur le réseau (configurable dans ettercap, mais par défaut cela permet de repérer facilement l'attaque)).\\
 
 \underline{Conclusion :}\\
-Sans TLS activé au niveau de l'interface sud, possibilité d'agir fortement sur le réseau (action directe sur la topologie notamment). Avec TLS, il est toujours possible de modifier le trafic sur le plan de données à la volée. Il est possible d'empêcher cette attaque si le contrôleur intercepte et analyse tous les paquets ARP (attention au DoS éventuel dans ce cas).
+Sans TLS activé au niveau de l'interface sud, il est possible d'agir fortement sur le réseau (action directe sur la topologie notamment). Avec TLS, il est toujours possible de modifier le trafic sur le plan de données à la volée. Il est possible d'empêcher cette attaque si le contrôleur intercepte et analyse tous les paquets ARP (attention au DoS éventuel dans ce cas).

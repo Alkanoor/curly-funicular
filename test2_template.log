@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.12.13)  18 JAN 2017 18:24
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.12.13)  19 JAN 2017 17:58
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -1250,9 +1250,9 @@ LaTeX Info: Redefining \nameref on input line 185.
 
 ABD: EveryShipout initializing macros
 (./_minted-test2_template/default-pyg-prefix.pygstyle) (./title.tex
-<images/TelecomParisTech_logo_200_01.png, id=179, 212.795pt x 212.795pt>
+<images/TelecomParisTech_logo_200_01.png, id=187, 212.795pt x 212.795pt>
 <use images/TelecomParisTech_logo_200_01.png>
-<images/Logo_SP.jpg, id=180, 250.9375pt x 250.9375pt> <use images/Logo_SP.jpg>
+<images/Logo_SP.jpg, id=188, 250.9375pt x 250.9375pt> <use images/Logo_SP.jpg>
 File: images/TelecomParisTech_logo_200_01.png Graphic file (type png)
 
 <use images/TelecomParisTech_logo_200_01.png>
@@ -1332,14 +1332,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 3--4
 
  []
 
-<images/routage_normal.png, id=268, 1018.80624pt x 359.3425pt>
+<images/routage_normal.png, id=278, 1018.80624pt x 359.3425pt>
 File: images/routage_normal.png Graphic file (type png)
 
 <use images/routage_normal.png>
 Package pdftex.def Info: images/routage_normal.png used on input line 9.
 (pdftex.def)             Requested size: 387.50443pt x 136.67767pt.
 
-<images/openflow.png, id=270, 1026.83624pt x 657.45625pt>
+<images/openflow.png, id=280, 1026.83624pt x 657.45625pt>
 File: images/openflow.png Graphic file (type png)
 
 <use images/openflow.png>
@@ -1481,7 +1481,7 @@ Overfull \hbox (8.63966pt too wide) in paragraph at lines 1--225
  le do-maine), puis d^^Sebut d'exp^^Serimentations
  []
 
-(./openflow.tex <images/interfaces.jpg, id=321, 372.39125pt x 332.24126pt>
+(./openflow.tex <images/interfaces.jpg, id=331, 372.39125pt x 332.24126pt>
 File: images/interfaces.jpg Graphic file (type jpg)
 
 <use images/interfaces.jpg>
@@ -1508,7 +1508,7 @@ LaTeX Font Warning: Command \relsize invalid in math mode on input line 15.
 
 LaTeX Font Warning: Command \relsize invalid in math mode on input line 17.
 
-<images/brocade_flow.png, id=334, 433.62pt x 301.125pt>
+<images/brocade_flow.png, id=344, 433.62pt x 301.125pt>
 File: images/brocade_flow.png Graphic file (type png)
 
 <use images/brocade_flow.png>
@@ -1537,7 +1537,7 @@ LaTeX Font Warning: Command \relsize invalid in math mode on input line 47.
 
 LaTeX Font Warning: Command \relsize invalid in math mode on input line 49.
 
-<images/session_openflow_whouaouh.png, id=341, 1358.07375pt x 442.65375pt>
+<images/session_openflow_whouaouh.png, id=351, 1358.07375pt x 442.65375pt>
 File: images/session_openflow_whouaouh.png Graphic file (type png)
 
 <use images/session_openflow_whouaouh.png>
@@ -1579,7 +1579,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 3--5
                                                   \fi \fi 
 l.5 
      <./images/session_openflow_whouaouh.png (PNG copy)>]
-<images/lldp.png, id=357, 423.5825pt x 271.0125pt>
+<images/lldp.png, id=367, 423.5825pt x 271.0125pt>
 File: images/lldp.png Graphic file (type png)
  <use images/lldp.png>
 Package pdftex.def Info: images/lldp.png used on input line 8.
@@ -1601,7 +1601,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 14--15
                                                   \fi \fi 
 l.231 		\subsubsection
                       {ONOS} <./images/lldp.png (PNG copy)>] (./onos.tex
-<images/ONOS_archi.png, id=366, 720.6925pt x 276.03125pt>
+<images/ONOS_archi.png, id=376, 720.6925pt x 276.03125pt>
 File: images/ONOS_archi.png Graphic file (type png)
 
 <use images/ONOS_archi.png>
@@ -1657,7 +1657,7 @@ LaTeX Font Warning: Command \relsize invalid in math mode on input line 12.
 
 LaTeX Font Warning: Command \relsize invalid in math mode on input line 14.
 
-<images/secure_mode.png, id=383, 325.215pt x 192.2382pt>
+<images/secure_mode.png, id=393, 325.215pt x 192.2382pt>
 File: images/secure_mode.png Graphic file (type png)
 
 <use images/secure_mode.png>
@@ -1697,7 +1697,7 @@ LaTeX Font Warning: Command \relsize invalid in math mode on input line 13.
 
 LaTeX Font Warning: Command \relsize invalid in math mode on input line 15.
 
-<images/threats.png, id=397, 745.8264pt x 330.2739pt>
+<images/threats.png, id=407, 745.8264pt x 330.2739pt>
 File: images/threats.png Graphic file (type png)
  <use images/threats.png>
 Package pdftex.def Info: images/threats.png used on input line 22.
@@ -1902,7 +1902,7 @@ Overfull \hbox (5.69167pt too wide) in alignment at lines 23--43
 Underfull \vbox (badness 10000) detected at line 43
  []
 
-[37] [38] <images/replication.png, id=492, 350.30875pt x 238.8925pt>
+[37] [38] <images/replication.png, id=502, 350.30875pt x 238.8925pt>
 File: images/replication.png Graphic file (type png)
 
 <use images/replication.png>
@@ -2048,7 +2048,7 @@ ables ONOS[]WEB[]USER, ONOS[]WEB[]PASS
 
 
 (./_minted-test2_template/758AD23A58A42815703FB3FB5B381F02A64D4ABF6BB2AC84A5BFF
-69D50CE1732.pygtex) <images/onos_GUI.png, id=631, 1675.25874pt x 870.25125pt>
+69D50CE1732.pygtex) <images/onos_GUI.png, id=641, 1675.25874pt x 870.25125pt>
 File: images/onos_GUI.png Graphic file (type png)
 
 <use images/onos_GUI.png>
@@ -2075,14 +2075,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 25--27
 
  []
 
-<images/ping_before.png, id=637, 1241.63875pt x 125.46875pt>
+<images/ping_before.png, id=647, 1241.63875pt x 125.46875pt>
 File: images/ping_before.png Graphic file (type png)
 
 <use images/ping_before.png>
 Package pdftex.def Info: images/ping_before.png used on input line 30.
 (pdftex.def)             Requested size: 455.8843pt x 46.0666pt.
 
-<images/ping_after.png, id=642, 1259.70625pt x 171.64125pt>
+<images/ping_after.png, id=652, 1259.70625pt x 171.64125pt>
 File: images/ping_after.png Graphic file (type png)
 
 <use images/ping_after.png>
@@ -2121,7 +2121,7 @@ l.295 	\newpage
 
 (./_minted-test2_template/4C907E8EEA679671923DD6023D46ECA8A64D4ABF6BB2AC84A5BFF
 69D50CE1732.pygtex)
-<images/scenario2_no_attack.png, id=659, 1674.255pt x 743.77875pt>
+<images/scenario2_no_attack.png, id=669, 1674.255pt x 743.77875pt>
 File: images/scenario2_no_attack.png Graphic file (type png)
 
 <use images/scenario2_no_attack.png>
@@ -2139,7 +2139,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 32--33
                                                   \fi \fi 
 l.33 
       <./images/scenario2_no_attack.png (PNG copy)>]
-<images/scenario2_success_colored.png, id=665, 1673.25125pt x 784.9325pt>
+<images/scenario2_success_colored.png, id=675, 1673.25125pt x 784.9325pt>
 File: images/scenario2_success_colored.png Graphic file (type png)
 
 <use images/scenario2_success_colored.png>
@@ -2158,74 +2158,126 @@ l.297 	\newpage
 
 
 (./_minted-test2_template/3909411178131A311601E5B37B16B478A64D4ABF6BB2AC84A5BFF
-69D50CE1732.pygtex) <images/packets_in.png, id=671, 791.95876pt x 168.63pt>
-File: images/packets_in.png Graphic file (type png)
-
-<use images/packets_in.png>
-Package pdftex.def Info: images/packets_in.png used on input line 23.
-(pdftex.def)             Requested size: 455.8843pt x 97.07213pt.
-
-<images/surcharge.png, id=672, 1665.22125pt x 731.73375pt>
+69D50CE1732.pygtex) <images/surcharge.png, id=681, 1665.22125pt x 731.73375pt>
 File: images/surcharge.png Graphic file (type png)
 
 <use images/surcharge.png>
-Package pdftex.def Info: images/surcharge.png used on input line 31.
+Package pdftex.def Info: images/surcharge.png used on input line 23.
 (pdftex.def)             Requested size: 455.8843pt x 200.32858pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-<images/DOS.png, id=673, 562.1pt x 624.3325pt>
+ <images/DOS.png, id=682, 562.1pt x 624.3325pt>
 File: images/DOS.png Graphic file (type png)
- <use images/DOS.png>
-Package pdftex.def Info: images/DOS.png used on input line 37.
-(pdftex.def)             Requested size: 364.70882pt x 405.0873pt.
+
+<use images/DOS.png>
+Package pdftex.def Info: images/DOS.png used on input line 29.
+(pdftex.def)             Requested size: 319.1176pt x 354.44424pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
-
-)
-Underfull \hbox (badness 10000) in paragraph at lines 41--299
-
- []
-
-runsystem(rm "test2_template.pyg")...executed.
 
 [54pdfTeX warning (ext4): destination with the same identifier (name{figure.17}
 ) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.300 \end{document}
-                     <./images/packets_in.png (PNG copy)>]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 300.
- [55pdfTeX warning (ext4): destination with the same identifier (name{figure.18
-}) has been already used, duplicate ignored
+l.38 
+      <./images/surcharge.png (PNG copy)>]
+<images/packets_in.png, id=689, 791.95876pt x 168.63pt>
+File: images/packets_in.png Graphic file (type png)
+
+<use images/packets_in.png>
+Package pdftex.def Info: images/packets_in.png used on input line 41.
+(pdftex.def)             Requested size: 455.8843pt x 97.07213pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+) [55pdfTeX warning (ext4): destination with the same identifier (name{figure.1
+8}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.300 \end{document}
-                     <./images/surcharge.png (PNG copy)>] [56pdfTeX warning (ex
-t4): destination with the same identifier (name{figure.19}) has been already us
-ed, duplicate ignored
+l.299 	\newpage
+                <./images/DOS.png (PNG copy)>] [56pdfTeX warning (ext4): destin
+ation with the same identifier (name{figure.19}) has been already used, duplica
+te ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.300 \end{document}
-                     <./images/DOS.png (PNG copy)>]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 300.
+l.299 	\newpage
+                <./images/packets_in.png (PNG copy)>] (./annexe_scenario4.tex
+\openout4 = `test2_template.pyg'.
+
+
+(./_minted-test2_template/28F17A574E152BBB74F0ED12447034D0A64D4ABF6BB2AC84A5BFF
+69D50CE1732.pygtex)
+\openout4 = `test2_template.pyg'.
+
+
+(./_minted-test2_template/B0CFD0D9E28BF56653D75AAD2E2BAA46A64D4ABF6BB2AC84A5BFF
+69D50CE1732.pygtex)
+Overfull \hbox (5.96411pt too wide) in paragraph at lines 24--25
+[]\OT1/cmr/m/n/10.95 Ensuite pour chaque ap-pli-ca-tion cr^^Se^^See d'in-dex i,
+ co-pier le contenu de ONOS-Attack/attacks/scena-
+ []
+
+
+Overfull \hbox (4.30952pt too wide) in paragraph at lines 24--25
+\OT1/cmr/m/n/10.95 rio4/app[i].java dans my[]apps/app[i]/src/main/java/org/app1
+/AppComponent.java, par exemple
+ []
+
+\openout4 = `test2_template.pyg'.
+
+
+(./_minted-test2_template/AFD2674E04B158180794770941012397A64D4ABF6BB2AC84A5BFF
+69D50CE1732.pygtex)
+\openout4 = `test2_template.pyg'.
+
+
+(./_minted-test2_template/7399951FB873DAF2B3142BDDACFBD7F359D3E0A5E9DAA12F19F11
+61B94C3370F.pygtex [57])
+\openout4 = `test2_template.pyg'.
+
+
+(./_minted-test2_template/476A23184C23EC66DE3181179C3E8A03A64D4ABF6BB2AC84A5BFF
+69D50CE1732.pygtex)
+\openout4 = `test2_template.pyg'.
+
+
+(./_minted-test2_template/550709875CF9A92EA758C3E075276F2759D3E0A5E9DAA12F19F11
+61B94C3370F.pygtex)
+\openout4 = `test2_template.pyg'.
+
+
+(./_minted-test2_template/261F6CF8C11C2E0006563854D09D2501A64D4ABF6BB2AC84A5BFF
+69D50CE1732.pygtex)
+\openout4 = `test2_template.pyg'.
+
+
+(./_minted-test2_template/2D8A8B6DE01D5F9BF18BE1DA6FAE7ACCA64D4ABF6BB2AC84A5BFF
+69D50CE1732.pygtex)
+\openout4 = `test2_template.pyg'.
+
+
+(./_minted-test2_template/F2F3FF7267C81F7AF82C84AF7D9B2173A64D4ABF6BB2AC84A5BFF
+69D50CE1732.pygtex))
+runsystem(rm "test2_template.pyg")...executed.
+
+ [58]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 302.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 302.
  (./test2_template.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 300.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 300.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 302.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 302.
 Package rerunfilecheck Info: File `test2_template.out' has not changed.
-(rerunfilecheck)             Checksum: 3B92AE8E77CE9F4F085D2414B6957CDD;3147.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 300.
+(rerunfilecheck)             Checksum: 623DE11F759EDE0386EC7796FC62DDD6;3281.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 302.
  ) 
 Here is how much of TeX's memory you used:
- 22962 strings out of 494883
- 424753 string characters out of 6178692
- 576527 words of memory out of 5000000
- 25511 multiletter control sequences out of 15000+600000
+ 23011 strings out of 494883
+ 428048 string characters out of 6178692
+ 577184 words of memory out of 5000000
+ 25526 multiletter control sequences out of 15000+600000
  13652 words of font info for 50 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
  62i,13n,67p,1630b,665s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -2330,10 +2382,10 @@ y10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb
 ></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr
 /share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/share
 /texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt9.pfb>
-Output written on test2_template.pdf (57 pages, 3400872 bytes).
+Output written on test2_template.pdf (59 pages, 3407599 bytes).
 PDF statistics:
- 782 PDF objects out of 1000 (max. 8388607)
- 671 compressed objects within 7 object streams
- 181 named destinations out of 1000 (max. 500000)
- 457 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 800 PDF objects out of 1000 (max. 8388607)
+ 687 compressed objects within 7 object streams
+ 185 named destinations out of 1000 (max. 500000)
+ 473 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -1,0 +1,4 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYGZdl{} \PYG{n+nb}{cd} \PYGZti{}/my\PYGZus{}apps/app1
+\PYGZdl{} mvn clean install \PYGZhy{}Dmaven.test.skip\PYG{o}{=}\PYG{n+nb}{true}
+\end{Verbatim}

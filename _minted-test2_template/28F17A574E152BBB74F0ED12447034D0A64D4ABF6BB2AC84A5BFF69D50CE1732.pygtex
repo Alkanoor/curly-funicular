@@ -1,0 +1,5 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYGZdl{} mkdir \PYGZti{}/my\PYGZus{}apps
+\PYGZdl{} \PYG{n+nb}{cd} \PYGZti{}/my\PYGZus{}apps
+\PYGZdl{} onos\PYGZhy{}create\PYGZhy{}app
+\end{Verbatim}

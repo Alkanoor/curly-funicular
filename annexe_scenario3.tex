@@ -20,22 +20,28 @@ Attendre quelques secondes entre les 2 premières commandes, le temps que les ta
 
 \begin{figure}[h]
   	\centering
-  	\includegraphics[width=1\textwidth]{packets_in.png}
-  	\caption{Nombreux PACKET\_IN et PACKET\_OUT dans ONOS}
-\end{figure}
-
-Sous wireshark, on observe l'échange de nombreux PACKET\_IN et PACKET\_OUT avec le switch malveillant.
-
-\begin{figure}[h]
-  	\centering
   	\includegraphics[width=1\textwidth]{surcharge.png}
   	\caption{Réseau attaqué : beaucoup d'hôtes sont détectés par ONOS}
 \end{figure}
 
 \begin{figure}[h]
   	\centering
-  	\includegraphics[width=0.8\textwidth]{DOS.png}
+  	\includegraphics[width=0.7\textwidth]{DOS.png}
   	\caption{Réseau attaqué : ping beaucoup plus faible, perte de paquets}
 \end{figure}
 
+
+Lors de l'attaque, on peut constater que le nombre d'hôtes référencés par ONOS augmente fortement (l'interface graphique fournit alors comme dans l'image précédente une vue assez brouillon du réseau).\\
+Sous wireshark, on observe l'échange de nombreux PACKET\_IN et PACKET\_OUT avec le switch malveillant, ainsi que quelques paquets mettant à jour les tables de flux du switch cible.\\
+Lorsqu'on ping une machine qui n'est pas reliée au switch cible, les délais sont classiques (quelques millisecondes pour les premiers, puis cela baisse avec l'ajout de règle spécifique à la table de flux). En revanche lorsqu'on ping une machine reliée au switch cible, on perd de nombreux paquets, et les délais sont extrêmement longs.\\
+Cela varie évidemment selon la puissance de l'attaque (le délai entre chaque émission de paquet malveillant) et le temps qu'on laisse l'attaque se dérouler (sinon les tables de flux du switch cible contiennent un chemin pour le ping de h1 vers h8 qui ne permet pas de constater la surcharge des tables de flux).
+
+\begin{figure}[h]
+  	\centering
+  	\includegraphics[width=1\textwidth]{packets_in.png}
+  	\caption{Nombreux PACKET\_IN et PACKET\_OUT dans ONOS}
+\end{figure}
+~\\
 \underline{Conclusion :}\\
+Ce genre d'attaque est présente dans tout réseau (mais spécifique à chaque fois, comme ici "grâce" au mécanisme de PACKET\_IN et à la façon dont se modifie le plan de données en fonction des PACKET\_IN reçus par le contrôleur). Ici, l'attaque réussit en partie car on dispose d'un contrôleur dans sa configuration initiale (qui fait suivre tous les paquets et ajoute des règles pour chaque nouvelle localisation d'hôte détectée).\\
+Cela signifie donc qu'en modifiant le comportement par défaut du contrôleur, il est envisageable de réduire fortement les conséquences de la réception de nombreux PACKET\_IN avec des provenances aléatoires. De plus il est assez probable qu'utilisé dans un environnement de production, le contrôleur soit programmé pour aggréger des flux semblables dans des règles communes, factorisant ainsi le traitement de nombreux paquets et empêchant la surcharge des tables de flux (donc l'attaque).

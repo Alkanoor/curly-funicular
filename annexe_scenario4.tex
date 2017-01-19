@@ -1,0 +1,78 @@
+\subsection{Scenario 4}
+
+\subsubsection{Configuration}
+
+Pour réaliser l'attaque on aura besoin de créer des petites applications (8) preuves de concept sur le contrôleur (extinction du contrôleur, boucle infinie, utilisation abusive de la mémoire disponible, utilisation abusive du processeur, suppression d'une application concurrente, suppression d'un élément du réseau, modification de la politique de gestion des PACKET\_IN, deni de service en réalisant l'attaque 3 mais depuis ONOS).
+Il faudra donc répéter 8 fois les opérations suivantes (en modifiant juste le nom de l'application à chaque fois).
+
+Depuis ONOS, avec le contrôleur qui est lancé (mais hors du contrôleur), créer un dossier qui contiendra nos applications (par exemple my\_apps), et lancer le programme se chargeant de créer les éléments nécessaires pour une nouvelle application :
+\begin{minted}{bash}
+$ mkdir ~/my_apps
+$ cd ~/my_apps
+$ onos-create-app
+\end{minted}
+
+Rentrer les informations suivantes (taper chaque ligne, si la ligne est vide se contenter du retour à la ligne) :
+\begin{minted}{bash}
+$> org.app1
+$> app1
+$> 1.7.0
+$> 
+$> 
+\end{minted}
+
+Ensuite pour chaque application créée d'index i, copier le contenu de ONOS-Attack/attacks/scena-rio4/app[i].java dans my\_apps/app[i]/src/main/java/org/app1/AppComponent.java, par exemple pour l'application 1 :
+
+\begin{minted}{bash}
+$ cp ~/ONOS-Attack/attacks/scenario4/app1.java
+~/my_apps/app1/src/main/java/org/app1/AppComponent.java
+\end{minted}
+
+Modifier le fichier pom.xml en supprimant le commentaire ligne 31 et en mettant ce qui est désiré pour les attributs nom, titre, et origine :
+\begin{minted}{xml}
+<!-- Uncomment to generate ONOS app from this module.-->
+<onos.app.name>org.app1</onos.app.name>
+<onos.app.title>App1</onos.app.title>
+<onos.app.origin>App1, Inc.</onos.app.origin>
+<onos.app.category>default</onos.app.category>
+<onos.app.url>http://onosproject.org</onos.app.url>
+<onos.app.readme>ONOS OSGi bundle archetype.</onos.app.readme>
+<!---->
+\end{minted}
+
+Puis "compiler" l'application :
+\begin{minted}{bash}
+$ cd ~/my_apps/app1
+$ mvn clean install -Dmaven.test.skip=true
+\end{minted}
+
+Si la "compilation" échoue avec un message d'erreur à propos de slf4j, rajouter les lignes suivantes dans le pom.xml du dossier de l'application :
+\begin{minted}{xml}
+<dependency>
+    <groupId>org.slf4j</groupId>
+    <artifactId>slf4j-api</artifactId>
+    <version>1.7.5</version>
+</dependency>
+<dependency>
+    <groupId>org.slf4j</groupId>
+    <artifactId>slf4j-log4j12</artifactId>
+    <version>1.7.5</version>
+</dependency>
+\end{minted}
+
+Ensuite, il faut installer l'application sur le contrôleur :
+\begin{minted}{bash}
+$ onos-app localhost install target/app1-1.7-SNAPSHOT.oar
+\end{minted}
+
+Il est possible de vérifier que l'application a bien été installée en appelant la commande apps -s sur le contrôleur (le nom de l'application, org.app1 ici, doit apparaître dans la liste).
+
+Enfin lancer l'attaque en activant l'application depuis ONOS :
+\begin{minted}{bash}
+$ app activate org.app1
+\end{minted}
+
+Un script permet d'éviter d'avoir à réitérer ce processus autant de fois qu'il y a d'applications. Pour cela, exécuter auto-install.sh dans ONOS-Attack (il faut seulement confirmer la création d'application 8 fois) :
+\begin{minted}{bash}
+$ ./auto-install.sh
+\end{minted}
