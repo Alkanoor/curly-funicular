@@ -198,6 +198,18 @@ pdfstartview = {FitH}}
 Avant d'entamer la lecture de ce rapport, je tiens avant tout à remercier toute l'équipe du département RST (Réseaux et Services des Télécommuni-cations) de Télécom SudParis qui m'a si bien accueilli durant ce stage. Je remercie également mon encadrant côté Télécom ParisTech Rida Khatoun, m'ayant mis en relation avec le maître de conférences Gregory Blanc qui m'a encadré avec bienveillance pendant toute la durée du stage. Enfin, toutes les autres personnes que j'ai pu cottoyer plus ou moins longtemps à l'occasion d'évènements ponctuels comme la conférence RAID qui s'est tenue en septembre.}
 \phantomsection
 
+\newpage
+{\large ~\\}
+\section*{\Huge{Introduction}}
+~\\
+Durant ce stage effectué du 20 juillet 2016 au 20 janvier 2017 dans les locaux de Télécom-SudParis, j'ai été amené à travailler sur les contrôleurs SDN (Software Defined Network) qui sont les points névralgiques dans un réseau SDN. Je me suis attaché plus particulièrement à l'étude de la sécurité d'un contrôleur qui s'appelle ONOS (Open Network Operating System). Ce document se propose d'expliquer de manière relativement didactique la façon dont j'ai conduit un audit du contrôleur, en détaillant de manière plus ou moins étoffée certains éléments à la fois techniques, mais aussi d'autres plus généraux.\\
+C'est pourquoi dans une première partie le concept de réseau SDN est abordé sous plusieurs angles (motivation du paradigme, schématisation, historique et applications).
+Puis dans un second temps je détaille d'avantage l'architecture technique d'un contrôleur SDN (architecture logicielle, protocoles sous-jacent), de manière à pouvoir expliquer les différentes vulnérabilités exploitables par la suite.
+La troisième partie est consacrée au détail des expérimentations conduites sur le contrôleur en vue de l'attaquer : hypothèses, buts, impacts et parades y sont décrits par rapport à 6 attaques conçues au cours du stage.
+Sur la base de ces travaux pratiques, la quatrième partie présente la conclusion de l'étude sous plusieurs angles de vue et fournit des recommandations qu'il serait préférable d'appliquer dans le cas d'un déploiement d'ONOS à large échelle.
+Enfin, je conclus sur quelques perspectives générales et rajoute une dernière partie annexe qui contient des instructions précises pour le lecteur désireux de reproduire certaines des attaques effectuées au cours du stage de manière simple.
+\phantomsection
+
 %======================== Table des matières ========================
 \newpage
 \tableofcontents
@@ -209,7 +221,7 @@ Avant d'entamer la lecture de ce rapport, je tiens avant tout à remercier toute
 	\subsection{Motivation}
 		\input{./motivation_sdn.tex}
 		~\\
-	\subsection{Concepts}
+	\subsection{Concept général}
 		\input{./concepts.tex}
 		~\\
 	\subsection{Historique}
