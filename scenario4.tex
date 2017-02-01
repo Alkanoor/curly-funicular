@@ -2,20 +2,24 @@
 - Un éditeur d’application malveillant\\
 
 
-\underline{Buts :}\\
-Tester le secure mode d’ONOS. Regarder ce qu’il est possible d’effectuer comme action néfaste sur le contrôleur, sur les performances du réseau en général. Modifier la topologie du réseau, effacer les tables de flux.
+\underline{Buts :}
+\begin{itemize}
+\item Tester le secure mode d’ONOS.
+\item Regarder ce qu’il est possible d’effectuer comme action néfaste sur le contrôleur, sur les performances du réseau en général.
+\item Modifier la topologie du réseau, effacer les tables de flux avec une application.\\
+\end{itemize}
 
 \underline{Déroulement :}\\
-Un utilisateur mal intentionné charge une application sur le contrôleur. Cette application contient des instructions de tous les types pour consommer les ressources du contrôleur et modifier son fonctionnement. Par exemple on testera si il est possible de provoquer l’arrêt du contrôleur. On testera également l’import et l’utilisation des fonctions de l’API d’ONOS bas niveau, c’est à dire celles qui sont susceptibles d’être utilisées par le coeur d’ONOS pour avoir des informations sur le réseau environnant. Enfin, on regardera si il est possible de monopoliser en partie certaines ressources du contrôleur (par exemple accès au disque, mais aussi processeur avec des calculs couteux répétés en boucle).
+Un utilisateur mal intentionné charge une application sur le contrôleur. Cette application contient des instructions de tous les types pour consommer les ressources du contrôleur et modifier son fonctionnement. Par exemple on testera si il est possible de provoquer l’arrêt du contrôleur. On testera également l’import et l’utilisation des fonctions de l’API d’ONOS bas niveau, c’est à dire celles qui sont susceptibles d’être utilisées par le cœur d’ONOS pour avoir des informations sur le réseau environnant. Enfin, on regardera si il est possible de monopoliser en partie certaines ressources du contrôleur (par exemple accès au disque, mais aussi processeur avec des calculs coûteux répétés en boucle).
 
 \underline{Détails techniques :}\\
 Se référer au scénario 4 décrit dans l'annexe (page).
 
 \underline{Résultat :}\\
-Si le contrôleur n'est pas correctement configuré ou est volontairement permissif, il faut avoir une confiance absolue dans les applications qui tournent sans droits restreints. En effet, sinon il est possible d'effectuer toutes les actions envisageables sur le contrôleur et donc sur le réseau.
+Parmi les 8 applications créées pour la preuve de concept, 5 mettent à mal ONOS de manière très prononcée, 2 ont un effet léger et une n'a quasiment aucun impact. Lorsqu'on active le Security Mode, une seule application avec un effet très sérieux demeure activable. Il s'agit de l'application "fork bomb" qui crée de très nombreux threads ne se terminant pas. On peut alors observer une consommation maximale du processeur et un ralentissement considérable du contrôleur.
 
 \underline{Parades proposées :}\\
-Le secure mode a été mis en place pour parer ce genre de vulnérabilité, et il est efficace pour cela. C’est une protection cruciale qu’on est en droit d’attendre pour un tel contrôleur. Le secure mode est assez puissant car il offre un niveau de granularité très fin \footnote{\url{https://wiki.onosproject.org/display/ONOS/ONOS+Application+Permissions}}. Si l'administrateur général configure correctement le contrôleur et octroie à chaque fois le minimum de privilèges requis pour les applications dont il ne maitrise pas forcément l'origine, cela minimise le risque.
+Le Security Mode a été mis en place pour parer ce genre de vulnérabilité, et il est efficace pour cela (même si une des applications dangereuses parmi celles testées n'est pas filtrée). C’est une protection cruciale qu’on est en droit d’attendre pour un tel contrôleur. Le Security Mode est assez puissant car il offre un niveau de granularité très fin \footnote{\url{https://wiki.onosproject.org/display/ONOS/ONOS+Application+Permissions}}. Si l'administrateur général configure correctement le contrôleur et octroie à chaque fois le minimum de privilèges requis pour les applications dont il ne maîtrise pas forcément l'origine, cela minimise le risque.
 
 \underline{Limitations/Impact/probabilité :}\\
 Cette fois la probabilité d’une telle attaque n’est pas à prendre à la légère. Compte tenu de l’offre des contrôleurs SDN concernant la possibilité d’ajouter facilement des applications au réseau, le risque de rencontrer un utilisateur malveillant désirant nuire au réseau ou seulement disposer de plus de ressources qu’allouées est élevé. L’impact d’une telle menace est élevé. Les vulnérabilités au sein du contrôleur même sont les plus dangereuses au sein d’un réseau SDN. C’est donc un point qu’il ne faut à aucun prix négliger lorsqu'on souhaite mettre en place un tel réseau. Encore une fois, si le contrôleur est compromis, tout l'est dans le domaine contrôlé.

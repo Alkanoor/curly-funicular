@@ -1,8 +1,10 @@
 Comme l'audit a été fait en suivant partiellement la méthode STRIDE, et bien que le tableau du paragraphe précédent soit important à suivre, on va formuler la conclusion de l'étude sous la forme de la matrice habituellement utilisée avec cette méthode (différents éléments du système à gauche, différents risques en haut du tableau).\\
-Parmi les éléments du système, on trouve :\\
-- le processus principal (coeur du contrôleur)\\
-- les flux de données (deux au niveau de l'interface nord (gestion, et applications), un autre au niveau de l'interface sud)\\
-- les entités en interaction avec le contrôleur (switchs, applications, et machines d'administration)
+Parmi les éléments du système, on trouve :
+\begin{itemize}
+\item le processus principal (cœur du contrôleur)
+\item les flux de données (deux au niveau de l'interface nord (gestion, et applications), un autre au niveau de l'interface sud)
+\item les entités en interaction avec le contrôleur (switchs, applications, et machines d'administration)
+\end{itemize}
 
 \begin{small}
 
@@ -35,12 +37,12 @@ Entités en interaction & Applications & \circled{-} &  & \circledorange{1} &  &
 \end{small}
 
 Pour compléter le tableau précédent, voici les explications des chiffres :
-\begin{list}{$\Asteriscus$}{}
-\item 1 : Si le coeur d'ONOS est intègre, les logs sont enregistrés en permanence sur le disque par défaut ce qui permet à la fois le debug d'application et la tracabilité des connexions et évènements réseau divers. Cependant, mettre en place un système de sauvegarde distant ou empêcher une application avec des droits d'écriture de réécrire le fichier de log n'est pas aisé.
-\item 2 : Le Secure-Mode permet à la fois d'empêcher des applications un peu trop curieuses d'accéder à ce qu'elles n'ont pas le droit d'accéder et d'exécuter des actions qu'elles ne sont pas sensées faire. Encore faut-il l'activer.
+\begin{itemize}
+\item 1 : Si le cœur d'ONOS est intègre, les journaux d'événements sont enregistrés en permanence sur le disque par défaut ce qui permet à la fois le débogage d'application et la traçabilité des connexions et événements réseau divers. Cependant, mettre en place un système de sauvegarde distant ou empêcher une application avec des droits d'écriture de réécrire le fichier de log n'est pas aisé.
+\item 2 : Le Security Mode permet à la fois d'empêcher des applications d'accéder à ce qu'elles n'ont pas le droit de lire et d'exécuter des actions qu'elles ne sont pas sensées faire. Cela nécessite d’être activé explicitement.
 \item 3 : ONOS génère de nombreuses exceptions au cours de son fonctionnement, et toutes ces exceptions sont sauvegardées, générant une trace énorme et consommant une certaine quantité de ressources. Il n'est pas impossible de créer une application qui exploite cela. Il existait d'ailleurs une vulnérabilité importante (CVE-2015-7516\footnote{https://wiki.onosproject.org/display/ONOS/Security+advisories}) sur la version 1.3 du contrôleur qui provoquait la déconnexion de switchs lors du non traitement d'une exception.
-\item 4 : L'utilisation de TLS, inactivé par défaut, permet de solutionner les problèmes de fuites d'informations et de modifications non souhaitées du flux au niveau des interfaces nord et sud (modulo la sûreté du protocole, comme toujours).
-\item 5 : Le protocole Openflow n'a pas été conçu pour empêcher le deni de service, donc il est possible d'utiliser certaines parties de la spécification pour provoquer ce type d'attaque (voir les deux dernières attaques de l'audit sur l'interface sud).
+\item 4 : L'utilisation de TLS, inactivé par défaut, permet de solutionner les problèmes de fuites d'informations et de modifications non souhaitées de flux au niveau des interfaces nord et sud (modulo la sûreté du protocole).
+\item 5 : Le protocole OpenFlow n'a pas été conçu pour empêcher le déni de service, donc il est possible d'utiliser certaines parties de la spécification pour provoquer ce type d'attaque (voir les deux dernières attaques de l'audit sur l'interface sud).
 \item 6 : L'usurpation d'identité d'un administrateur peut se faire si la configuration de l'authentification au niveau du contrôleur (GUI, CLI, ssh) est celle par défaut. Il ne faut pas oublier de changer les identifiants, ou de désactiver les services qu'on ne souhaite pas utiliser.
-\item 7 : La deuxième attaque réalisée prouve qu'ONOS ne gère pas d'authentification pour les entités réseau au sud, ce qui permet l'usurpation d'identité de switchs. Cependant il existe maintenant une application en cours de développement (AAA, comme sur OpenDayLight) qui permet de corriger en partie le problème\footnote{https://wiki.onosproject.org/pages/viewpage.action?pageId=6357336}.
-\end{list}
+\item 7 : La deuxième attaque réalisée prouve qu'ONOS ne gère pas d'authentification pour les entités réseau au sud, ce qui permet l'usurpation d'identité de switchs. Cependant il existe maintenant une application en cours de développement (qui porte le même nom que l'application équivalente sur OpenDayLight : AAA) qui permet de corriger en partie le problème\footnote{https://wiki.onosproject.org/pages/viewpage.action?pageId=6357336}.
+\end{itemize}

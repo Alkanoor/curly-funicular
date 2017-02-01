@@ -1,22 +1,30 @@
-\underline{Prérequis/Hypothèses :}\\
-- Un switch malveillant connecté à un autre switch dans le réseau local\\
-- Une machine A connectée directement à un switch s1 dans un sous réseau accessible depuis le switch malveillant\\
-- Une machine B connectée indirectement à un switch s2\\
-- A cherche à joindre B\\
-- Le switch s1 a ses tables de flux par rapport au paquets ARP susceptibles d’être crées à partir de A vers B vides (c’est à dire aucune règle n’est susceptible d’appliquer une action prédéfinie aux paquets ARP provenant de A vers B (et donc génération d’un PACKET\_IN en conséquence)).\\
-- Une topologie en partie connue (IP des hôtes à usurper) est un plus\\
+\underline{Prérequis/Hypothèses :}
 
+\begin{itemize}
+
+\item Un hôte malveillant connecté à un switch dans le réseau local.
+\item Une machine A connectée directement à un switch s1 dans un sous réseau accessible depuis le switch auquel est connecté l'hôte malveillant.
+\item Une machine B connectée indirectement à un switch s2.
+\item Le switch s1 a ses tables de flux par rapport au paquets ARP susceptibles d’être crées à partir de A vers B vides (c’est à dire aucune règle n’est susceptible d’appliquer une action prédéfinie aux paquets ARP provenant de A vers B (et donc génération d’un PACKET\_IN en conséquence)). Cette hypothèse est vérifiée lorsque le switch n'a vu aucun trafic (nouveau déploiement) ou lorsque les flux ont expiré.
+\item Une topologie en partie connue (IP des hôtes à usurper) est un plus car cela rend l'attaque moins facilement détectable.
+
+\end{itemize}
 
 \underline{Buts :}\\
-- Tester la capacité du contrôleur à détecter des Man in the Middle, ce qui devrait s’avérer finalement plus simple que dans un réseau normal (en effet le contrôleur dispose normalement d’une vision globale de la topologie réseau à partir des switchs qu’il contrôle.
+Tester la sensibilité du réseau aux attaques de type Man in the Middle et la capacité du contrôleur à détecter voire empêcher ces attaques.
 
-\underline{Déroulement :}\\
-- La machine A cherche à contacter la machine B (ping par exemple)\\
-- Une requête ARP est donc envoyée depuis A et s1 la retransmet au contrôleur n’ayant pas encore d’action associée au flux\\
-- Le contrôleur renvoie le paquet en PACKET\_OUT sur le switch s1 qui le rediffuse\\
-- Notre switch malveillant répond plus rapidement que l’équipement concerné à la requête ARP et cherche à intercepter la communication entre A et B voire à la supprimer
+\underline{Déroulement :}
 
-Dans la pratique, l'attaque se passe exactement comme dans un réseau classique : le switch malveillant envoie de très nombreuses fausses requêtes ARP en broadcast pour altérer les tables ARP des équipements cibles. On utilisera donc ettercap pour mener l'attaque.
+\begin{itemize}
+
+\item La machine A cherche à contacter la machine B (ping par exemple)
+\item Une requête ARP est donc envoyée depuis A et s1 la retransmet au contrôleur n’ayant pas encore d’action associée au flux
+\item Le contrôleur renvoie le paquet en PACKET\_OUT sur le switch s1 qui le rediffuse
+\item Notre switch malveillant envoie des fausses réponses ARP en broadcast contenant l'association de son adresse Ethernet avec les adresses IP de A et B ce qui met à jour les tables ARP de A et de B en faisant croire à A que B est notre hôte malveillant et à B que A l'est également
+
+\end{itemize}
+
+Dans la pratique, l'attaque se passe exactement comme dans un réseau classique : de nombreuses fausses requêtes ARP sont envoyées en broadcast pour altérer les tables ARP des équipements cibles. Ettercap a donc été utilisé pour mener l'attaque. Pour obtenir plus d'informations sur les attaques de ce type, il existe un certain nombre de ressources facilement accessibles \footnote{Par exemple \url{https://www.information-security.fr/attaque-man-in-the-middle-via-arp-spoofing/}}
 
 \underline{Détails techniques :}\\
 Se référer au scénario 1 décrit dans l'annexe (page).
@@ -25,13 +33,19 @@ Se référer au scénario 1 décrit dans l'annexe (page).
 Comme sur un réseau classique, l'attaque fonctionne (on est à la fois en mesure d'intercepter et de modifier le trafic entre A et B). Cela s'explique facilement puisque les mécanismes utilisés pour le routage et le transport sont les mêmes. Si TLS n'est pas utilisé au sud on peut envisager l'attaque en plus sur le plan de contrôle, et donc pousser ses propres règles sur l'entité visée.
 
 \underline{Parades proposées :}\\
-Dans un réseau SDN, il me semble faisable de détecter et contrer ce genre d'attaque beaucoup plus facilement que dans un réseau classique. Si on enlève la solution TLS avec authentification mutuelle (qui permet de supprimer ce problème au niveau du plan de contrôle mais pas au niveau du plan de données, le switch malveillant ne pouvant plus communiquer avec le contrôleur mais le peut toujours avec les autres switchs), on peut proposer 2 parades.
+Dans un réseau SDN, il me semble faisable de détecter et contrer ce genre d'attaque beaucoup plus facilement que dans un réseau classique. Si on enlève la solution TLS avec authentification mutuelle (qui permet de supprimer ce problème au niveau du plan de contrôle mais pas au niveau du plan de données, le switch malveillant ne pouvant plus communiquer avec le contrôleur mais pouvant toujours le faire avec les autres switchs), on peut proposer 2 parades.
 
-La première tient à la "signature" de l'attaque. Dans le cas d'une topologie inconnue par le switch malveillant, celui-ci va envoyer de nombreux paquets ARP pour découvrir les éléments présents sur le réseau. Or si aucune règle spéciale n'est présente sur les switchs, les paquets sont envoyés au contrôleur. Ce dernier peut donc détecter, si les envois sont trop rapprochés par exemple, une activité anormale en provenance d'une même adresse mac.
+La première tient à la "signature" de l'attaque. Dans le cas d'une topologie inconnue par le switch malveillant, celui-ci va envoyer de nombreux paquets ARP pour découvrir les éléments présents sur le réseau. Or si aucune règle spéciale n'est présente sur les switchs, les paquets sont envoyés au contrôleur. Ce dernier peut donc détecter, si les envois sont trop rapprochés par exemple, une activité anormale en provenance d'une même adresse mac (on peut donc proposer la création d'un flux filtrant les requêtes ARP et un mécanisme de détection sur les compteurs).
 
-La seconde est encore liée à la capacité du contrôleur à disséquer les paquets qu'il reçoit. En effet, lors de l'attaque, il va recevoir des paquets ARP portant une adresse IP connue (la cible) associée à une adresse MAC ne correspondant pas à la description de l'hôte qu'il détient. Si il analyse les paquets ARP reçus, il peut donc détecter l'attaque. L'inconvénient de cette méthode est l'obligation de traiter chaque paquet ARP reçu, ce qui peut être éventuellement utilisé dans un but de DoS.
+La seconde est encore liée à la capacité du contrôleur à disséquer les paquets qu'il reçoit. En effet, lors de l'attaque, il va recevoir des paquets ARP portant une adresse IP connue (la cible) associée à une adresse Ethernet ne correspondant pas à la description de l'hôte qu'il détient (c'est à dire au triplet adresse IP, DPID (qui est associé de manière unique à une adresse Ethernet) et VLAN ID qui identifie l'équipement). Si il analyse les paquets ARP reçus, il peut donc détecter l'attaque. L'inconvénient de cette méthode est l'obligation de traiter chaque paquet ARP reçu, ce qui peut être éventuellement utilisé dans un but de DoS.
 
 \underline{Limitations/Impact/probabilité :}\\
-Comme sur un réseau traditionnel, l’attaque ne fonctionne qu’au sein d’un réseau local donc l’attaquant doit avoir accès au réseau. De plus, même si les impacts de ce genre d’attaque peuvent être importants (la communication passant par une troisième entité, tout peut être modifié entre les équipements concernés) :\\
--d’une part l’utilisation d’un chiffrement entre contrôleur et switch permet théoriquement d’éviter à un élément non authentifié de pouvoir modifier de manière conséquente le réseau (même si la gestion d’une PKI fiable au sein d’un réseau SDN est complexe à mettre en œuvre).\\
--d’autre part comme on l'a dit au dessus, le contrôleur SDN est mieux armé pour répondre à ce genre d’attaque qu’un réseau classique, au prix d'un surcoût éventuel en ressources (gestion de tous les paquets ARP depuis le contrôleur).
+Comme sur un réseau traditionnel, l’attaque ne fonctionne qu’au sein d’un réseau local donc l’attaquant doit avoir accès au réseau. De plus, même si les impacts de ce genre d’attaque peuvent être importants (puisque toute la communication entre deux équipements quelconques peut être interceptée et modifiée) :\\
+
+\begin{itemize}
+
+\item d’une part l’utilisation d’un chiffrement entre contrôleur et switch permet théoriquement d’éviter à un élément non authentifié de pouvoir modifier de manière conséquente le réseau (même si la gestion d’une PKI fiable au sein d’un réseau SDN est complexe à mettre en œuvre).
+\item d’autre part comme on l'a dit précédemment, le contrôleur SDN est mieux armé pour répondre à ce genre d’attaque qu’un réseau classique, au prix d'un surcoût éventuel en ressources (qui implique la gestion partielle des paquets ARP depuis le contrôleur).
+
+
+\end{itemize}
