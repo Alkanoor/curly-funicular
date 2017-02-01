@@ -2,7 +2,7 @@ Pour éclairer de manière expérimentale le large spectre de menaces auquel peu
 
 Pour rester dans la nomenclature précédente, voici les attaques envisagées :
 
-\begin{list}{$\Asteriscus$}{}
+\begin{itemize}
 
 \item \underline{Scénario 1 :} Tampering et Information disclosure (interface sud) \\
 \underline{But :} Intercepter et modifier les communications sur le plan de données ou de contrôle si TLS n'est pas activé.
@@ -11,10 +11,10 @@ Pour rester dans la nomenclature précédente, voici les attaques envisagées :
 \underline{But :} Altérer la topologie estimée par le contrôleur en usurpant l'identité d'un switch ou en inventant un faux switch et en créant des faux messages LLDP.
 
 \item \underline{Scénario 3 :} DoS (interface sud) \\
-\underline{But :} Réduire fortement le débit au niveau de certains noeuds par envoi d'un très grand nombre de paquets dont on espère qu'ils vont chacun aboutir à la création d'une règle au niveau du contrôleur. Ceci afin de surcharger les tables de flux des switchs visés.
+\underline{But :} Réduire fortement le débit au niveau de certains nœuds par envoi d'un très grand nombre de paquets dont on espère qu'ils vont chacun aboutir à la création d'une règle au niveau du contrôleur. Ceci afin de surcharger les tables de flux des switchs visés.
 
 \item \underline{Scénario 4 :} DoS (interface nord) \\
-\underline{But :} Altérer les performances du contrôleur, tester certaines permissions critiques avec le Secure-Mode.
+\underline{But :} Altérer les performances du contrôleur, tester certaines permissions critiques avec le Security Mode.
 
 \item \underline{Scénario 5 :} Information disclosure (interface nord) \\
 \underline{But :} A partir d'une application banale qui n'a pas le droit de regarder quelles sont les autres applications présentes sur le contrôleur, observer quels éléments peuvent quand même être rendus accessibles sans que cela soit explicitement prévu.
@@ -22,6 +22,6 @@ Pour rester dans la nomenclature précédente, voici les attaques envisagées :
 \item \underline{Scénario 6 :} Spoofing (interface nord) \\
 \underline{But :} Tester la frontière entre permission liée à une application et permission liée à l'API REST.
 
-\end{list}
+\end{itemize}
 
 Chacun de ces 6 scénarios est détaillé séparément dans la partie suivante.

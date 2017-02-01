@@ -240,15 +240,15 @@ Enfin, je conclus sur quelques perspectives générales et rajoute une dernière
 \section{Cadre de l'étude}
 	\subsection{Problématique et objectifs}
 		\input{./problematique.tex}
-	\subsection{Architecture d'un réseau SDN}
-		Avant toute chose, il est nécessaire de détailler la façon dont un réseau SDN fonctionne, afin que les attaques qui seront évoquées plus tard puissent être bien comprises. Pour cela, on insistera particulièrement sur la description du protocole Openflow, mais aussi sur celle de l'objet de notre étude, ONOS.
-		\subsubsection{Openflow}
+	\subsection{Architecture d'un réseau SDN contrôlé par ONOS}
+		Avant toute chose, il est nécessaire de détailler la façon dont un réseau SDN fonctionne, afin que les attaques qui seront évoquées plus tard puissent être bien comprises. Pour cela, on insistera particulièrement sur la description du protocole OpenFlow, mais aussi sur celle de l'objet de notre étude, ONOS.
+		\subsubsection{OpenFlow}
 			\input{./openflow.tex}
 		\subsubsection{Contrôleur SDN}
 			\input{./controleur.tex}
 		\subsubsection{ONOS}
 			\input{./onos.tex}
-	\subsection{Surface d'attaque}
+	\subsection{Environnement d'attaque}
 		\input{./faiblesses.tex}
 		\subsubsection{Menaces au niveau de l'interaction avec les switchs}
 			\input{./south_threat.tex}
@@ -261,6 +261,7 @@ Enfin, je conclus sur quelques perspectives générales et rajoute une dernière
 \newpage
 \fancyhead[L]{3- Audit}
 \section{Audit}
+	Afin de ne pas surcharger le corps de ce rapport, les attaques évoquées à la fin de la section précédente sont ici légèrement détaillées. Pour disposer de schémas, de captures d'écran et d'explications complémentaires, la partie annexe est prévue à cet effet.
 	\subsection{Man in the middle au niveau de l'interface sud}
 		\input{./scenario1.tex}
 		\newpage

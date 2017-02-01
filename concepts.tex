@@ -5,7 +5,7 @@ Pour réaliser cela, il est nécessaire, puisqu'un réseau est constitué d'enti
 \begin{figure}[h]
   	\centering
   	\includegraphics[width=0.8\textwidth]{openflow.png}
-  	\caption[Caption for LOF]{Réseau SDN : "l'intelligence" est déportée vers le contôleur \footnotemark}
+  	\caption[Caption for LOF]{Réseau SDN : "l'intelligence" est déportée vers le contrôleur \footnotemark}
 \end{figure}
 
 \footnotetext{\label{rapport_maxence} Schéma extrait du mémoire "Étude d’OpenFlow dans le contexte de la sécurité" de Maxence Tury}
@@ -22,7 +22,7 @@ Les avantages de cette architecture sont multiples :
 \item Cela facilite donc énormément le développement d'applications réseau complexes, puisque la tâche peut être quasiment séparée de sa réalisation physique.
 \item Les routes optimales sont plus facilement calculables qu'au sein d'un réseau classique : un seul élément gère les différentes distances et métriques qui peuvent changer selon le trafic, et être modifiées à la volée par des applications spécifiques.
 \item La gestion du réseau devient plus simple, les évènements importants (perte d'un lien, dysfonctionnement, ralentissement ...) peuvent être remarqués rapidement, la réaction pouvant être automatique et quasiment instantanée.
-\item Les coûts matériels sont globalement diminués puisqu'un switch programmable Openflow peut n'implémenter que le protocole en question pour être fonctionnel (le reste pouvant être pris en charge logiciellement au niveau du contrôleur). Il est également possible de migrer partiellement vers une architecture SDN en utilisant des switchs hybrides.
+\item Les coûts matériels sont globalement diminués puisqu'un switch programmable OpenFlow peut n'implémenter que le protocole en question pour être fonctionnel (le reste pouvant être pris en charge logiciellement au niveau du contrôleur). Il est également possible de migrer partiellement vers une architecture SDN en utilisant des switchs hybrides.
 \end{itemize}
 
 Pour résumer, beaucoup plus de flexibilité est permise par cette approche, économisant temps et matériel. Évidemment, l'idée n'est pas nouvelle, mais n'a pas que des avantages. Notamment : la sécurité du contrôleur devient un point brûlant, puisque toute la gestion du réseau repose sur lui.

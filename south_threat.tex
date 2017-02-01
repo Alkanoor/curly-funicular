@@ -1,16 +1,16 @@
-Le contrôleur reçoit et interprête des données d'éléments externes. Cela signifie que, si l'une des entités avec qui il communique est malveillante, celle-ci a la possibilité d'agir négativement sur le contrôleur.
-Concernant la méthode STRIDE appliquée à l'interface sud, on trouve majoritairement 4 menaces :
+Le contrôleur reçoit et interprète des données des switchs qu'il contrôle. Cela signifie que, si l'une des entités avec qui il communique est malveillante, celle-ci a la possibilité d'agir négativement sur le contrôleur.
+En appliquant la méthode STRIDE à l'interface sud, on trouve 4 menaces :
 
-\begin{list}{$\Asteriscus$}{}
+\begin{itemize}
 
-\item Spoofing (S) : possibilité pour un élement de se faire passer pour ce qu’il n’est pas (un switch se faisant passer pour un autre switch par exemple, ...).
+\item Usurpation d'identité (S) : possibilité pour un élement de se faire passer pour ce qu’il n’est pas (un switch se faisant passer pour un autre switch par exemple, ...).
 
-\item Tampering (T) : possibilité de modifier le flux de données des switchs en se plaçant sur le chemin du contrôleur (man in the middle). Cette partie est rapide à étudier puisque TLS, si il est correctement utilisé, permet d’éviter toute modification du flux.
+\item Altération (T) : possibilité de modifier le flux de données des switchs en se plaçant sur le chemin du contrôleur (man in the middle). Cette partie est rapide à étudier puisque TLS, si il est correctement utilisé, permet d’éviter toute modification du flux.
 
-\item Information disclosure (I) : possibilité d’obtenir les flux d’informations entre les éléments du réseau et le contrôleur (là encore si TLS est activé cela réduit la menace à son minimum).
+\item Divulgation d'information (I) : possibilité d’obtenir les flux d’informations entre les éléments du réseau et le contrôleur (là encore si TLS est activé cela réduit la menace à son minimum).
 
-\item Denial of service (D) : possibilité de surcharge des interfaces réseau, par exemple un switch non désiré sur le réseau qui surcharge le contrôleur de messages, de manière intelligente (en sachant ce qui ralentira le plus le contrôleur) ou non.
+\item Déni de service (D) : possibilité de surcharge des interfaces réseau, par exemple un switch non désiré sur le réseau qui surcharge le contrôleur de messages, de manière intelligente (en sachant ce qui ralentira le plus le contrôleur) ou non.
 
-\end{list}
+\end{itemize}
 
-Dans la suite, on testera S,T,D. Mais toujours relativement au contrôleur, c'est à dire qu'on regardera si le contrôleur agit comme il est supposé réagir, permettant ou non l'attaque. Et on constatera ou non la généricité des attaques.
+Dans la suite, on testera S, T, D (et pas I car on supposera TLS activé). Mais toujours relativement au contrôleur, c'est à dire qu'on regardera si le contrôleur agit comme il est supposé réagir, permettant ou non l'attaque. Et on constatera ou non la généricité des attaques.
